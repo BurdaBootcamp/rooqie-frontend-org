@@ -9732,34 +9732,54 @@ a.button {
   transition-duration: 0s; }
 
 .userevents {
-  background-color: #e1e1e1; }
-  .userevents .card {
-    margin: 5px 0px;
-    min-height: 20vh;
-    background-image: url("../img/example-img/englischer-garten.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center; }
-  .userevents a {
-    text-decoration: none; }
-  .userevents .event-name {
-    margin-left: 10%;
-    color: white;
-    font-weight: bold;
-    font-size: 2em;
-    margin-top: 50px; }
-  .userevents .event-date {
-    margin-left: 10%;
-    color: #e1e1e1;
-    font-weight: bold; }
+  background-color: #e1e1e1;
+  position: absolute; }
+  .userevents .eventlist {
+    height: 75vh; }
+    .userevents .eventlist .card {
+      margin: 5px 0px;
+      min-height: 20vh;
+      background-image: url("../img/example-img/englischer-garten.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center; }
+    .userevents .eventlist a {
+      text-decoration: none; }
+    .userevents .eventlist .event-name {
+      margin-left: 10%;
+      color: white;
+      font-weight: bold;
+      font-size: 2em;
+      margin-top: 50px; }
+    .userevents .eventlist .event-date {
+      margin-left: 10%;
+      color: #e1e1e1;
+      font-weight: bold; }
+  .userevents .actionpanel {
+    height: 19vh;
+    background-color: white;
+    -webkit-box-shadow: 0px -4px 5px 0px rgba(80, 80, 80, 0.5);
+    -moz-box-shadow: 0px -4px 5px 0px rgba(80, 80, 80, 0.5);
+    box-shadow: 0px -4px 5px 0px rgba(80, 80, 80, 0.5); }
+    .userevents .actionpanel a {
+      padding: 20px 40px;
+      color: #969696; }
+      .userevents .actionpanel a .icon {
+        width: 40px;
+        height: 40px;
+        margin-right: 15px; }
+        .userevents .actionpanel a .icon .icon-circle {
+          fill: white; }
+        .userevents .actionpanel a .icon .icon-text {
+          fill: #969696; }
 
 .bar.bar-dark {
   border-color: white;
   background-color: white;
   color: #009edf;
-  -webkit-box-shadow: 0px 4px 5px 0px rgba(80, 80, 80, 0.5);
-  -moz-box-shadow: 0px 4px 5px 0px rgba(80, 80, 80, 0.5);
-  box-shadow: 0px 4px 5px 0px rgba(80, 80, 80, 0.5); }
+  -webkit-box-shadow: 0px -4px 5px 0px rgba(80, 80, 80, 0.5);
+  -moz-box-shadow: 0px -4px 5px 0px rgba(80, 80, 80, 0.5);
+  box-shadow: 0px -4px 5px 0px rgba(80, 80, 80, 0.5); }
 
 .bar.bar-dark .title {
   color: #009edf; }
@@ -9788,9 +9808,9 @@ ion-header-bar .title {
     background-position: center center;
     height: 30vh;
     width: 100%;
-    -webkit-box-shadow: 0px 4px 5px 0px rgba(80, 80, 80, 0.5);
-    -moz-box-shadow: 0px 4px 5px 0px rgba(80, 80, 80, 0.5);
-    box-shadow: 0px 4px 5px 0px rgba(80, 80, 80, 0.5); }
+    -webkit-box-shadow: 0px -4px 5px 0px rgba(80, 80, 80, 0.5);
+    -moz-box-shadow: 0px -4px 5px 0px rgba(80, 80, 80, 0.5);
+    box-shadow: 0px -4px 5px 0px rgba(80, 80, 80, 0.5); }
     .eventdetail .event-headerbox .event-topbar {
       height: 60%; }
     .eventdetail .event-headerbox .event-titlebox {
@@ -9809,9 +9829,9 @@ ion-header-bar .title {
     min-height: 30vh;
     width: 100%;
     background-color: white;
-    -webkit-box-shadow: 0px 4px 5px 0px rgba(80, 80, 80, 0.5);
-    -moz-box-shadow: 0px 4px 5px 0px rgba(80, 80, 80, 0.5);
-    box-shadow: 0px 4px 5px 0px rgba(80, 80, 80, 0.5); }
+    -webkit-box-shadow: 0px -4px 5px 0px rgba(80, 80, 80, 0.5);
+    -moz-box-shadow: 0px -4px 5px 0px rgba(80, 80, 80, 0.5);
+    box-shadow: 0px -4px 5px 0px rgba(80, 80, 80, 0.5); }
     .eventdetail .event-descriptionbox svg {
       width: 80%;
       margin-left: 10px;

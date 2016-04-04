@@ -7,9 +7,9 @@
     background-position: center center;
     height: 30vh;
     width: 100%;
-    -webkit-box-shadow: 0px 4px 5px 0px $menu_shadow;
-    -moz-box-shadow: 0px 4px 5px 0px $menu_shadow;
-    box-shadow: 0px 4px 5px 0px $menu_shadow;
+    -webkit-box-shadow: $shadow_menu;
+    -moz-box-shadow: $shadow_menu;
+    box-shadow: $shadow_menu;
     .event-topbar {
       height: 60%;
     }
@@ -33,9 +33,9 @@
     min-height: 30vh;
     width: 100%;
     background-color: $primary_white;
-    -webkit-box-shadow: 0px 4px 5px 0px $menu_shadow;
-    -moz-box-shadow: 0px 4px 5px 0px $menu_shadow;
-    box-shadow: 0px 4px 5px 0px $menu_shadow;
+    -webkit-box-shadow: $shadow_menu;
+    -moz-box-shadow: $shadow_menu;
+    box-shadow: $shadow_menu;
     svg {
       width: 80%;
       margin-left: 10px;

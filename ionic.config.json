@@ -1,6 +1,6 @@
 {
   "name": "rooqie-frontend",
-  "app_id": "",
+  "app_id": "06256cad",
   "gulpStartupTasks": [
     "sass",
     "watch"

@@ -1,5 +1,7 @@
 $primary_blue: rgb(0,158,223);
 $primary_grey: rgb(225,225,225);
+$primary_darkgrey: rgb(150,150,150);
 $primary_white: rgb(255,255,255);
 
-$menu_shadow: rgba(80,80,80,0.5);
+$shadow_color: rgba(80,80,80,0.5);
+$shadow_menu: 0px -4px 5px 0px $shadow_color;
