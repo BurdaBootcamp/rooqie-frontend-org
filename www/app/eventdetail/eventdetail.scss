@@ -1,0 +1,60 @@
+.eventdetail {
+  background-color: $primary_grey;
+  .event-headerbox {
+    background-image: url('../img/example-img/englischer-garten.jpg');
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center center;
+    height: 30vh;
+    width: 100%;
+    -webkit-box-shadow: 0px 4px 5px 0px $menu_shadow;
+    -moz-box-shadow: 0px 4px 5px 0px $menu_shadow;
+    box-shadow: 0px 4px 5px 0px $menu_shadow;
+    .event-topbar {
+      height: 60%;
+    }
+    .event-titlebox {
+      height: 40%;
+      .event-name {
+        margin-left: 10%;
+        color: $primary_white;
+        font-weight: bold;
+        font-size: 2em;
+      }
+      .event-date {
+        margin-left: 10%;
+        color: $primary_grey;
+        font-weight: bold;
+      }
+    }
+  }
+  .event-descriptionbox {
+    margin-top: 5vh;
+    min-height: 30vh;
+    width: 100%;
+    background-color: $primary_white;
+    -webkit-box-shadow: 0px 4px 5px 0px $menu_shadow;
+    -moz-box-shadow: 0px 4px 5px 0px $menu_shadow;
+    box-shadow: 0px 4px 5px 0px $menu_shadow;
+    svg {
+      width: 80%;
+      margin-left: 10px;
+      margin-top: -50px;
+    }
+    .icon-circle {
+      fill: $primary_white;
+    }
+    .icon-text {
+      fill: $primary_blue;
+    }
+    p.title {
+      padding: 5px;
+      width: 100%;
+      text-align: right;
+    }
+    p.text {
+      margin-top: -40px;
+      padding: 20px 30px;
+    }
+  }
+}

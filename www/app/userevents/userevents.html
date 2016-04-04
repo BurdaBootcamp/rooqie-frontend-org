@@ -1,0 +1,15 @@
+<ion-view title="Meine Events">
+  <ion-content class="userevents">
+
+    <a ui-sref="eventdetail({id: event.id})" ng-repeat="event in data.userevents">
+      <div class="card">
+        <p class="event-name">
+          {{event.name}}
+        </p>
+        <p class="event-date">
+          {{event.daystring}} Uhr
+        </p>
+      </div>
+    </a>
+  </ion-content>
+</ion-view>
