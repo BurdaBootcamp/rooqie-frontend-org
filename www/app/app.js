@@ -27,6 +27,15 @@ angular.module('app', ['ionic'])
         }
       }
     })
+    .state('app.userinterests', {
+      url: '/userinterests',
+      views: {
+        'menuContent': {
+          templateUrl: 'app/userinterests/userinterests.html',
+          controller: 'UserinterestsCtrl'
+        }
+      }
+    })
     .state('app.profile', {
       url: '/profile',
       views: {
@@ -35,7 +44,8 @@ angular.module('app', ['ionic'])
           controller: 'ProfileCtrl'
         }
       }
-    }).state('eventdetail', {
+    })
+    .state('eventdetail', {
       url: '/eventdetail/:id',
       templateUrl: 'app/eventdetail/eventdetail.html',
       controller: 'EventdetailCtrl'
