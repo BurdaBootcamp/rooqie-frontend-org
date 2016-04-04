@@ -30,9 +30,9 @@
   .actionpanel {
     height: 19vh;
     background-color: $primary_white;
-    -webkit-box-shadow: $shadow_menu;
-    -moz-box-shadow: $shadow_menu;
-    box-shadow: $shadow_menu;
+    -webkit-box-shadow: $shadow_menu_up;
+    -moz-box-shadow: $shadow_menu_up;
+    box-shadow: $shadow_menu_up;
     a:first-child {
       margin-top: 20px;
     }
@@ -54,5 +54,8 @@
   }
   .activated, .active {
     background-color: transparnet;
+  }
+  .button {
+    background-color: $primary_white;
   }
 }
