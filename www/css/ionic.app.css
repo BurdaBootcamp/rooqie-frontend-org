@@ -9732,7 +9732,7 @@ a.button {
   transition-duration: 0s; }
 
 .userevents {
-  background-color: #e1e1e1;
+  background-color: #1A9FDC;
   position: absolute; }
   .userevents .eventlist {
     height: 75vh; }
@@ -9773,25 +9773,89 @@ a.button {
         .userevents .actionpanel a .icon .icon-text {
           fill: #969696; }
 
+.userinterests {
+  background-color: #1A9FDC;
+  position: absolute; }
+  .userinterests .section-container {
+    height: 100vh;
+    position: absolute;
+    margin: 7vh 8vw 7vh 8vw; }
+    .userinterests .section-container .text {
+      color: white;
+      font-size: 1.6em;
+      line-height: 1.7em; }
+    .userinterests .section-container button {
+      background-color: #28A8E0;
+      border: 1px solid #28A8E0;
+      border-radius: 3em;
+      color: white;
+      padding: 10px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 1.6em;
+      margin-top: 3vh; }
+    .userinterests .section-container .icon_circle {
+      fill: rgba(255, 255, 255, 0.1); }
+    .userinterests .section-container .icon_circle:active {
+      fill: white; }
+    .userinterests .section-container .icon_tick {
+      fill: rgba(255, 255, 255, 0); }
+    .userinterests .section-container .droplist {
+      color: white;
+      font-size: 1.3em;
+      margin-left: 5px;
+      margin-top: -10px; }
+    .userinterests .section-container .event-name {
+      margin-left: 10%;
+      color: white;
+      font-weight: bold;
+      font-size: 2em;
+      margin-top: 50px; }
+    .userinterests .section-container .event-date {
+      margin-left: 10%;
+      color: #e1e1e1;
+      font-weight: bold; }
+  .userinterests .actionpanel {
+    height: 19vh;
+    background-color: white;
+    -webkit-box-shadow: 0px -4px 5px 0px rgba(80, 80, 80, 0.5);
+    -moz-box-shadow: 0px -4px 5px 0px rgba(80, 80, 80, 0.5);
+    box-shadow: 0px -4px 5px 0px rgba(80, 80, 80, 0.5); }
+    .userinterests .actionpanel a {
+      padding: 20px 40px;
+      color: #969696; }
+      .userinterests .actionpanel a .icon {
+        width: 40px;
+        height: 40px;
+        margin-right: 15px; }
+        .userinterests .actionpanel a .icon .icon-circle {
+          fill: white; }
+        .userinterests .actionpanel a .icon .icon-text {
+          fill: #969696; }
+
+.nondisplay {
+  display: none; }
+
 .bar.bar-dark {
   border-color: white;
   background-color: white;
-  color: #009edf;
+  color: #1A9FDC;
   -webkit-box-shadow: 0px -4px 5px 0px rgba(80, 80, 80, 0.5);
   -moz-box-shadow: 0px -4px 5px 0px rgba(80, 80, 80, 0.5);
   box-shadow: 0px -4px 5px 0px rgba(80, 80, 80, 0.5); }
 
 .bar.bar-dark .title {
-  color: #009edf; }
+  color: #1A9FDC; }
 
 .bar-dark .button.button-icon {
-  color: #009edf; }
+  color: #1A9FDC; }
 
 .menu ion-content {
-  background-color: #009edf; }
+  background-color: #1A9FDC; }
 
 .menu .list .item {
-  background-color: #009edf;
+  background-color: #1A9FDC;
   color: white;
   font-weight: bold;
   border-color: white; }
@@ -9839,7 +9903,7 @@ ion-header-bar .title {
     .eventdetail .event-descriptionbox .icon-circle {
       fill: white; }
     .eventdetail .event-descriptionbox .icon-text {
-      fill: #009edf; }
+      fill: #1A9FDC; }
     .eventdetail .event-descriptionbox p.title {
       padding: 5px;
       width: 100%;
