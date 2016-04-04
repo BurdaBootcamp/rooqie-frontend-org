@@ -2,43 +2,155 @@
   <ion-content class="eventdetail">
     <div class="event-headerbox">
       <div class="event-topbar">
-        <a ui-sref="app.userevents">Test</a>
+        <a ui-sref="app.userevents">
+          <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     width="96.667px" height="96.667px" viewBox="0 0 96.667 96.667" enable-background="new 0 0 96.667 96.667" xml:space="preserve">
+            <g id="XMLID_1_">
+              <g>
+                <path class="icon-circle" fill="#1D1D1B" d="M48.337,0c26.69,0,48.33,21.64,48.33,48.33c0,26.7-21.64,48.34-48.33,48.34
+                  c-26.7,0-48.34-21.64-48.34-48.34C-0.002,21.641,21.638,0,48.337,0z M52.837,72.13V43.69c0-2.48-2.02-4.5-4.5-4.5
+                  c-2.49,0-4.5,2.02-4.5,4.5v28.44c0,2.48,2.01,4.5,4.5,4.5C50.818,76.63,52.837,74.611,52.837,72.13z M53.858,28.69
+                  c0-3.04-2.46-5.5-5.5-5.5c-3.03,0-5.5,2.46-5.5,5.5c0,3.03,2.47,5.5,5.5,5.5C51.398,34.19,53.858,31.72,53.858,28.69z"/>
+                <path class="icon-text" fill="#FFFFFF" d="M52.837,43.69v28.44c0,2.48-2.02,4.5-4.5,4.5c-2.49,0-4.5-2.02-4.5-4.5V43.69c0-2.48,2.01-4.5,4.5-4.5
+                  C50.818,39.19,52.837,41.21,52.837,43.69z"/>
+                <path class="icon-text" fill="#FFFFFF" d="M48.358,23.19c3.04,0,5.5,2.46,5.5,5.5c0,3.03-2.46,5.5-5.5,5.5c-3.03,0-5.5-2.47-5.5-5.5
+                  C42.858,25.65,45.328,23.19,48.358,23.19z"/>
+              </g>
+              <g>
+              </g>
+            </g>
+          </svg>
+        </a>
       </div>
       <div class="event-titlebox">
-        <p class="event-name">{{data.event.name}}</p>
-        <p class="event-date">{{data.event.daystring}} Uhr</p>
-      </div>
-    </div>
-    <div class="event-descriptionbox">
-      <div class="header-row row">
-        <div class="col col-20">
-          <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-          	 width="96.667px" height="96.667px" viewBox="0 0 96.667 96.667" enable-background="new 0 0 96.667 96.667" xml:space="preserve">
-          <g id="XMLID_1_">
-          	<g>
-          		<path class="icon-circle" fill="#1D1D1B" d="M48.337,0c26.69,0,48.33,21.64,48.33,48.33c0,26.7-21.64,48.34-48.33,48.34
-          			c-26.7,0-48.34-21.64-48.34-48.34C-0.002,21.641,21.638,0,48.337,0z M52.837,72.13V43.69c0-2.48-2.02-4.5-4.5-4.5
-          			c-2.49,0-4.5,2.02-4.5,4.5v28.44c0,2.48,2.01,4.5,4.5,4.5C50.818,76.63,52.837,74.611,52.837,72.13z M53.858,28.69
-          			c0-3.04-2.46-5.5-5.5-5.5c-3.03,0-5.5,2.46-5.5,5.5c0,3.03,2.47,5.5,5.5,5.5C51.398,34.19,53.858,31.72,53.858,28.69z"/>
-          		<path class="icon-text" fill="#FFFFFF" d="M52.837,43.69v28.44c0,2.48-2.02,4.5-4.5,4.5c-2.49,0-4.5-2.02-4.5-4.5V43.69c0-2.48,2.01-4.5,4.5-4.5
-          			C50.818,39.19,52.837,41.21,52.837,43.69z"/>
-          		<path class="icon-text" fill="#FFFFFF" d="M48.358,23.19c3.04,0,5.5,2.46,5.5,5.5c0,3.03-2.46,5.5-5.5,5.5c-3.03,0-5.5-2.47-5.5-5.5
-          			C42.858,25.65,45.328,23.19,48.358,23.19z"/>
-          	</g>
-          	<g>
-          	</g>
-          </g>
-          </svg>
+        <div class="textbox">
+          <p class="event-name">{{data.event.name}}</p>
+          <p class="event-date">{{data.event.daystring}} Uhr</p>
         </div>
-        <div class="col">
-          <p class="title">
-            Information
+        <div class="event-join">
+          <a ui-sref="eventjoin({id: data.event.id})">
+            <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+               width="96.667px" height="96.667px" viewBox="0 0 96.667 96.667" enable-background="new 0 0 96.667 96.667" xml:space="preserve">
+              <g id="XMLID_1_">
+                <g>
+                  <path class="icon-circle" fill="#1D1D1B" d="M48.337,0c26.69,0,48.33,21.64,48.33,48.33c0,26.7-21.64,48.34-48.33,48.34
+                    c-26.7,0-48.34-21.64-48.34-48.34C-0.002,21.641,21.638,0,48.337,0z M52.837,72.13V43.69c0-2.48-2.02-4.5-4.5-4.5
+                    c-2.49,0-4.5,2.02-4.5,4.5v28.44c0,2.48,2.01,4.5,4.5,4.5C50.818,76.63,52.837,74.611,52.837,72.13z M53.858,28.69
+                    c0-3.04-2.46-5.5-5.5-5.5c-3.03,0-5.5,2.46-5.5,5.5c0,3.03,2.47,5.5,5.5,5.5C51.398,34.19,53.858,31.72,53.858,28.69z"/>
+                  <path class="icon-text" fill="#FFFFFF" d="M52.837,43.69v28.44c0,2.48-2.02,4.5-4.5,4.5c-2.49,0-4.5-2.02-4.5-4.5V43.69c0-2.48,2.01-4.5,4.5-4.5
+                    C50.818,39.19,52.837,41.21,52.837,43.69z"/>
+                  <path class="icon-text" fill="#FFFFFF" d="M48.358,23.19c3.04,0,5.5,2.46,5.5,5.5c0,3.03-2.46,5.5-5.5,5.5c-3.03,0-5.5-2.47-5.5-5.5
+                    C42.858,25.65,45.328,23.19,48.358,23.19z"/>
+                </g>
+                <g>
+                </g>
+              </g>
+            </svg>
+          </a>
+          <p>
+            zusagen
           </p>
         </div>
       </div>
-      <p class="text">
+      <div style="clear: both;"></div>
+    </div>
+
+    <div class="contentbox">
+      <div class="headerbox">
+        <div class="icon">
+          <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             width="96.667px" height="96.667px" viewBox="0 0 96.667 96.667" enable-background="new 0 0 96.667 96.667" xml:space="preserve">
+            <g id="XMLID_1_">
+              <g>
+                <path class="icon-circle" fill="#1D1D1B" d="M48.337,0c26.69,0,48.33,21.64,48.33,48.33c0,26.7-21.64,48.34-48.33,48.34
+                  c-26.7,0-48.34-21.64-48.34-48.34C-0.002,21.641,21.638,0,48.337,0z M52.837,72.13V43.69c0-2.48-2.02-4.5-4.5-4.5
+                  c-2.49,0-4.5,2.02-4.5,4.5v28.44c0,2.48,2.01,4.5,4.5,4.5C50.818,76.63,52.837,74.611,52.837,72.13z M53.858,28.69
+                  c0-3.04-2.46-5.5-5.5-5.5c-3.03,0-5.5,2.46-5.5,5.5c0,3.03,2.47,5.5,5.5,5.5C51.398,34.19,53.858,31.72,53.858,28.69z"/>
+                <path class="icon-text" fill="#FFFFFF" d="M52.837,43.69v28.44c0,2.48-2.02,4.5-4.5,4.5c-2.49,0-4.5-2.02-4.5-4.5V43.69c0-2.48,2.01-4.5,4.5-4.5
+                  C50.818,39.19,52.837,41.21,52.837,43.69z"/>
+                <path class="icon-text" fill="#FFFFFF" d="M48.358,23.19c3.04,0,5.5,2.46,5.5,5.5c0,3.03-2.46,5.5-5.5,5.5c-3.03,0-5.5-2.47-5.5-5.5
+                  C42.858,25.65,45.328,23.19,48.358,23.19z"/>
+              </g>
+              <g>
+              </g>
+            </g>
+          </svg>
+        </div>
+        <div class="title">
+          Einladung
+        </div>
+        <div style="clear: both;"></div>
+      </div>
+      <p class="description">
         {{data.event.description}}
       </p>
+    </div>
+
+    <div class="contentbox">
+      <div class="headerbox">
+        <div class="icon">
+          <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             width="96.667px" height="96.667px" viewBox="0 0 96.667 96.667" enable-background="new 0 0 96.667 96.667" xml:space="preserve">
+            <g id="XMLID_1_">
+              <g>
+                <path class="icon-circle" fill="#1D1D1B" d="M48.337,0c26.69,0,48.33,21.64,48.33,48.33c0,26.7-21.64,48.34-48.33,48.34
+                  c-26.7,0-48.34-21.64-48.34-48.34C-0.002,21.641,21.638,0,48.337,0z M52.837,72.13V43.69c0-2.48-2.02-4.5-4.5-4.5
+                  c-2.49,0-4.5,2.02-4.5,4.5v28.44c0,2.48,2.01,4.5,4.5,4.5C50.818,76.63,52.837,74.611,52.837,72.13z M53.858,28.69
+                  c0-3.04-2.46-5.5-5.5-5.5c-3.03,0-5.5,2.46-5.5,5.5c0,3.03,2.47,5.5,5.5,5.5C51.398,34.19,53.858,31.72,53.858,28.69z"/>
+                <path class="icon-text" fill="#FFFFFF" d="M52.837,43.69v28.44c0,2.48-2.02,4.5-4.5,4.5c-2.49,0-4.5-2.02-4.5-4.5V43.69c0-2.48,2.01-4.5,4.5-4.5
+                  C50.818,39.19,52.837,41.21,52.837,43.69z"/>
+                <path class="icon-text" fill="#FFFFFF" d="M48.358,23.19c3.04,0,5.5,2.46,5.5,5.5c0,3.03-2.46,5.5-5.5,5.5c-3.03,0-5.5-2.47-5.5-5.5
+                  C42.858,25.65,45.328,23.19,48.358,23.19z"/>
+              </g>
+              <g>
+              </g>
+            </g>
+          </svg>
+        </div>
+        <div class="title">
+          Location
+        </div>
+        <div style="clear: both;"></div>
+      </div>
+      <iframe class="mapbox" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2661.1997000234473!2d11.605552200000007!3d48.16423229999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479e759795f82b6b%3A0xc99bdf627cefefd1!2sEnglish+Garden!5e0!3m2!1sen!2sde!4v1459779139755" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+
+    <div class="eventparticipants">
+      <div class="headerbox">
+        <div class="icon">
+          <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             width="96.667px" height="96.667px" viewBox="0 0 96.667 96.667" enable-background="new 0 0 96.667 96.667" xml:space="preserve">
+            <g id="XMLID_1_">
+              <g>
+                <path class="icon-circle" fill="#1D1D1B" d="M48.337,0c26.69,0,48.33,21.64,48.33,48.33c0,26.7-21.64,48.34-48.33,48.34
+                  c-26.7,0-48.34-21.64-48.34-48.34C-0.002,21.641,21.638,0,48.337,0z M52.837,72.13V43.69c0-2.48-2.02-4.5-4.5-4.5
+                  c-2.49,0-4.5,2.02-4.5,4.5v28.44c0,2.48,2.01,4.5,4.5,4.5C50.818,76.63,52.837,74.611,52.837,72.13z M53.858,28.69
+                  c0-3.04-2.46-5.5-5.5-5.5c-3.03,0-5.5,2.46-5.5,5.5c0,3.03,2.47,5.5,5.5,5.5C51.398,34.19,53.858,31.72,53.858,28.69z"/>
+                <path class="icon-text" fill="#FFFFFF" d="M52.837,43.69v28.44c0,2.48-2.02,4.5-4.5,4.5c-2.49,0-4.5-2.02-4.5-4.5V43.69c0-2.48,2.01-4.5,4.5-4.5
+                  C50.818,39.19,52.837,41.21,52.837,43.69z"/>
+                <path class="icon-text" fill="#FFFFFF" d="M48.358,23.19c3.04,0,5.5,2.46,5.5,5.5c0,3.03-2.46,5.5-5.5,5.5c-3.03,0-5.5-2.47-5.5-5.5
+                  C42.858,25.65,45.328,23.19,48.358,23.19z"/>
+              </g>
+              <g>
+              </g>
+            </g>
+          </svg>
+        </div>
+        <div class="title">
+          Teilnehmer
+        </div>
+        <div style="clear: both;"></div>
+      </div>
+      <div class="participants">
+        <p class="label">
+          {{data.remainingSpaces}} Plätze sind noch frei
+        </p>
+        <ion-scroll class="participantslist" direction="x">
+          <div>
+            <img ng-repeat="user in data.users" style="margin-right: 5px">
+          </div>
+        </ion-scroll>
+      </div>
     </div>
   </ion-content>
 </ion-view>

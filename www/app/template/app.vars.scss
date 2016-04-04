@@ -2,6 +2,9 @@ $primary_blue: rgb(0,158,223);
 $primary_grey: rgb(225,225,225);
 $primary_darkgrey: rgb(150,150,150);
 $primary_white: rgb(255,255,255);
+$primary_white_opacity: rgba(255,255,255, 0.5);
+$transparent: rgba(0,0,0,0);
 
 $shadow_color: rgba(80,80,80,0.5);
-$shadow_menu: 0px -4px 5px 0px $shadow_color;
+$shadow_menu: 0px 4px 5px 0px $shadow_color;
+$shadow_menu_up: 0px -4px 5px 0px $shadow_color;

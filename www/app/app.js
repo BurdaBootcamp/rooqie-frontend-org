@@ -39,6 +39,10 @@ angular.module('app', ['ionic'])
       url: '/eventdetail/:id',
       templateUrl: 'app/eventdetail/eventdetail.html',
       controller: 'EventdetailCtrl'
+    }).state('eventjoin', {
+      url: '/eventjoin/:id',
+      templateUrl: 'app/eventjoin/eventjoin.html',
+      controller: 'EventjoinCtrl'
     });
     $urlRouterProvider.otherwise('/loading');
   })
