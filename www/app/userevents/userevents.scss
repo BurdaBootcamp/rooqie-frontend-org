@@ -33,13 +33,16 @@
     -webkit-box-shadow: $shadow_menu;
     -moz-box-shadow: $shadow_menu;
     box-shadow: $shadow_menu;
+    a:first-child {
+      margin-top: 20px;
+    }
     a {
-      padding: 20px 40px;
+      padding: 0px 40px;
       color: $primary_darkgrey;
       .icon {
+        margin-right: 15px;
         width: 40px;
         height: 40px;
-        margin-right: 15px;
         .icon-circle {
           fill: $primary_white;
         }
@@ -48,5 +51,8 @@
         }
       }
     }
+  }
+  .activated, .active {
+    background-color: transparnet;
   }
 }
