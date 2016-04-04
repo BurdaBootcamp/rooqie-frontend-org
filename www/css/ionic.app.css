@@ -9788,20 +9788,22 @@ a.button {
 .bar.bar-dark .title {
   color: #009edf; }
 
+.bar-header {
+  -webkit-box-shadow: 0px -4px 5px 0px rgba(80, 80, 80, 0.5);
+  -moz-box-shadow: 0px -4px 5px 0px rgba(80, 80, 80, 0.5);
+  box-shadow: 0px -4px 5px 0px rgba(80, 80, 80, 0.5); }
+
 .bar-dark .button.button-icon {
   color: #009edf; }
 
 .menu ion-content {
-  background-color: #009edf; }
+  background-color: white; }
 
 .menu .list .item {
-  background-color: #009edf;
-  color: white;
+  background-color: white;
+  color: #969696;
   font-weight: bold;
-  border-color: white; }
-
-ion-header-bar .title {
-  color: white; }
+  border: none; }
 
 .eventdetail {
   background-color: #e1e1e1; }

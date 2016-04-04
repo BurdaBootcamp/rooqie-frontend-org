@@ -10,21 +10,23 @@
   color: $primary_blue;
 }
 
+.bar-header {
+  -webkit-box-shadow: $shadow_menu;
+  -moz-box-shadow: $shadow_menu;
+  box-shadow: $shadow_menu;
+}
+
 .bar-dark .button.button-icon {
   color: $primary_blue;
 }
 
 .menu ion-content {
-  background-color: $primary_blue;
+  background-color: $primary_white;
 }
 
 .menu .list .item {
-  background-color: $primary_blue;
-  color: $primary_white;
+  background-color: $primary_white;
+  color: $primary_darkgrey;
   font-weight: bold;
-  border-color: $primary_white;
-}
-
-ion-header-bar .title {
-  color: $primary_white;
+  border: none;
 }
