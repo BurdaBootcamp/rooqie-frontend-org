@@ -9821,15 +9821,11 @@ a.button {
     box-shadow: 0px 4px 5px 0px rgba(80, 80, 80, 0.5); }
     .eventdetail .event-headerbox .event-topbar {
       height: 63%; }
-      .eventdetail .event-headerbox .event-topbar svg {
+      .eventdetail .event-headerbox .event-topbar img {
         width: 40px;
         height: 40px;
         margin-left: 20px;
         margin-top: 20px; }
-        .eventdetail .event-headerbox .event-topbar svg .icon-circle {
-          fill: white; }
-        .eventdetail .event-headerbox .event-topbar svg .icon-text {
-          fill: #009edf; }
     .eventdetail .event-headerbox .event-titlebox .textbox {
       float: left;
       height: 37%;
@@ -9846,14 +9842,14 @@ a.button {
         font-size: 1.3em; }
     .eventdetail .event-headerbox .event-join {
       float: right; }
-      .eventdetail .event-headerbox .event-join svg {
+      .eventdetail .event-headerbox .event-join img {
         margin-right: 20px;
         margin-top: 5px;
         height: 40px;
         width: 40px; }
-        .eventdetail .event-headerbox .event-join svg .icon-circle {
+        .eventdetail .event-headerbox .event-join img .icon-circle {
           fill: rgba(255, 255, 255, 0.5); }
-        .eventdetail .event-headerbox .event-join svg .icon-text {
+        .eventdetail .event-headerbox .event-join img .icon-text {
           fill: transparent; }
       .eventdetail .event-headerbox .event-join p {
         color: white;
@@ -9870,14 +9866,14 @@ a.button {
       z-index: 10; }
       .eventdetail .contentbox .headerbox .icon {
         float: left; }
-        .eventdetail .contentbox .headerbox .icon svg {
+        .eventdetail .contentbox .headerbox .icon img {
           width: 40px;
           height: 40px;
           margin-top: -20px;
           margin-left: 20px; }
-          .eventdetail .contentbox .headerbox .icon svg .icon-circle {
+          .eventdetail .contentbox .headerbox .icon img .icon-circle {
             fill: white; }
-          .eventdetail .contentbox .headerbox .icon svg .icon-text {
+          .eventdetail .contentbox .headerbox .icon img .icon-text {
             fill: #009edf; }
       .eventdetail .contentbox .headerbox .title {
         float: right;
@@ -9916,14 +9912,14 @@ a.button {
       z-index: 10; }
       .eventdetail .eventparticipants .headerbox .icon {
         float: left; }
-        .eventdetail .eventparticipants .headerbox .icon svg {
+        .eventdetail .eventparticipants .headerbox .icon img {
           width: 40px;
           height: 40px;
           margin-top: -20px;
           margin-left: 20px; }
-          .eventdetail .eventparticipants .headerbox .icon svg .icon-circle {
+          .eventdetail .eventparticipants .headerbox .icon img .icon-circle {
             fill: white; }
-          .eventdetail .eventparticipants .headerbox .icon svg .icon-text {
+          .eventdetail .eventparticipants .headerbox .icon img .icon-text {
             fill: #009edf; }
       .eventdetail .eventparticipants .headerbox .title {
         float: right;
@@ -9965,14 +9961,14 @@ a.button {
     box-shadow: 0px 4px 5px 0px rgba(80, 80, 80, 0.5); }
     .eventjoin .event-headerbox .event-topbar {
       height: 63%; }
-      .eventjoin .event-headerbox .event-topbar svg {
+      .eventjoin .event-headerbox .event-topbar img {
         width: 40px;
         height: 40px;
         margin-left: 20px;
         margin-top: 20px; }
-        .eventjoin .event-headerbox .event-topbar svg .icon-circle {
+        .eventjoin .event-headerbox .event-topbar img .icon-circle {
           fill: white; }
-        .eventjoin .event-headerbox .event-topbar svg .icon-text {
+        .eventjoin .event-headerbox .event-topbar img .icon-text {
           fill: #009edf; }
     .eventjoin .event-headerbox .event-titlebox .textbox {
       float: left;
@@ -9990,14 +9986,14 @@ a.button {
         font-size: 1.3em; }
     .eventjoin .event-headerbox .event-join {
       float: right; }
-      .eventjoin .event-headerbox .event-join svg {
+      .eventjoin .event-headerbox .event-join img {
         margin-right: 20px;
         margin-top: 5px;
         height: 40px;
         width: 40px; }
-        .eventjoin .event-headerbox .event-join svg .icon-circle {
+        .eventjoin .event-headerbox .event-join img .icon-circle {
           fill: rgba(255, 255, 255, 0.5); }
-        .eventjoin .event-headerbox .event-join svg .icon-text {
+        .eventjoin .event-headerbox .event-join img .icon-text {
           fill: transparent; }
       .eventjoin .event-headerbox .event-join p {
         color: white;
@@ -10014,14 +10010,14 @@ a.button {
       z-index: 10; }
       .eventjoin .contentbox .headerbox .icon {
         float: left; }
-        .eventjoin .contentbox .headerbox .icon svg {
+        .eventjoin .contentbox .headerbox .icon img {
           width: 40px;
           height: 40px;
           margin-top: -20px;
           margin-left: 20px; }
-          .eventjoin .contentbox .headerbox .icon svg .icon-circle {
+          .eventjoin .contentbox .headerbox .icon img .icon-circle {
             fill: white; }
-          .eventjoin .contentbox .headerbox .icon svg .icon-text {
+          .eventjoin .contentbox .headerbox .icon img .icon-text {
             fill: #009edf; }
     .eventjoin .contentbox .message {
       padding: 10px 37px;

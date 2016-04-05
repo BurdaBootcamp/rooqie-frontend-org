@@ -1,6 +1,6 @@
 'use strict';
 angular.module('app')
-  .controller('EventdetailCtrl', function($scope, $stateParams, $window){
+  .controller('EventjoinCtrl', function($scope, $stateParams, $window){
     var data = {}, fn = {};
     var weekday = new Array(7);
     weekday[0]=  "Sonntag";
@@ -51,22 +51,4 @@ angular.module('app')
     xhr.setRequestHeader("postman-token", "12b81b8f-93c1-7752-d2ac-823e5743d6a0");
 
     xhr.send(reqData2);
-
-    var reqData3 = null;
-
-    var xhr = new XMLHttpRequest();
-    xhr.withCredentials = true;
-
-    xhr.addEventListener("readystatechange", function () {
-      if (this.readyState === 4) {
-        console.log(JSON.parse(this.responseText).participates);
-        data.participates = JSON.parse(this.responseText).participates;
-      }
-    });
-
-    xhr.open("GET", "http://localhost:3000/api/participants/participates?accountId=" + $window.localStorage['user_id'] + "&eventId=" + $stateParams.id + "&access_token=" + $window.localStorage['access_token']);
-    xhr.setRequestHeader("cache-control", "no-cache");
-    xhr.setRequestHeader("postman-token", "e5c9e6c6-e44e-fdfd-c819-c833ee6d60d8");
-
-    xhr.send(reqData3);
   });

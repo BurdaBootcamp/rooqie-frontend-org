@@ -3,23 +3,7 @@
     <div class="event-headerbox">
       <div class="event-topbar">
         <a ui-sref="app.userevents">
-          <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                     width="96.667px" height="96.667px" viewBox="0 0 96.667 96.667" enable-background="new 0 0 96.667 96.667" xml:space="preserve">
-            <g id="XMLID_1_">
-              <g>
-                <path class="icon-circle" fill="#1D1D1B" d="M48.337,0c26.69,0,48.33,21.64,48.33,48.33c0,26.7-21.64,48.34-48.33,48.34
-                  c-26.7,0-48.34-21.64-48.34-48.34C-0.002,21.641,21.638,0,48.337,0z M52.837,72.13V43.69c0-2.48-2.02-4.5-4.5-4.5
-                  c-2.49,0-4.5,2.02-4.5,4.5v28.44c0,2.48,2.01,4.5,4.5,4.5C50.818,76.63,52.837,74.611,52.837,72.13z M53.858,28.69
-                  c0-3.04-2.46-5.5-5.5-5.5c-3.03,0-5.5,2.46-5.5,5.5c0,3.03,2.47,5.5,5.5,5.5C51.398,34.19,53.858,31.72,53.858,28.69z"/>
-                <path class="icon-text" fill="#FFFFFF" d="M52.837,43.69v28.44c0,2.48-2.02,4.5-4.5,4.5c-2.49,0-4.5-2.02-4.5-4.5V43.69c0-2.48,2.01-4.5,4.5-4.5
-                  C50.818,39.19,52.837,41.21,52.837,43.69z"/>
-                <path class="icon-text" fill="#FFFFFF" d="M48.358,23.19c3.04,0,5.5,2.46,5.5,5.5c0,3.03-2.46,5.5-5.5,5.5c-3.03,0-5.5-2.47-5.5-5.5
-                  C42.858,25.65,45.328,23.19,48.358,23.19z"/>
-              </g>
-              <g>
-              </g>
-            </g>
-          </svg>
+          <img src="img/icons/arrow_left_red_white.svg">
         </a>
       </div>
       <div class="event-titlebox">
@@ -28,29 +12,19 @@
           <p class="event-date">{{data.event.daystring}} Uhr</p>
         </div>
         <div class="event-join">
-          <a ui-sref="eventjoin({id: data.event.id})">
-            <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-               width="96.667px" height="96.667px" viewBox="0 0 96.667 96.667" enable-background="new 0 0 96.667 96.667" xml:space="preserve">
-              <g id="XMLID_1_">
-                <g>
-                  <path class="icon-circle" fill="#1D1D1B" d="M48.337,0c26.69,0,48.33,21.64,48.33,48.33c0,26.7-21.64,48.34-48.33,48.34
-                    c-26.7,0-48.34-21.64-48.34-48.34C-0.002,21.641,21.638,0,48.337,0z M52.837,72.13V43.69c0-2.48-2.02-4.5-4.5-4.5
-                    c-2.49,0-4.5,2.02-4.5,4.5v28.44c0,2.48,2.01,4.5,4.5,4.5C50.818,76.63,52.837,74.611,52.837,72.13z M53.858,28.69
-                    c0-3.04-2.46-5.5-5.5-5.5c-3.03,0-5.5,2.46-5.5,5.5c0,3.03,2.47,5.5,5.5,5.5C51.398,34.19,53.858,31.72,53.858,28.69z"/>
-                  <path class="icon-text" fill="#FFFFFF" d="M52.837,43.69v28.44c0,2.48-2.02,4.5-4.5,4.5c-2.49,0-4.5-2.02-4.5-4.5V43.69c0-2.48,2.01-4.5,4.5-4.5
-                    C50.818,39.19,52.837,41.21,52.837,43.69z"/>
-                  <path class="icon-text" fill="#FFFFFF" d="M48.358,23.19c3.04,0,5.5,2.46,5.5,5.5c0,3.03-2.46,5.5-5.5,5.5c-3.03,0-5.5-2.47-5.5-5.5
-                    C42.858,25.65,45.328,23.19,48.358,23.19z"/>
-                </g>
-                <g>
-                </g>
-              </g>
-            </svg>
+          <a ui-sref="eventjoin({id: data.event.id})" ng-if="data.participates == true">
+            <img src="img/icons/check_accept_green_white.svg">
           </a>
-          <p>
-            zusagen
+          <p ng-if="data.participates == true">
+            zugesagt
           </p>
         </div>
+        <a ui-sref="#" ng-if="data.participates == false">
+          <img src="img/icons/check_accept_transparent.svg">
+        </a>
+        <p ng-if="data.participates == false">
+          zusagen
+        </p>
       </div>
       <div style="clear: both;"></div>
     </div>
@@ -58,23 +32,7 @@
     <div class="contentbox">
       <div class="headerbox">
         <div class="icon">
-          <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-             width="96.667px" height="96.667px" viewBox="0 0 96.667 96.667" enable-background="new 0 0 96.667 96.667" xml:space="preserve">
-            <g id="XMLID_1_">
-              <g>
-                <path class="icon-circle" fill="#1D1D1B" d="M48.337,0c26.69,0,48.33,21.64,48.33,48.33c0,26.7-21.64,48.34-48.33,48.34
-                  c-26.7,0-48.34-21.64-48.34-48.34C-0.002,21.641,21.638,0,48.337,0z M52.837,72.13V43.69c0-2.48-2.02-4.5-4.5-4.5
-                  c-2.49,0-4.5,2.02-4.5,4.5v28.44c0,2.48,2.01,4.5,4.5,4.5C50.818,76.63,52.837,74.611,52.837,72.13z M53.858,28.69
-                  c0-3.04-2.46-5.5-5.5-5.5c-3.03,0-5.5,2.46-5.5,5.5c0,3.03,2.47,5.5,5.5,5.5C51.398,34.19,53.858,31.72,53.858,28.69z"/>
-                <path class="icon-text" fill="#FFFFFF" d="M52.837,43.69v28.44c0,2.48-2.02,4.5-4.5,4.5c-2.49,0-4.5-2.02-4.5-4.5V43.69c0-2.48,2.01-4.5,4.5-4.5
-                  C50.818,39.19,52.837,41.21,52.837,43.69z"/>
-                <path class="icon-text" fill="#FFFFFF" d="M48.358,23.19c3.04,0,5.5,2.46,5.5,5.5c0,3.03-2.46,5.5-5.5,5.5c-3.03,0-5.5-2.47-5.5-5.5
-                  C42.858,25.65,45.328,23.19,48.358,23.19z"/>
-              </g>
-              <g>
-              </g>
-            </g>
-          </svg>
+          <img src="img/icons/information_blue_white.svg">
         </div>
         <div class="title">
           Einladung
@@ -89,23 +47,7 @@
     <div class="contentbox">
       <div class="headerbox">
         <div class="icon">
-          <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-             width="96.667px" height="96.667px" viewBox="0 0 96.667 96.667" enable-background="new 0 0 96.667 96.667" xml:space="preserve">
-            <g id="XMLID_1_">
-              <g>
-                <path class="icon-circle" fill="#1D1D1B" d="M48.337,0c26.69,0,48.33,21.64,48.33,48.33c0,26.7-21.64,48.34-48.33,48.34
-                  c-26.7,0-48.34-21.64-48.34-48.34C-0.002,21.641,21.638,0,48.337,0z M52.837,72.13V43.69c0-2.48-2.02-4.5-4.5-4.5
-                  c-2.49,0-4.5,2.02-4.5,4.5v28.44c0,2.48,2.01,4.5,4.5,4.5C50.818,76.63,52.837,74.611,52.837,72.13z M53.858,28.69
-                  c0-3.04-2.46-5.5-5.5-5.5c-3.03,0-5.5,2.46-5.5,5.5c0,3.03,2.47,5.5,5.5,5.5C51.398,34.19,53.858,31.72,53.858,28.69z"/>
-                <path class="icon-text" fill="#FFFFFF" d="M52.837,43.69v28.44c0,2.48-2.02,4.5-4.5,4.5c-2.49,0-4.5-2.02-4.5-4.5V43.69c0-2.48,2.01-4.5,4.5-4.5
-                  C50.818,39.19,52.837,41.21,52.837,43.69z"/>
-                <path class="icon-text" fill="#FFFFFF" d="M48.358,23.19c3.04,0,5.5,2.46,5.5,5.5c0,3.03-2.46,5.5-5.5,5.5c-3.03,0-5.5-2.47-5.5-5.5
-                  C42.858,25.65,45.328,23.19,48.358,23.19z"/>
-              </g>
-              <g>
-              </g>
-            </g>
-          </svg>
+          <img src="img/icons/location_blue_white.svg">
         </div>
         <div class="title">
           Location
@@ -118,23 +60,7 @@
     <div class="eventparticipants">
       <div class="headerbox">
         <div class="icon">
-          <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-             width="96.667px" height="96.667px" viewBox="0 0 96.667 96.667" enable-background="new 0 0 96.667 96.667" xml:space="preserve">
-            <g id="XMLID_1_">
-              <g>
-                <path class="icon-circle" fill="#1D1D1B" d="M48.337,0c26.69,0,48.33,21.64,48.33,48.33c0,26.7-21.64,48.34-48.33,48.34
-                  c-26.7,0-48.34-21.64-48.34-48.34C-0.002,21.641,21.638,0,48.337,0z M52.837,72.13V43.69c0-2.48-2.02-4.5-4.5-4.5
-                  c-2.49,0-4.5,2.02-4.5,4.5v28.44c0,2.48,2.01,4.5,4.5,4.5C50.818,76.63,52.837,74.611,52.837,72.13z M53.858,28.69
-                  c0-3.04-2.46-5.5-5.5-5.5c-3.03,0-5.5,2.46-5.5,5.5c0,3.03,2.47,5.5,5.5,5.5C51.398,34.19,53.858,31.72,53.858,28.69z"/>
-                <path class="icon-text" fill="#FFFFFF" d="M52.837,43.69v28.44c0,2.48-2.02,4.5-4.5,4.5c-2.49,0-4.5-2.02-4.5-4.5V43.69c0-2.48,2.01-4.5,4.5-4.5
-                  C50.818,39.19,52.837,41.21,52.837,43.69z"/>
-                <path class="icon-text" fill="#FFFFFF" d="M48.358,23.19c3.04,0,5.5,2.46,5.5,5.5c0,3.03-2.46,5.5-5.5,5.5c-3.03,0-5.5-2.47-5.5-5.5
-                  C42.858,25.65,45.328,23.19,48.358,23.19z"/>
-              </g>
-              <g>
-              </g>
-            </g>
-          </svg>
+          <img src="img/icons/participant_blue_white.svg">
         </div>
         <div class="title">
           Teilnehmer

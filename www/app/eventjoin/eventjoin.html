@@ -1,0 +1,38 @@
+<ion-view title="Meine Events">
+  <ion-content class="eventjoin">
+    <div class="event-headerbox">
+      <div class="event-topbar">
+        <a ui-sref="eventdetail({id: data.event.id})">
+          <img src="img/icons/arrow_left_red_white.svg">
+        </a>
+      </div>
+      <div class="event-titlebox">
+        <div class="textbox">
+          <p class="event-name">{{data.event.name}}</p>
+          <p class="event-date">{{data.event.daystring}} Uhr</p>
+        </div>
+        <div class="event-join">
+          <img src="img/icons/check_accept_green_white.svg">
+          <p>
+            zugesagt
+          </p>
+        </div>
+      </div>
+      <div style="clear: both;"></div>
+    </div>
+
+    <div class="contentbox">
+      <div class="headerbox">
+        <div class="icon">
+          <img src="img/icons/information_blue_white.svg">
+        </div>
+        <div style="clear: both;"></div>
+      </div>
+      <div class="message">
+        <p class="headline">Du bist dabei!</p>
+        <p>Du kannst dir den Termin nun in den Kalender eintragen. Bitte sag ab falls du es nicht schaffst!</p>
+      </div>
+    </div>
+
+  </ion-content>
+</ion-view>
