@@ -6,6 +6,6 @@ angular.module('app')
         disableAnimate: true,
         disableBack: true
       });
-      $state.go('app.userinterests');
+      $state.go('app.userevents');
     }
   );
