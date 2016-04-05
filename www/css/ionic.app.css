@@ -9761,19 +9761,23 @@ a.button {
     -webkit-box-shadow: 0px -4px 5px 0px rgba(80, 80, 80, 0.5);
     -moz-box-shadow: 0px -4px 5px 0px rgba(80, 80, 80, 0.5);
     box-shadow: 0px -4px 5px 0px rgba(80, 80, 80, 0.5); }
-    .userevents .actionpanel a:first-child {
-      margin-top: 20px; }
-    .userevents .actionpanel a {
-      padding: 0px 40px;
-      color: #969696; }
-      .userevents .actionpanel a .icon {
+    .userevents .actionpanel .btn {
+      width: 80%;
+      height: 40px; }
+      .userevents .actionpanel .btn:first-child {
+        padding-top: 25px; }
+      .userevents .actionpanel .btn img {
+        float: left;
         margin-right: 15px;
         width: 40px;
-        height: 40px; }
-        .userevents .actionpanel a .icon .icon-circle {
-          fill: white; }
-        .userevents .actionpanel a .icon .icon-text {
-          fill: #969696; }
+        height: 40px;
+        margin-left: 37px; }
+      .userevents .actionpanel .btn p {
+        float: right;
+        width: 65%;
+        color: #969696;
+        font-size: 1.2em;
+        padding-top: 10px; }
   .userevents .activated, .userevents .active {
     background-color: transparnet; }
   .userevents .button {
@@ -10028,3 +10032,20 @@ a.button {
         font-weight: bolder;
         font-size: 1.5em;
         margin-bottom: 10px; }
+    .eventjoin .contentbox .btn {
+      width: 80%;
+      height: 40px; }
+      .eventjoin .contentbox .btn:first-child {
+        padding-top: 25px; }
+      .eventjoin .contentbox .btn img {
+        float: left;
+        margin-right: 15px;
+        width: 40px;
+        height: 40px;
+        margin-left: 37px; }
+      .eventjoin .contentbox .btn p {
+        float: right;
+        width: 65%;
+        color: #969696;
+        font-size: 1.2em;
+        padding-top: 10px; }

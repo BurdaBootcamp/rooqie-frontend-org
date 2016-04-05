@@ -40,7 +40,7 @@ angular.module('app', ['ionic'])
       templateUrl: 'app/eventdetail/eventdetail.html',
       controller: 'EventdetailCtrl'
     }).state('eventjoin', {
-      url: '/eventjoin/:id',
+      url: '/eventjoin/:id/:join',
       templateUrl: 'app/eventjoin/eventjoin.html',
       controller: 'EventjoinCtrl'
     });

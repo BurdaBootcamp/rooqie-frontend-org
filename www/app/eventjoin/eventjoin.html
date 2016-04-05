@@ -32,6 +32,34 @@
         <p class="headline">Du bist dabei!</p>
         <p>Du kannst dir den Termin nun in den Kalender eintragen. Bitte sag ab falls du es nicht schaffst!</p>
       </div>
+      <div class="btn">
+        <a href="#">
+          <img src="img/icons/arrow_down_grey_white.svg">
+          <p>Teilnehmer Themen</p>
+          <div style="clear: both"></div>
+        </a>
+      </div>
+      <div class="btn">
+        <a href="#">
+          <img src="img/icons/plus_grey_white.svg">
+          <p>in den Kalender eintragen</p>
+          <div style="clear: both"></div>
+        </a>
+      </div>
+      <div class="btn">
+        <a ui-sref="app.userevents">
+          <img src="img/icons/plus_grey_white.svg">
+          <p>meine Verabredungen</p>
+          <div style="clear: both"></div>
+        </a>
+      </div>
+      <div class="btn" ng-click="fn.leaveEvent()">
+        <a href="#" (click)="fn.leaveEvent()">
+          <img src="img/icons/plus_grey_white.svg">
+          <p>absagen</p>
+          <div style="clear: both"></div>
+        </a>
+      </div>
     </div>
 
   </ion-content>

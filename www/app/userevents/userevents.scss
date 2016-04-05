@@ -33,22 +33,25 @@
     -webkit-box-shadow: $shadow_menu_up;
     -moz-box-shadow: $shadow_menu_up;
     box-shadow: $shadow_menu_up;
-    a:first-child {
-      margin-top: 20px;
-    }
-    a {
-      padding: 0px 40px;
-      color: $primary_darkgrey;
-      .icon {
+    .btn {
+      width: 80%;
+      height: 40px;
+      &:first-child {
+        padding-top: 25px;
+      }
+      img {
+        float: left;
         margin-right: 15px;
         width: 40px;
         height: 40px;
-        .icon-circle {
-          fill: $primary_white;
-        }
-        .icon-text {
-          fill: $primary_darkgrey;
-        }
+        margin-left: 37px;
+      }
+      p {
+        float: right;
+        width: 65%;
+        color: $primary_darkgrey;
+        font-size: 1.2em;
+        padding-top: 10px;
       }
     }
   }

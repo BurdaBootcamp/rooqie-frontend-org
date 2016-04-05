@@ -12,19 +12,19 @@
           <p class="event-date">{{data.event.daystring}} Uhr</p>
         </div>
         <div class="event-join">
-          <a ui-sref="eventjoin({id: data.event.id})" ng-if="data.participates == true">
+          <a ui-sref="eventjoin({id: data.event.id, join: false})" ng-if="data.participates == true">
             <img src="img/icons/check_accept_green_white.svg">
           </a>
           <p ng-if="data.participates == true">
             zugesagt
           </p>
+          <a ui-sref="eventjoin({id: data.event.id, join: false})" ng-if="data.participates == false">
+            <img src="img/icons/check_accept_transparent.svg">
+          </a>
+          <p ng-if="data.participates == false">
+            zusagen
+          </p>
         </div>
-        <a ui-sref="#" ng-if="data.participates == false">
-          <img src="img/icons/check_accept_transparent.svg">
-        </a>
-        <p ng-if="data.participates == false">
-          zusagen
-        </p>
       </div>
       <div style="clear: both;"></div>
     </div>

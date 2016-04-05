@@ -59,7 +59,6 @@ angular.module('app')
 
     xhr.addEventListener("readystatechange", function () {
       if (this.readyState === 4) {
-        console.log(JSON.parse(this.responseText).participates);
         data.participates = JSON.parse(this.responseText).participates;
       }
     });
