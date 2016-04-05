@@ -20,8 +20,30 @@ angular.module('app')
 	$scope.selection = interest;
 	$scope.fn = fn;
 
+	console.log("hey");
+ //    //your code to run since DOM is loaded and ready
 
 
-	console.log(selection);
+	var trigger = angular.element( document.querySelector( ".trigger" ));	
+  	
+ //  	$scope.trigger = "no";
+ //  	$scope.changeClass = function(){
+ //    	if ($scope.trigger === "no")
+ //    		$scope.trigger = "yes";
+ //      		$scope.firstclass = "invisible";
+ //    	else
+ //    		$scope.trigger === "no";
+ //      		$scope.firstclass = "visible";
+	// };
+
+	// // .getElementsByTagName('li');
+	// var target = document.getElementsByClassName("dropdownlist");
+
+	// console.log(trigger);
+	// trigger.addEventListener('click', function(e) {
+	//   	e.preventDefault();
+	//   	target.classList.toggle('nondisplay');
+	//   	console.log("hi");
+	// });
 });
 

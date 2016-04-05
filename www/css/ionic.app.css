@@ -9834,7 +9834,7 @@ a.button {
         .userinterests .actionpanel a .icon .icon-text {
           fill: #969696; }
 
-.nondisplay {
+.invisible {
   display: none; }
 
 .bar.bar-dark {
