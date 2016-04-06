@@ -1,0 +1,32 @@
+.recommendations {
+  background-color: $primary_grey;
+  position: absolute;
+  .eventlist {
+    height: 94vh;
+    .card {
+      margin: 5px 0px;
+      min-height: 20vh;
+      background-size:     cover;
+      background-repeat:   no-repeat;
+      background-position: center center;
+    }
+    a {
+      text-decoration: none;
+    }
+    .event-name {
+      margin-left: 10%;
+      color: $primary_white;
+      font-weight: bold;
+      font-size: 2em;
+      margin-top: 50px;
+    }
+    .event-date {
+      margin-left: 10%;
+      color: $primary_grey;
+      font-weight: bold;
+      &:last-child {
+        margin-top: -15px;
+      }
+    }
+  }
+}
