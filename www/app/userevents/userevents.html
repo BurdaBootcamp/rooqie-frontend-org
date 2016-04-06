@@ -1,8 +1,8 @@
-<ion-view title="Meine Events">
+<ion-view title="Meine Verabredungen">
   <ion-content class="userevents">
     <ion-scroll class="eventlist">
       <a ui-sref="eventdetail({id: event.id})" ng-repeat="event in data.userevents">
-        <div class="card">
+        <div class="card" style="background-image: url({{event.categories.image}})">
           <p class="event-name">
             {{event.name}}
           </p>
@@ -23,7 +23,7 @@
       <div class="btn">
         <a href="#">
           <img src="img/icons/plus_grey_white.svg">
-          <p>Neues Event anlegen</p>
+          <p>Neue Verabredung</p>
           <div style="clear: both"></div>
         </a>
       </div>

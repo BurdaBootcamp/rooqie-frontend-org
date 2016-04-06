@@ -1,6 +1,6 @@
 'use strict';
 angular.module('app')
-  .controller('UsereventsCtrl', function($scope, $stateParams, $window){
+  .controller('UsereventsCtrl', function($rootScope, $scope, $stateParams, $window){
     var data = {}, fn = {};
     var weekday = new Array(7);
     weekday[0]=  "Sonntag";
@@ -25,9 +25,8 @@ angular.module('app')
         data.userevents.forEach(function(e){
           var date = new Date(e.date);
           e['daystring'] = weekday[date.getDay()] + ", " + ("0" + date.getHours()).slice(-2) + "." + ("0" + date.getMinutes()).slice(-2);
+          e.categories = $rootScope.categories[e.category];
         })
-
-        data.userevents[0].date = new Date(data.userevents[0].date);
       }
     });
 
