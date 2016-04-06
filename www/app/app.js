@@ -59,6 +59,22 @@ angular.module('app', ['ionic'])
       url: '/eventleave/:id/:join',
       templateUrl: 'app/pages/eventleave/eventleave.html',
       controller: 'EventleaveCtrl'
+    })
+    .state('app.imprint', {
+      url: '/imprint',
+      views: {
+        'menuContent': {
+          templateUrl: 'app/pages/legal/imprint.html'
+        }
+      }
+    })
+    .state('app.dataprotection', {
+      url: '/dataprotection',
+      views: {
+        'menuContent': {
+          templateUrl: 'app/pages/legal/dataprotection.html'
+        }
+      }
     });
     $urlRouterProvider.otherwise('/loading');
   })
