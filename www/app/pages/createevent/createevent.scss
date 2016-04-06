@@ -1,0 +1,32 @@
+.createevent-categories {
+  background-color: $primary_grey;
+  .category-box {
+    height: 20vh;
+    padding: 5px;
+    .category-img{
+        height: 70%;
+        width: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5);
+        -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5);
+        box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5);
+    }
+    .category-name {
+      height: 30%;
+      width: 100%;
+      background-color: rgb(255,255,255);
+      -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5);
+      -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5);
+      box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.5);
+      p {
+        text-align: center;
+        color: $primary_darkgrey;
+        width: 100%;
+        font-size: 1.2em;
+        padding-top: 5px;
+      }
+    }
+  }
+}

@@ -60,6 +60,24 @@ angular.module('app', ['ionic'])
       templateUrl: 'app/pages/eventleave/eventleave.html',
       controller: 'EventleaveCtrl'
     })
+    .state('app.createevent-categories', {
+      url: '/createevent/categories',
+      views: {
+        'menuContent': {
+          templateUrl: 'app/pages/createevent/categories.html',
+          controller: 'CreateeventCategoriesCtrl'
+        }
+      }
+    })
+    .state('app.createevent-datepicker', {
+      url: '/createevent/datepicker',
+      views: {
+        'menuContent': {
+          templateUrl: 'app/pages/createevent/datepicker.html',
+          controller: 'CreateeventDatepickerCtrl'
+        }
+      }
+    })
     .state('app.imprint', {
       url: '/imprint',
       views: {
@@ -106,7 +124,7 @@ angular.module('app', ['ionic'])
       },
       "coffee": {
         "name": "Café",
-        "image": "img/categories/coffee.png"
+        "image": "img/categories/coffee.jpg"
       },
       "cooking": {
         "name": "Kochen",
@@ -118,7 +136,7 @@ angular.module('app', ['ionic'])
       },
       "museum": {
         "name": "Museum",
-        "image": "img/categories/museum.png"
+        "image": "img/categories/museum.jpg"
       }
     };
     $rootScope.weekday = ["Sonntag", "Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag"];
