@@ -1,0 +1,14 @@
+.background {
+  background-color: $primary_darkgrey;
+  position: absolute;
+
+  .section-container {
+    height: 100vh;
+    position: absolute;
+    margin: 7vh 8vw 7vh 8vw;
+    overflow: hidden;
+  }
+}
+
+
+

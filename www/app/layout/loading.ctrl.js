@@ -6,6 +6,6 @@ angular.module('app')
         disableAnimate: true,
         disableBack: true
       });
-      $state.go('app.recommendations');
+      $state.go('app.legal', {views: {'menuContent': {templateUrl: 'app/legal/einstellungen.html', controller: 'LegalCtrl'}}});
     }
   );

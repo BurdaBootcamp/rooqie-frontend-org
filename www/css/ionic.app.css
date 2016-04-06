@@ -10166,3 +10166,12 @@ a.button {
       font-weight: bold; }
       .recommendations .eventlist .event-date:last-child {
         margin-top: -15px; }
+
+.background {
+  background-color: #969696;
+  position: absolute; }
+  .background .section-container {
+    height: 100vh;
+    position: absolute;
+    margin: 7vh 8vw 7vh 8vw;
+    overflow: hidden; }

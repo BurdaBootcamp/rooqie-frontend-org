@@ -36,6 +36,36 @@ angular.module('app', ['ionic'])
         }
       }
     })
+
+
+
+
+    .state('app.legal', {
+      url: "/legal",
+      views: {
+        'menuContent': {
+          templateUrl: 'app/legal/datenschutz.html',
+          controller: 'LegalCtrl'
+        },
+        'menuContent': {
+          templateUrl: 'app/legal/abmeldebestaetigung.html',
+          controller: 'LegalCtrl'
+        },
+        'menuContent': {
+          templateUrl: 'app/legal/abmelden.html',
+          controller: 'LegalCtrl'
+        },
+        'menuContent': {
+          templateUrl: 'app/legal/einstellungen.html',
+          controller: 'LegalCtrl'
+        },
+        'menuContent': {
+          templateUrl: 'app/legal/impressum.html',
+          controller: 'LegalCtrl'
+        }
+      }
+    })
+
     .state('app.profile', {
       url: '/profile',
       views: {
