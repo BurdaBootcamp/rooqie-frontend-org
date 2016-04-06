@@ -1,0 +1,19 @@
+<ion-view title="Einladungen">
+  <ion-content class="recommendations">
+    <ion-scroll class="eventlist">
+      <a ui-sref="eventdetail({id: event.id})" ng-repeat="event in events">
+        <div class="card" style="background-image: url({{event.category.image}})">
+          <p class="event-name">
+            {{event.name}}
+          </p>
+          <p class="event-date">
+            {{event.date}} Uhr
+          </p>
+          <p class="event-date">
+            {{event.participantCount}}/{{event.maxParticipants}}
+          </p>
+        </div>
+      </a>
+    </ion-scroll>
+  </ion-content>
+</ion-view>

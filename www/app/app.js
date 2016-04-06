@@ -9,20 +9,20 @@ angular.module('app', ['ionic'])
     })
     .state('login', {
       url: '/login',
-      templateUrl: 'app/authentication/login.html',
+      templateUrl: 'app/pages/authentication/login.html',
       controller: 'LoginCtrl'
     })
     .state('app', {
       url: '/app',
       abstract: true,
-      templateUrl: 'app/layout/layout.html',
+      templateUrl: 'app/pages/layout/layout.html',
       controller: 'LayoutCtrl'
     })
     .state('app.recommendations', {
       url: '/recommendations',
       views: {
         'menuContent': {
-          templateUrl: 'app/recommendations/recommendations.html',
+          templateUrl: 'app/pages/recommendations/recommendations.html',
           controller: 'RecommendationsCtrl'
         }
       }
@@ -31,7 +31,7 @@ angular.module('app', ['ionic'])
       url: '/userevents',
       views: {
         'menuContent': {
-          templateUrl: 'app/userevents/userevents.html',
+          templateUrl: 'app/pages/userevents/userevents.html',
           controller: 'UsereventsCtrl'
         }
       }
@@ -40,24 +40,24 @@ angular.module('app', ['ionic'])
       url: '/profile',
       views: {
         'menuContent': {
-          templateUrl: 'app/profile/profile.html',
+          templateUrl: 'app/pages/profile/profile.html',
           controller: 'ProfileCtrl'
         }
       }
     })
     .state('eventdetail', {
       url: '/eventdetail/:id',
-      templateUrl: 'app/eventdetail/eventdetail.html',
+      templateUrl: 'app/pages/eventdetail/eventdetail.html',
       controller: 'EventdetailCtrl'
     })
     .state('eventjoin', {
       url: '/eventjoin/:id/:join',
-      templateUrl: 'app/eventjoin/eventjoin.html',
+      templateUrl: 'app/pages/eventjoin/eventjoin.html',
       controller: 'EventjoinCtrl'
     })
     .state('eventleave', {
       url: '/eventleave/:id/:join',
-      templateUrl: 'app/eventleave/eventleave.html',
+      templateUrl: 'app/pages/eventleave/eventleave.html',
       controller: 'EventleaveCtrl'
     });
     $urlRouterProvider.otherwise('/loading');
@@ -105,6 +105,12 @@ angular.module('app', ['ionic'])
         "image": "img/categories/museum.png"
       }
     };
+    $rootScope.weekday = ["Sonntag", "Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag"];
+    //$rootScope.URL = "http://localhost";
+    $rootScope.URL = "http://ec2-52-58-3-95.eu-central-1.compute.amazonaws.com";
+    $rootScope.PORT = "3000";
+    $rootScope.PREFIX = "/api";
+    $rootScope.API_URL = $rootScope.URL + ":" + $rootScope.PORT + $rootScope.PREFIX;
     $rootScope.safeApply = function(fn){
       var phase = this.$root ? this.$root.$$phase : this.$$phase;
       if(phase === '$apply' || phase === '$digest'){

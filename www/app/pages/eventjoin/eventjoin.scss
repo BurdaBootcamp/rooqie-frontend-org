@@ -1,0 +1,126 @@
+.eventjoin {
+  background-color: $primary_grey;
+  .event-headerbox {
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center center;
+    height: 30vh;
+    width: 100%;
+    -webkit-box-shadow: $shadow_menu;
+    -moz-box-shadow: $shadow_menu;
+    box-shadow: $shadow_menu;
+    .event-topbar {
+      height: 63%;
+      img {
+        width: 40px;
+        height: 40px;
+        margin-left: 20px;
+        margin-top: 20px;
+        .icon-circle {
+          fill: $primary_white;
+        }
+        .icon-text {
+          fill: $primary_blue;
+        }
+      }
+    }
+    .event-titlebox {
+      .textbox{
+        float: left;
+        height: 37%;
+        width: 80%;
+        overflow-x: hidden;
+        .event-name {
+          margin-left: 10%;
+          color: $primary_white;
+          font-weight: bold;
+          font-size: 2em;
+        }
+        .event-date {
+          margin-left: 10%;
+          color: $primary_grey;
+          font-size: 1.3em;
+        }
+      }
+    }
+    .event-join{
+      float: right;
+      img {
+        margin-right: 20px;
+        margin-top: 5px;
+        height: 40px;
+        width: 40px;
+        .icon-circle {
+          fill: $primary_white_opacity;
+        }
+        .icon-text {
+          fill: $transparent;
+        }
+      }
+      p {
+        color: $primary_white;
+        font-size: 0.8em;
+
+      }
+    }
+  }
+  .contentbox {
+    margin-top: 2vh;
+    height: 68vh;
+    background-color: $primary_white;
+    -webkit-box-shadow: $shadow_menu;
+    -moz-box-shadow: $shadow_menu;
+    box-shadow: $shadow_menu;
+    .headerbox {
+      height: 30px;
+      z-index: 10;
+      .icon {
+        float: left;
+        img {
+          width: 40px;
+          height: 40px;
+          margin-top: -20px;
+          margin-left: 20px;
+          .icon-circle {
+            fill: $primary_white;
+          }
+          .icon-text {
+            fill: $primary_blue;
+          }
+        }
+      }
+    }
+    .message {
+      padding: 10px 37px;
+      color: $primary_darkgrey;
+      font-size: 1.3em;
+      overflow: hidden;
+      .headline {
+        font-weight: bolder;
+        font-size: 1.5em;
+        margin-bottom: 10px;
+      }
+    }
+    .btn {
+      width: 80%;
+      height: 40px;
+      &:first-child {
+        padding-top: 25px;
+      }
+      img {
+        float: left;
+        margin-right: 15px;
+        width: 40px;
+        height: 40px;
+        margin-left: 37px;
+      }
+      p {
+        float: right;
+        width: 65%;
+        color: $primary_darkgrey;
+        font-size: 1.2em;
+        padding-top: 10px;
+      }
+    }
+  }
+}

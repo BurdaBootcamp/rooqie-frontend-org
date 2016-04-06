@@ -1,10 +1,11 @@
-@import "../userevents/userevents";
+@import "../pages/userevents/userevents";
 
-@import "../layout/layout";
+@import "../pages/layout/layout";
 
-@import "../eventdetail/eventdetail";
+@import "../pages/eventdetail/eventdetail";
 
-@import "../eventjoin/eventjoin";
-@import "../eventleave/eventleave";
+@import "../pages/eventjoin/eventjoin";
 
-@import "../recommendations/recommendations";
+@import "../pages/eventleave/eventleave";
+
+@import "../pages/recommendations/recommendations";
