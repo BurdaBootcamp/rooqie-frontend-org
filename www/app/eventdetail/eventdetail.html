@@ -1,13 +1,13 @@
-<ion-view title="Meine Events">
+<ion-view title="Meine Verabredung">
   <ion-content class="eventdetail">
-    <div class="event-headerbox">
+    <div class="event-headerbox" style="background-image: url({{data.event.categories.image}})">
       <div class="event-topbar">
-        <a ui-sref="app.userevents">
+        <a href="" ng-click="fn.myGoBack()">
           <img src="img/icons/arrow_left_red_white.svg">
         </a>
       </div>
       <div class="event-titlebox">
-        <div class="textbox">
+        <div class="textbox" ng-if="data.event">
           <p class="event-name">{{data.event.name}}</p>
           <p class="event-date">{{data.event.daystring}} Uhr</p>
         </div>
@@ -18,7 +18,7 @@
           <p ng-if="data.participates == true">
             zugesagt
           </p>
-          <a ui-sref="eventjoin({id: data.event.id, join: false})" ng-if="data.participates == false">
+          <a ui-sref="eventjoin({id: data.event.id, join: true})" ng-if="data.participates == false">
             <img src="img/icons/check_accept_transparent.svg">
           </a>
           <p ng-if="data.participates == false">
@@ -73,7 +73,7 @@
         </p>
         <ion-scroll class="participantslist" direction="x">
           <div>
-            <img ng-repeat="user in data.users" style="margin-right: 5px">
+            <img ng-src="{{user.image}}" ng-repeat="user in data.users" style="margin-right: 5px">
           </div>
         </ion-scroll>
       </div>

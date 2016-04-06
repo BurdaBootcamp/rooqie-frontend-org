@@ -1,7 +1,6 @@
 .eventdetail {
   background-color: $primary_grey;
   .event-headerbox {
-    background-image: url('../img/example-img/englischer-garten.jpg');
     background-size:     cover;
     background-repeat:   no-repeat;
     background-position: center center;
@@ -72,6 +71,8 @@
       .icon {
         float: left;
         img {
+          position: absolute;
+          z-index: 10;
           width: 40px;
           height: 40px;
           margin-top: -20px;
@@ -85,6 +86,9 @@
         }
       }
       .title {
+        position: absolute;
+        z-index: 10;
+        right: 0;
         float: right;
         background-color: $primary_blue;
         text-align: center;
@@ -127,6 +131,8 @@
       .icon {
         float: left;
         img {
+          position: absolute;
+          z-index: 10;
           width: 40px;
           height: 40px;
           margin-top: -20px;
@@ -140,6 +146,9 @@
         }
       }
       .title {
+        position: absolute;
+        z-index: 10;
+        right: 0;
         float: right;
         background-color: $primary_blue;
         text-align: center;

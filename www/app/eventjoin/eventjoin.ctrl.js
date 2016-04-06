@@ -1,6 +1,6 @@
 'use strict';
 angular.module('app')
-  .controller('EventjoinCtrl', function($scope, $state, $stateParams, $window){
+  .controller('EventjoinCtrl', function($scope, $ionicHistory, $state, $stateParams, $window){
     var data = {}, fn = {};
     var weekday = new Array(7);
     weekday[0]=  "Sonntag";
@@ -77,7 +77,6 @@ angular.module('app')
 
 
     fn.leaveEvent = function() {
-      console.log("delete");
       var data = null;
 
       var xhr = new XMLHttpRequest();
@@ -85,7 +84,6 @@ angular.module('app')
 
       xhr.addEventListener("readystatechange", function () {
         if (this.readyState === 4) {
-          console.log(this.responseText);
         }
       });
 
@@ -94,6 +92,10 @@ angular.module('app')
       xhr.setRequestHeader("postman-token", "97c9189b-1007-6c0b-6b33-132c50d4b6ed");
 
       xhr.send(data);
-      $state.go('app.userevents');
+      $state.go('eventleave', {id: $stateParams.id});
     }
+
+    fn.myGoBack = function() {
+      $ionicHistory.goBack();
+    };
   });

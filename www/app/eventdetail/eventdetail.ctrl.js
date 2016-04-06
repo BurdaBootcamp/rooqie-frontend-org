@@ -1,6 +1,6 @@
 'use strict';
 angular.module('app')
-  .controller('EventdetailCtrl', function($scope, $stateParams, $window){
+  .controller('EventdetailCtrl', function($rootScope, $scope, $ionicHistory, $stateParams, $window){
     var data = {}, fn = {};
     var weekday = new Array(7);
     weekday[0]=  "Sonntag";
@@ -24,6 +24,7 @@ angular.module('app')
         data.event = JSON.parse(this.responseText);
         var date = new Date(data.event.date);
         data.event['daystring'] = weekday[date.getDay()] + ", " + ("0" + date.getHours()).slice(-2) + "." + ("0" + date.getMinutes()).slice(-2);
+        data.event.categories = $rootScope.categories[data.event.category];
       }
     });
 
@@ -40,7 +41,7 @@ angular.module('app')
 
     xhr.addEventListener("readystatechange", function () {
       if (this.readyState === 4) {
-        data.user = [];
+        data.users = [];
         data.users = JSON.parse(this.responseText);
         data.remainingSpaces = data.event.maxParticipants - data.users.length;
       }
@@ -68,4 +69,8 @@ angular.module('app')
     xhr.setRequestHeader("postman-token", "e5c9e6c6-e44e-fdfd-c819-c833ee6d60d8");
 
     xhr.send(reqData3);
+
+    fn.myGoBack = function() {
+      $ionicHistory.goBack();
+    };
   });
