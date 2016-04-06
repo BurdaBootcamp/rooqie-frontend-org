@@ -18,6 +18,15 @@ angular.module('app', ['ionic'])
       templateUrl: 'app/layout/layout.html',
       controller: 'LayoutCtrl'
     })
+    .state('app.recommendations', {
+      url: '/recommendations',
+      views: {
+        'menuContent': {
+          templateUrl: 'app/recommendations/recommendations.html',
+          controller: 'RecommendationsCtrl'
+        }
+      }
+    })
     .state('app.userevents', {
       url: '/userevents',
       views: {
@@ -35,18 +44,67 @@ angular.module('app', ['ionic'])
           controller: 'ProfileCtrl'
         }
       }
-    }).state('eventdetail', {
+    })
+    .state('eventdetail', {
       url: '/eventdetail/:id',
       templateUrl: 'app/eventdetail/eventdetail.html',
       controller: 'EventdetailCtrl'
-    }).state('eventjoin', {
+    })
+    .state('eventjoin', {
       url: '/eventjoin/:id/:join',
       templateUrl: 'app/eventjoin/eventjoin.html',
       controller: 'EventjoinCtrl'
+    })
+    .state('eventleave', {
+      url: '/eventleave/:id/:join',
+      templateUrl: 'app/eventleave/eventleave.html',
+      controller: 'EventleaveCtrl'
     });
     $urlRouterProvider.otherwise('/loading');
   })
   .run(function($rootScope){
+    $rootScope.categories = {
+      "trip": {
+        "name": "Ausflug",
+        "image": "img/categories/trip_sea.jpg"
+      },
+      "party": {
+        "name": "Feiern",
+        "image": "img/categories/cocktails.jpg"
+      },
+      "sightseeing": {
+        "name": "Sightseeing",
+        "image": "img/categories/trip_english_garden.jpg"
+      },
+      "breakfast": {
+        "name": "Frühstück",
+        "image": "img/categories/breakfast.png"
+      },
+      "sport": {
+        "name": "Sport",
+        "image": "img/categories/sports_foodball.jpg"
+      },
+      "tatort": {
+        "name": "Tatort",
+        "image": "img/categories/tatort.jpg"
+      },
+      "coffee": {
+        "name": "Café",
+        "image": "img/categories/coffee.png"
+      },
+      "cooking": {
+        "name": "Kochen",
+        "image": "img/categories/course_cooking.jpg"
+      },
+      "cinema": {
+        "name": "Kino",
+        "image": "img/categories/movienight.jpg"
+      },
+      "museum": {
+        "name": "Museum",
+        "image": "img/categories/museum.png"
+      }
+    };
     $rootScope.safeApply = function(fn){
       var phase = this.$root ? this.$root.$$phase : this.$$phase;
       if(phase === '$apply' || phase === '$digest'){

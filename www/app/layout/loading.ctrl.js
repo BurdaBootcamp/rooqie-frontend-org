@@ -6,6 +6,6 @@ angular.module('app')
         disableAnimate: true,
         disableBack: true
       });
-      $state.go('eventdetail', {'id': 1});
+      $state.go('app.recommendations');
     }
   );

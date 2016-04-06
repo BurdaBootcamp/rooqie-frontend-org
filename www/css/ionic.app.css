@@ -9739,7 +9739,6 @@ a.button {
     .userevents .eventlist .card {
       margin: 5px 0px;
       min-height: 20vh;
-      background-image: url("../img/example-img/englischer-garten.jpg");
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center center; }
@@ -9814,7 +9813,6 @@ a.button {
 .eventdetail {
   background-color: #e1e1e1; }
   .eventdetail .event-headerbox {
-    background-image: url("../img/example-img/englischer-garten.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -9871,6 +9869,8 @@ a.button {
       .eventdetail .contentbox .headerbox .icon {
         float: left; }
         .eventdetail .contentbox .headerbox .icon img {
+          position: absolute;
+          z-index: 10;
           width: 40px;
           height: 40px;
           margin-top: -20px;
@@ -9880,6 +9880,9 @@ a.button {
           .eventdetail .contentbox .headerbox .icon img .icon-text {
             fill: #009edf; }
       .eventdetail .contentbox .headerbox .title {
+        position: absolute;
+        z-index: 10;
+        right: 0;
         float: right;
         background-color: #009edf;
         text-align: center;
@@ -9917,6 +9920,8 @@ a.button {
       .eventdetail .eventparticipants .headerbox .icon {
         float: left; }
         .eventdetail .eventparticipants .headerbox .icon img {
+          position: absolute;
+          z-index: 10;
           width: 40px;
           height: 40px;
           margin-top: -20px;
@@ -9926,6 +9931,9 @@ a.button {
           .eventdetail .eventparticipants .headerbox .icon img .icon-text {
             fill: #009edf; }
       .eventdetail .eventparticipants .headerbox .title {
+        position: absolute;
+        z-index: 10;
+        right: 0;
         float: right;
         background-color: #009edf;
         text-align: center;
@@ -10049,3 +10057,112 @@ a.button {
         color: #969696;
         font-size: 1.2em;
         padding-top: 10px; }
+
+.eventleave {
+  background-color: #e1e1e1; }
+  .eventleave .event-headerbox {
+    background-image: url("../img/example-img/englischer-garten.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 30vh;
+    width: 100%;
+    -webkit-box-shadow: 0px 4px 5px 0px rgba(80, 80, 80, 0.5);
+    -moz-box-shadow: 0px 4px 5px 0px rgba(80, 80, 80, 0.5);
+    box-shadow: 0px 4px 5px 0px rgba(80, 80, 80, 0.5); }
+    .eventleave .event-headerbox .event-topbar {
+      height: 63%; }
+      .eventleave .event-headerbox .event-topbar img {
+        width: 40px;
+        height: 40px;
+        margin-left: 20px;
+        margin-top: 20px; }
+        .eventleave .event-headerbox .event-topbar img .icon-circle {
+          fill: white; }
+        .eventleave .event-headerbox .event-topbar img .icon-text {
+          fill: #009edf; }
+    .eventleave .event-headerbox .event-titlebox .textbox {
+      float: left;
+      height: 37%;
+      width: 80%;
+      overflow-x: hidden; }
+      .eventleave .event-headerbox .event-titlebox .textbox .event-name {
+        margin-left: 10%;
+        color: white;
+        font-weight: bold;
+        font-size: 2em; }
+      .eventleave .event-headerbox .event-titlebox .textbox .event-date {
+        margin-left: 10%;
+        color: #e1e1e1;
+        font-size: 1.3em; }
+    .eventleave .event-headerbox .event-join {
+      float: right; }
+      .eventleave .event-headerbox .event-join img {
+        margin-right: 20px;
+        margin-top: 5px;
+        height: 40px;
+        width: 40px; }
+        .eventleave .event-headerbox .event-join img .icon-circle {
+          fill: rgba(255, 255, 255, 0.5); }
+        .eventleave .event-headerbox .event-join img .icon-text {
+          fill: transparent; }
+      .eventleave .event-headerbox .event-join p {
+        color: white;
+        font-size: 0.8em; }
+  .eventleave .contentbox {
+    margin-top: 2vh;
+    height: 68vh;
+    background-color: white;
+    -webkit-box-shadow: 0px 4px 5px 0px rgba(80, 80, 80, 0.5);
+    -moz-box-shadow: 0px 4px 5px 0px rgba(80, 80, 80, 0.5);
+    box-shadow: 0px 4px 5px 0px rgba(80, 80, 80, 0.5); }
+    .eventleave .contentbox .headerbox {
+      height: 30px;
+      z-index: 10; }
+      .eventleave .contentbox .headerbox .icon {
+        float: left; }
+        .eventleave .contentbox .headerbox .icon img {
+          width: 40px;
+          height: 40px;
+          margin-top: -20px;
+          margin-left: 20px; }
+          .eventleave .contentbox .headerbox .icon img .icon-circle {
+            fill: white; }
+          .eventleave .contentbox .headerbox .icon img .icon-text {
+            fill: #009edf; }
+    .eventleave .contentbox .message {
+      padding: 10px 37px;
+      color: #969696;
+      font-size: 1.3em;
+      overflow: hidden; }
+      .eventleave .contentbox .message .headline {
+        font-weight: bolder;
+        font-size: 1.5em;
+        margin-bottom: 10px;
+        line-height: 1em; }
+
+.recommendations {
+  background-color: #e1e1e1;
+  position: absolute; }
+  .recommendations .eventlist {
+    height: 94vh; }
+    .recommendations .eventlist .card {
+      margin: 5px 0px;
+      min-height: 20vh;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center; }
+    .recommendations .eventlist a {
+      text-decoration: none; }
+    .recommendations .eventlist .event-name {
+      margin-left: 10%;
+      color: white;
+      font-weight: bold;
+      font-size: 2em;
+      margin-top: 50px; }
+    .recommendations .eventlist .event-date {
+      margin-left: 10%;
+      color: #e1e1e1;
+      font-weight: bold; }
+      .recommendations .eventlist .event-date:last-child {
+        margin-top: -15px; }
