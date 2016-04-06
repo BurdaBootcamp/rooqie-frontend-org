@@ -1,0 +1,16 @@
+<ion-view title="Neue Einladung">
+  <ion-content class="createevent">
+    <ul>
+      <div ng-repeat = "item in data.categories "class="event-box">
+          <li class = "cat-container">
+            <div class="event-image">
+              <img src={{item.image}}>
+            </div>
+            <div class="event-category">
+              <p>{{item.name}}</p>
+            </div>
+          </li>
+      </div>
+    </ul>
+  </ion-content>
+</ion-view>

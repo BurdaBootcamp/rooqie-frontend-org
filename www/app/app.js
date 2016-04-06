@@ -36,8 +36,24 @@ angular.module('app', ['ionic'])
         }
       }
     })
-
-
+    .state('app.createevent', {
+      url: '/createevent',
+      views: {
+        'menuContent': {
+          templateUrl: 'app/createevent/createevent.html',
+          controller: 'CreateeventCtrl'
+        }
+      }
+    })
+    .state('app.createdate', {
+      url: '/createdate',
+      views: {
+        'menuContent': {
+          templateUrl: 'app/createdate/createdate.html',
+          controller: 'CreatedateCtrl'
+        }
+      }
+    })
 
 
     .state('app.legal', {
