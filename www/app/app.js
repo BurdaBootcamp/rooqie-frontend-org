@@ -56,6 +56,40 @@ angular.module('app', ['ionic', 'onezone-datepicker'])
     })
 
 
+
+
+
+
+
+
+    .state('app.welcome', {
+      url: '/onboarding/welcome',
+      views: {
+        'menuContent': {
+          templateUrl: 'app/onboarding/welcome/welcome.html',
+          controller: 'WelcomeCtrl'
+        }
+      }
+    })
+
+    .state('app.onboarding1', {
+      url: '/onboarding/onboarding1',
+      views: {
+        'menuContent': {
+          templateUrl: 'app/onboarding/onboarding1/onboarding1.html',
+          controller: 'Onboarding1Ctrl'
+        }
+      }
+    })
+
+
+
+
+
+
+
+
+
     .state('app.legal', {
       url: "/legal",
       views: {

@@ -1,0 +1,85 @@
+/*ion-header-bar.bar-dark.bar.bar-header {
+  display: none !important;
+}*/
+
+.welcome{
+  background-color: $primary_blue;
+  position: absolute;
+
+  .section-container {
+    height: 100vh;
+    position: absolute;
+    margin: 7vh 8vw 7vh 8vw;
+
+    .logobox {
+      position: absolute;
+      margin-left: 50vw;
+      margin-top: 10vw;
+
+      img {
+        position: relative;
+        margin-left: -120px;
+       
+        .icon_circle {
+          fill: rgba(255, 255, 255, 1);
+        }
+      }
+    }
+
+    .text {
+      position: absolute;
+      margin-top: 35vh;
+      margin-left: 50vw;
+      color: white;
+      font-size: 1.1em;
+      line-height: 1.2em;
+      width: 200px;
+
+
+      .slogan2 {
+        position: relative;
+        margin-left: -250px;
+      }
+    }
+  div.button_container {
+    position: absolute;
+    margin-top: 60vh;
+    margin-left: 50vw;
+    
+    button {
+      position: relative;
+      margin-left: -103px;
+      width: 160px;
+      height: 50px;
+      background-color: white;
+      border: 1px solid $secondary_blue;
+      border-radius: 3em;
+      color: black;
+      text-align: center;
+      font-size: 1.6em;
+      }
+    }
+  }  
+}
+
+
+
+
+
+.daskomischei {
+  color: $secondary_blue !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
