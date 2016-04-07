@@ -1,0 +1,37 @@
+<ion-view title="Neues Event">
+  <ion-content class="createevent-description">
+    <div class="event-headerbox" style="background-image: url({{event.category.image}})">
+      <div class="event-topbar">
+        <a href="" ng-click="myGoBack()">
+          <img src="img/icons/arrow_left_red_white.svg">
+        </a>
+      </div>
+    </div>
+    <div class="contentbox">
+      <img class="locationImage" src="img/categories/breakfast.png">
+      <div class="locationInfos">
+        <p class="locationName">{{event.location.name}}</p>
+        <p class="locationAddress">{{event.location.address}}</p>
+        <p class="locationUrl">
+          <a href="#">{{event.location.url}}</a>
+        </p>
+      </div>
+      <div class="descriptionField">
+        <textarea placeholder="Schreibe hier einen kurzen text zu der Verabredung" ng-model="event.description"></textarea>
+      </div>
+      <div class="actionPane">
+        <div class="backButton">
+          <a href="" ng-click="myGoBack()">
+            <img src="img/icons/arrow_left_white_grey.svg">
+          </a>
+        </div>
+        <div class="nextButton">
+          <p>
+            <a href="" ng-click="createEvent(event)">posten</a>
+          </p>
+        </div>
+        <div style="clear: both"></div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

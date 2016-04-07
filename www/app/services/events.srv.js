@@ -29,6 +29,17 @@ angular.module('app')
     },
     leave: function(eventId){
       return $http.delete($rootScope.API_URL + "/events/" + eventId + "/accounts/rel/" + $window.localStorage['user_id'] + "?access_token=" + $window.localStorage['access_token']);
+    },
+    createEvent: function(event) {
+      var postData = {
+        "name": event.name,
+        "date": event.date,
+        "description": event.description,
+        "location": event.locationId,
+        "category": event.categoryName,
+        "maxParticipants": event.maxParticipants
+      };
+      return $http.post($rootScope.API_URL + "/events?access_token=" + $window.localStorage['access_token'], postData);
     }
   };
 });

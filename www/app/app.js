@@ -1,5 +1,5 @@
 'use strict';
-angular.module('app', ['ionic'])
+angular.module('app', ['ionic', 'onezone-datepicker'])
   .config(function($stateProvider, $urlRouterProvider, $provide){
     $stateProvider
     .state('loading', {
@@ -70,11 +70,21 @@ angular.module('app', ['ionic'])
       }
     })
     .state('app.createevent-datepicker', {
-      url: '/createevent/datepicker',
+      url: '/createevent/datepicker/:category',
       views: {
         'menuContent': {
           templateUrl: 'app/pages/createevent/datepicker.html',
           controller: 'CreateeventDatepickerCtrl'
+        }
+      }
+    })
+    .state('app.createevent-description', {
+      url: '/createevent/description',
+      params: {event: null},
+      views: {
+        'menuContent': {
+          templateUrl: 'app/pages/createevent/description.html',
+          controller: 'CreateeventDescriptionCtrl'
         }
       }
     })

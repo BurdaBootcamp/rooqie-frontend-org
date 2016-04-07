@@ -1,4 +1,49 @@
 <ion-view title="Neues Event">
   <ion-content class="createevent-datepicker">
+    <div class="datepickerbox">
+      <onezone-datepicker datepicker-object="onezoneDatepicker">
+      </onezone-datepicker>
+    </div>
+
+    <div class="timepickerbox">
+      <form novalidate>
+        <div class="rooqierow">
+          <div class="rooqielabel">Datum</div>
+          <div class="rooqievalue"><input type="text" style="display:none" value="{{onezoneDatepicker.date}}" ng-model="event.date"><input type="text" value="{{onezoneDatepicker.date | date:'dd MMMM yyyy'}}"></div>
+          <div style="clear: both"></div>
+        </div>
+        <div class="rooqierow">
+          <div class="rooqielabel">Uhrzeit</div>
+          <div class="rooqievalue"><input type="text" placeholder="HH:MM" ng-model="event.time"></div>
+          <div style="clear: both"></div>
+        </div>
+        <div class="rooqierow">
+          <div class="rooqielabel">Dauer</div>
+          <div class="rooqievalue"><input type="number" placeholder="ca. Stunden" ng-model="event.duration"></div>
+          <div style="clear: both"></div>
+        </div>
+        <div class="rooqierow">
+          <div class="rooqielabel">Max. Teilnehmer</div>
+          <div class="rooqievalue"><input type="number" placeholder="Anzahl" ng-model="event.maxParticipants"></div>
+          <div style="clear: both"></div>
+        </div>
+        <div class="actionPane">
+          <div class="backButton">
+            <a href="" ng-click="fn.myGoBack()">
+              <img src="img/icons/arrow_left_white_grey.svg">
+            </a>
+          </div>
+          <a href="" ng-click="nextStep(event)">
+            <div class="nextButton">
+              <p>
+                weiter
+              </p>
+            </div>
+          </a>
+          <div style="clear: both"></div>
+        </div>
+      </form>
+    </div>
+  </div>
   </ion-content>
 </ion-view>
