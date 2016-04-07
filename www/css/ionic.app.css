@@ -10426,3 +10426,282 @@ label.item.item-input input {
 
 .daskomischei {
   color: #28a8e0 !important; }
+
+/*ion-header-bar.bar-dark.bar.bar-header {
+  display: none !important;
+}*/
+.onboarding2 {
+  background-color: #009edf;
+  position: absolute; }
+  .onboarding2 .section-container {
+    height: 100vh;
+    position: absolute;
+    margin: 7vh 8vw 7vh 8vw; }
+    .onboarding2 .section-container .logobox {
+      position: absolute;
+      margin-left: 50vw;
+      margin-top: 10vw; }
+      .onboarding2 .section-container .logobox img {
+        position: relative;
+        margin-left: -90px; }
+        .onboarding2 .section-container .logobox img .icon_circle {
+          fill: white; }
+    .onboarding2 .section-container .text {
+      position: absolute;
+      margin-top: 35vh;
+      margin-left: 50vw;
+      color: white;
+      font-size: 1.1em;
+      line-height: 1.2em;
+      width: 200px; }
+      .onboarding2 .section-container .text .slogan2 {
+        position: relative;
+        margin-left: -250px; }
+    .onboarding2 .section-container div.since_container {
+      position: absolute;
+      margin-top: 50vh;
+      margin-left: 10vw; }
+    .onboarding2 .section-container div.form_container {
+      position: absolute;
+      margin-top: 52.5vh;
+      margin-left: 38vw;
+      border: none;
+      bottom: white;
+      color: white; }
+      .onboarding2 .section-container div.form_container label {
+        background: #009edf;
+        width: 120px;
+        border-left: 0px solid;
+        border-right: 0px solid;
+        border-top: 0px solid; }
+      .onboarding2 .section-container div.form_container input {
+        color: white; }
+      .onboarding2 .section-container div.form_container ::-webkit-input-placeholder {
+        color: white;
+        font-size: 1.1em;
+        font-height: 1.2em; }
+    .onboarding2 .section-container div.button_container {
+      position: absolute;
+      margin-top: 70vh;
+      margin-left: 50vw; }
+      .onboarding2 .section-container div.button_container button {
+        position: relative;
+        margin-left: -103px;
+        width: 160px;
+        height: 50px;
+        background-color: #28a8e0;
+        border: 1px solid #28a8e0;
+        border-radius: 3em;
+        color: #e1e1e1;
+        text-align: center;
+        font-size: 1.6em; }
+      .onboarding2 .section-container div.button_container button:active {
+        position: relative;
+        margin-left: -103px;
+        width: 160px;
+        height: 50px;
+        background-color: white;
+        border: 1px solid #28a8e0;
+        border-radius: 3em;
+        color: black;
+        text-align: center;
+        font-size: 1.6em; }
+
+.daskomischei {
+  color: #28a8e0 !important; }
+
+/*ion-header-bar.bar-dark.bar.bar-header {
+  display: none !important;
+}*/
+.welcome {
+  background-color: #009edf;
+  position: absolute; }
+  .welcome .section-container {
+    height: 100vh;
+    position: absolute;
+    margin: 7vh 8vw 7vh 8vw; }
+    .welcome .section-container .logobox {
+      position: absolute;
+      margin-left: 50vw;
+      margin-top: 10vw; }
+      .welcome .section-container .logobox img {
+        position: relative;
+        margin-left: -120px; }
+        .welcome .section-container .logobox img .icon_circle {
+          fill: white; }
+    .welcome .section-container .text {
+      position: absolute;
+      margin-top: 35vh;
+      margin-left: 50vw;
+      color: white;
+      font-size: 1.1em;
+      line-height: 1.2em;
+      width: 200px; }
+      .welcome .section-container .text .slogan2 {
+        position: relative;
+        margin-left: -250px; }
+    .welcome .section-container div.button_container {
+      position: absolute;
+      margin-top: 60vh;
+      margin-left: 50vw; }
+      .welcome .section-container div.button_container button {
+        position: relative;
+        margin-left: -103px;
+        width: 160px;
+        height: 50px;
+        background-color: white;
+        border: 1px solid #28a8e0;
+        border-radius: 3em;
+        color: black;
+        text-align: center;
+        font-size: 1.6em; }
+
+.daskomischei {
+  color: #28a8e0 !important; }
+
+/*ion-header-bar.bar-dark.bar.bar-header {
+  display: none !important;
+}*/
+.welcome {
+  background-color: #009edf;
+  position: absolute; }
+  .welcome .section-container {
+    height: 100vh;
+    position: absolute;
+    margin: 7vh 8vw 7vh 8vw; }
+    .welcome .section-container .logobox {
+      position: absolute;
+      margin-left: 50vw;
+      margin-top: 10vw; }
+      .welcome .section-container .logobox img {
+        position: relative;
+        margin-left: -120px; }
+        .welcome .section-container .logobox img .icon_circle {
+          fill: white; }
+    .welcome .section-container .text {
+      position: absolute;
+      margin-top: 35vh;
+      margin-left: 50vw;
+      color: white;
+      font-size: 1.1em;
+      line-height: 1.2em;
+      width: 200px; }
+      .welcome .section-container .text .slogan2 {
+        position: relative;
+        margin-left: -250px; }
+    .welcome .section-container div.button_container {
+      position: absolute;
+      margin-top: 60vh;
+      margin-left: 50vw; }
+      .welcome .section-container div.button_container button {
+        position: relative;
+        margin-left: -103px;
+        width: 160px;
+        height: 50px;
+        background-color: white;
+        border: 1px solid #28a8e0;
+        border-radius: 3em;
+        color: black;
+        text-align: center;
+        font-size: 1.6em; }
+
+.daskomischei {
+  color: #28a8e0 !important; }
+
+/*ion-header-bar.bar-dark.bar.bar-header {
+  display: none !important;
+}*/
+.welcome {
+  background-color: #009edf;
+  position: absolute; }
+  .welcome .section-container {
+    height: 100vh;
+    position: absolute;
+    margin: 7vh 8vw 7vh 8vw; }
+    .welcome .section-container .logobox {
+      position: absolute;
+      margin-left: 50vw;
+      margin-top: 10vw; }
+      .welcome .section-container .logobox img {
+        position: relative;
+        margin-left: -120px; }
+        .welcome .section-container .logobox img .icon_circle {
+          fill: white; }
+    .welcome .section-container .text {
+      position: absolute;
+      margin-top: 35vh;
+      margin-left: 50vw;
+      color: white;
+      font-size: 1.1em;
+      line-height: 1.2em;
+      width: 200px; }
+      .welcome .section-container .text .slogan2 {
+        position: relative;
+        margin-left: -250px; }
+    .welcome .section-container div.button_container {
+      position: absolute;
+      margin-top: 60vh;
+      margin-left: 50vw; }
+      .welcome .section-container div.button_container button {
+        position: relative;
+        margin-left: -103px;
+        width: 160px;
+        height: 50px;
+        background-color: white;
+        border: 1px solid #28a8e0;
+        border-radius: 3em;
+        color: black;
+        text-align: center;
+        font-size: 1.6em; }
+
+.daskomischei {
+  color: #28a8e0 !important; }
+
+/*ion-header-bar.bar-dark.bar.bar-header {
+  display: none !important;
+}*/
+.welcome {
+  background-color: #009edf;
+  position: absolute; }
+  .welcome .section-container {
+    height: 100vh;
+    position: absolute;
+    margin: 7vh 8vw 7vh 8vw; }
+    .welcome .section-container .logobox {
+      position: absolute;
+      margin-left: 50vw;
+      margin-top: 10vw; }
+      .welcome .section-container .logobox img {
+        position: relative;
+        margin-left: -120px; }
+        .welcome .section-container .logobox img .icon_circle {
+          fill: white; }
+    .welcome .section-container .text {
+      position: absolute;
+      margin-top: 35vh;
+      margin-left: 50vw;
+      color: white;
+      font-size: 1.1em;
+      line-height: 1.2em;
+      width: 200px; }
+      .welcome .section-container .text .slogan2 {
+        position: relative;
+        margin-left: -250px; }
+    .welcome .section-container div.button_container {
+      position: absolute;
+      margin-top: 60vh;
+      margin-left: 50vw; }
+      .welcome .section-container div.button_container button {
+        position: relative;
+        margin-left: -103px;
+        width: 160px;
+        height: 50px;
+        background-color: white;
+        border: 1px solid #28a8e0;
+        border-radius: 3em;
+        color: black;
+        text-align: center;
+        font-size: 1.6em; }
+
+.daskomischei {
+  color: #28a8e0 !important; }
