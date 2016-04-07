@@ -6,6 +6,6 @@ angular.module('app')
         disableAnimate: true,
         disableBack: true
       });
-      $state.go('app.onboarding3');
+      $state.go('app.onboarding5');
     }
   );

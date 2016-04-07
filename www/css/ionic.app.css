@@ -10645,23 +10645,23 @@ label.item.item-input input {
 /*ion-header-bar.bar-dark.bar.bar-header {
   display: none !important;
 }*/
-.welcome {
+.onboarding5 {
   background-color: #009edf;
   position: absolute; }
-  .welcome .section-container {
+  .onboarding5 .section-container {
     height: 100vh;
     position: absolute;
     margin: 7vh 8vw 7vh 8vw; }
-    .welcome .section-container .logobox {
+    .onboarding5 .section-container .logobox {
       position: absolute;
       margin-left: 50vw;
       margin-top: 10vw; }
-      .welcome .section-container .logobox img {
+      .onboarding5 .section-container .logobox img {
         position: relative;
         margin-left: -120px; }
-        .welcome .section-container .logobox img .icon_circle {
+        .onboarding5 .section-container .logobox img .icon_circle {
           fill: white; }
-    .welcome .section-container .text {
+    .onboarding5 .section-container .text {
       position: absolute;
       margin-top: 35vh;
       margin-left: 50vw;
@@ -10669,14 +10669,14 @@ label.item.item-input input {
       font-size: 1.1em;
       line-height: 1.2em;
       width: 200px; }
-      .welcome .section-container .text .slogan2 {
+      .onboarding5 .section-container .text .slogan2 {
         position: relative;
         margin-left: -250px; }
-    .welcome .section-container div.button_container {
+    .onboarding5 .section-container div.button_container {
       position: absolute;
       margin-top: 60vh;
       margin-left: 50vw; }
-      .welcome .section-container div.button_container button {
+      .onboarding5 .section-container div.button_container button {
         position: relative;
         margin-left: -103px;
         width: 160px;

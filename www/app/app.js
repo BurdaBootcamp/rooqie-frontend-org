@@ -108,17 +108,15 @@ angular.module('app', ['ionic', 'onezone-datepicker'])
         }
       }
     })
-    // .state('app.onboarding5', {
-    //   url: '/onboarding/onboarding5',
-    //   views: {
-    //     'menuContent': {
-    //       templateUrl: 'app/onboarding/onboarding5/onboarding5.html',
-    //       controller: 'Onboarding5Ctrl'
-    //     }
-    //   }
-    // })
-
-
+    .state('app.onboarding5', {
+      url: '/onboarding/onboarding5',
+      views: {
+        'menuContent': {
+          templateUrl: 'app/onboarding/onboarding5/onboarding5.html',
+          controller: 'Onboarding5Ctrl'
+        }
+      }
+    })
 
 
     .state('app.legal', {
