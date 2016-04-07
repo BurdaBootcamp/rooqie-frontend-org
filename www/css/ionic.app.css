@@ -10309,132 +10309,38 @@ a.button {
         font-size: 1.2em;
         padding-top: 10px; }
 
-.createevent {
-  background-color: #969696; }
-  .createevent ul {
-    -webkit-column-count: 2;
-    /* Chrome, Safari, Opera */
-    -moz-column-count: 2;
-    /* Firefox */
-    column-count: 2; }
-    .createevent ul .cat-container {
-      height: 25vh;
-      width: 48vw;
-      margin-left: 5px;
-      margin-right: 5px;
-      margin-top: 2px;
-      -webkit-box-shadow: 0px 4px 5px 0px rgba(80, 80, 80, 0.5);
-      -moz-box-shadow: 0px 4px 5px 0px rgba(80, 80, 80, 0.5);
-      box-shadow: 0px 4px 5px 0px rgba(80, 80, 80, 0.5); }
-      .createevent ul .cat-container .event-image {
-        height: 20vh;
-        width: 48vw; }
-        .createevent ul .cat-container .event-image img {
-          height: 100%;
-          width: 100%; }
-      .createevent ul .cat-container .event-category {
-        height: 5vh;
-        width: 48vw;
-        background-color: white;
-        position: absolute; }
-        .createevent ul .cat-container .event-category p {
-          text-align: center;
-          vertical-align: middle;
-          margin-top: 8px;
-          font: 1.15em; }
-  .createevent .event-headerbox {
-    background-image: url("../img/example-img/englischer-garten.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    height: 30vh;
-    width: 100%;
-    -webkit-box-shadow: 0px 4px 5px 0px rgba(80, 80, 80, 0.5);
-    -moz-box-shadow: 0px 4px 5px 0px rgba(80, 80, 80, 0.5);
-    box-shadow: 0px 4px 5px 0px rgba(80, 80, 80, 0.5); }
-    .createevent .event-headerbox .event-topbar {
-      height: 63%; }
-      .createevent .event-headerbox .event-topbar img {
-        width: 40px;
-        height: 40px;
-        margin-left: 20px;
-        margin-top: 20px; }
-        .createevent .event-headerbox .event-topbar img .icon-circle {
-          fill: white; }
-        .createevent .event-headerbox .event-topbar img .icon-text {
-          fill: #009edf; }
-    .createevent .event-headerbox .event-titlebox .textbox {
-      float: left;
-      height: 37%;
-      width: 80%;
-      overflow-x: hidden; }
-      .createevent .event-headerbox .event-titlebox .textbox .event-name {
-        margin-left: 10%;
-        color: white;
-        font-weight: bold;
-        font-size: 2em; }
-      .createevent .event-headerbox .event-titlebox .textbox .event-date {
-        margin-left: 10%;
-        color: #e1e1e1;
-        font-size: 1.3em; }
-    .createevent .event-headerbox .event-join {
-      float: right; }
-      .createevent .event-headerbox .event-join img {
-        margin-right: 20px;
-        margin-top: 5px;
-        height: 40px;
-        width: 40px; }
-        .createevent .event-headerbox .event-join img .icon-circle {
-          fill: rgba(255, 255, 255, 0.5); }
-        .createevent .event-headerbox .event-join img .icon-text {
-          fill: transparent; }
-      .createevent .event-headerbox .event-join p {
-        color: white;
-        font-size: 0.8em; }
-  .createevent .contentbox {
-    margin-top: 2vh;
-    height: 68vh;
-    background-color: white;
-    -webkit-box-shadow: 0px 4px 5px 0px rgba(80, 80, 80, 0.5);
-    -moz-box-shadow: 0px 4px 5px 0px rgba(80, 80, 80, 0.5);
-    box-shadow: 0px 4px 5px 0px rgba(80, 80, 80, 0.5); }
-    .createevent .contentbox .headerbox {
-      height: 30px;
-      z-index: 10; }
-      .createevent .contentbox .headerbox .icon {
-        float: left; }
-        .createevent .contentbox .headerbox .icon img {
-          width: 40px;
-          height: 40px;
-          margin-top: -20px;
-          margin-left: 20px; }
-          .createevent .contentbox .headerbox .icon img .icon-circle {
-            fill: white; }
-          .createevent .contentbox .headerbox .icon img .icon-text {
-            fill: #009edf; }
-    .createevent .contentbox .message {
-      padding: 10px 37px;
-      color: #969696;
-      font-size: 1.3em;
-      overflow: hidden; }
-      .createevent .contentbox .message .headline {
-        font-weight: bolder;
-        font-size: 1.5em;
-        margin-bottom: 10px; }
-    .createevent .contentbox .btn {
-      width: 80%;
-      height: 40px; }
-      .createevent .contentbox .btn:first-child {
-        padding-top: 25px; }
-      .createevent .contentbox .btn img {
-        float: left;
-        margin-right: 15px;
-        width: 40px;
-        height: 40px;
-        margin-left: 37px; }
-      .createevent .contentbox .btn p {
-        float: right;
-        width: 65%;
-        color: #969696;
-        font-size: 1.2em;
-        padding-top: 10px; }
+div.row {
+  margin-top: 30px;
+  margin-bottom: 2px; }
+
+.onezone-datepicker.onezone-datepicker-show {
+  max-height: 50vh !important;
+  border-bottom: 0px !important; }
+
+.onezone-datepicker {
+  height: 50vh !important;
+  background-color: white !important; }
+
+/*div .row:nth-child(8){
+  margin-top: 20px;
+}*/
+span.onezone-datepicker-selection-button {
+  display: none !important; }
+
+.timepicker {
+  margin-top: 20px; }
+
+h4 {
+  text-align: center; }
+
+label.item.item-input input {
+  text-align: center; }
+
+.button-stable {
+  margin: 0 auto;
+  display: block;
+  border-color: #e1e1e1 !important; }
+
+/*
+<span class="onezone-datepicker-selection-button ion-ios-checkmark" ng-if="!datepicker.hideSetButton" ng-click="setDate()"></span>
+::before </span>*/

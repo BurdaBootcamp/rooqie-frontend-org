@@ -1,5 +1,5 @@
 'use strict';
-angular.module('app', ['ionic'])
+angular.module('app', ['ionic', 'onezone-datepicker'])
   .config(function($stateProvider, $urlRouterProvider, $provide){
     $stateProvider
     .state('loading', {
