@@ -10550,6 +10550,63 @@ a.button {
         text-decoration: none;
         font-size: 1.6em; }
 
+.interests {
+  background-color: #009edf;
+  position: absolute; }
+  .interests .section-container {
+    height: 100vh;
+    position: absolute;
+    margin: 7vh 8vw 7vh 8vw; }
+    .interests .section-container .text {
+      color: white;
+      font-size: 1.6em;
+      line-height: 1.7em; }
+    .interests .section-container button {
+      background-color: #28a8e0;
+      border: 1px #28a8e0;
+      border-radius: 3em;
+      color: #969696;
+      padding: 10px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 1.6em;
+      margin-top: 3vh; }
+    .interests .section-container .prime_haken {
+      position: relative;
+      margin-bottom: -10px; }
+    .interests .section-container .sec_haken {
+      width: 20px; }
+    .interests .section-container .unterliste {
+      margin-left: 42px; }
+    .interests .section-container .icon_circle {
+      fill: rgba(255, 255, 255, 0.1); }
+    .interests .section-container .icon_circle:active {
+      fill: white; }
+    .interests .section-container .icon_tick {
+      fill: rgba(255, 255, 255, 0); }
+    .interests .section-container .droplist {
+      color: white;
+      font-size: 1.3em;
+      margin-left: 5px;
+      margin-top: -10px; }
+    .interests .section-container .event-name {
+      margin-left: 10%;
+      color: white;
+      font-weight: bold;
+      font-size: 2em;
+      margin-top: 50px; }
+    .interests .section-container .event-date {
+      margin-left: 10%;
+      color: #e1e1e1;
+      font-weight: bold; }
+
+.sg-replace-icons input[type=checkbox] + label:before {
+  /* Default font size */
+  /* font-size:1.3em; */
+  /* Larger font size */
+  font-size: 0px; }
+
 .profile {
   background-color: #009edf; }
   .profile .mainIcon {

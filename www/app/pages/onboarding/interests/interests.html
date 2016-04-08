@@ -1,0 +1,29 @@
+<ion-view title="Interessen">
+  <ion-content class="interests">
+    <div class = "section-container">
+        <div class = "text">
+          Sag uns was du machst und was dich interessiert!
+        </div>
+
+
+        <center>
+          <button>Weiter</button>
+        </center>
+
+  
+      <div ng-repeat="(key, value) in interests">
+        <label>
+          <img class = "prime_haken" src="img/icons/haken.svg">
+          <input type="checkbox" name="selectedCategory" class="category droplist trigger" value="{{key}}">{{key}}<br>
+        </label>
+        <label ng-repeat="item in value" class="unterliste">
+          <img class = "sec_haken" src="img/icons/haken.svg">
+          <input type="checkbox" name="selectedCategory2"class="category droplist trigger" value="{{item}}">{{item}}<br>
+        </label>
+      </div>
+    
+
+
+    </div>
+  </ion-content>
+</ion-view>

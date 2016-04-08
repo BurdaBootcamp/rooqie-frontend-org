@@ -45,6 +45,16 @@ angular.module('app', ['ionic', 'onezone-datepicker'])
         }
       }
     })
+    .state('app.interests', {
+      url: '/onboarding/interests',
+      views: {
+        'menuContent': {
+          templateUrl: 'app/pages/onboarding/interests/interests.html',
+          controller: 'InterestsCtrl'
+        }
+      }
+    })
+
     .state('eventdetail', {
       url: '/eventdetail/:id',
       templateUrl: 'app/pages/eventdetail/eventdetail.html',
