@@ -1,11 +1,35 @@
-<ion-view title="Profile">
-  <ion-content>
-    <div class="list card">
-      <div class="item item-avatar">
-        <h2>{{data.user.firstname}}, {{data.user.lastname}}</h2>
-        <p>city: {{data.user.city}}</p>
-        <p>email: {{data.user.email}}</p>
+<ion-view title="Intro">
+  <ion-content class="profile">
+      <img class="mainIcon" src="img/pictograms/group_participants_white_grey.svg">
+      <div class="text">
+        <div class="inputbox">
+          <img class="inputIcon" src="img/icons/location_white_transparent.svg">
+          <input type="text" placeholder="Name" ng-model="moved">
+          <div style="clear: btoth"></div>
+        </div>
+        <div class="inputbox">
+          <img class="inputIcon" src="img/icons/location_white_transparent.svg">
+          <input type="text" placeholder="Wohnort" ng-model="moved">
+          <div style="clear: btoth"></div>
+        </div>
+        <div class="inputbox">
+          <img class="inputIcon" src="img/icons/location_white_transparent.svg">
+          <input type="text" placeholder="Umzug" ng-model="moved">
+          <div style="clear: btoth"></div>
+        </div>
+        <div class="inputbox">
+          <img class="inputIcon" src="img/icons/location_white_transparent.svg">
+          <input type="text" placeholder="Beruf" ng-model="moved">
+          <div style="clear: btoth"></div>
+        </div>
       </div>
+      <a href="" ui-sref="onboarding-welcome">
+        <div class="nextButton">
+          <p>
+            Weiter
+          </p>
+        </div>
+      </a>
     </div>
   </ion-content>
 </ion-view>

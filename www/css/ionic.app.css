@@ -9749,7 +9749,8 @@ a.button {
       color: white;
       font-weight: bold;
       font-size: 2em;
-      margin-top: 50px; }
+      margin-top: 50px;
+      line-height: normal; }
     .userevents .eventlist .event-date {
       margin-left: 10%;
       color: #e1e1e1;
@@ -9990,7 +9991,8 @@ a.button {
         margin-left: 10%;
         color: white;
         font-weight: bold;
-        font-size: 2em; }
+        font-size: 2em;
+        line-height: normal; }
       .eventjoin .event-headerbox .event-titlebox .textbox .event-date {
         margin-left: 10%;
         color: #e1e1e1;
@@ -10089,7 +10091,8 @@ a.button {
         margin-left: 10%;
         color: white;
         font-weight: bold;
-        font-size: 2em; }
+        font-size: 2em;
+        line-height: normal; }
       .eventleave .event-headerbox .event-titlebox .textbox .event-date {
         margin-left: 10%;
         color: #e1e1e1;
@@ -10158,7 +10161,8 @@ a.button {
       color: white;
       font-weight: bold;
       font-size: 2em;
-      margin-top: 50px; }
+      margin-top: 50px;
+      line-height: normal; }
     .recommendations .eventlist .event-date {
       margin-left: 10%;
       color: #e1e1e1;
@@ -10171,22 +10175,24 @@ a.button {
   .createevent-categories .category-box {
     height: 20vh;
     padding: 5px; }
+    .createevent-categories .category-box a {
+      text-decoration: none; }
     .createevent-categories .category-box .category-img {
       height: 70%;
       width: 100%;
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center center;
-      -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
-      -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
-      box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5); }
+      -webkit-box-shadow: 0px 4px 5px 0px rgba(80, 80, 80, 0.5);
+      -moz-box-shadow: 0px 4px 5px 0px rgba(80, 80, 80, 0.5);
+      box-shadow: 0px 4px 5px 0px rgba(80, 80, 80, 0.5); }
     .createevent-categories .category-box .category-name {
       height: 30%;
       width: 100%;
       background-color: white;
-      -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
-      -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
-      box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5); }
+      -webkit-box-shadow: 0px 4px 5px 0px rgba(80, 80, 80, 0.5);
+      -moz-box-shadow: 0px 4px 5px 0px rgba(80, 80, 80, 0.5);
+      box-shadow: 0px 4px 5px 0px rgba(80, 80, 80, 0.5); }
       .createevent-categories .category-box .category-name p {
         text-align: center;
         color: #969696;
@@ -10194,9 +10200,401 @@ a.button {
         font-size: 1.2em;
         padding-top: 5px; }
 
+.createevent-description {
+  background-color: #e1e1e1; }
+  .createevent-description .event-headerbox {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 30vh;
+    width: 100%; }
+    .createevent-description .event-headerbox .event-topbar {
+      height: 63%; }
+      .createevent-description .event-headerbox .event-topbar img {
+        width: 40px;
+        height: 40px;
+        margin-left: 20px;
+        margin-top: 20px; }
+  .createevent-description .contentbox {
+    height: 70vh;
+    background-color: white;
+    width: 100%;
+    -webkit-box-shadow: 0px -4px 5px 0px rgba(80, 80, 80, 0.5);
+    -moz-box-shadow: 0px -4px 5px 0px rgba(80, 80, 80, 0.5);
+    box-shadow: 0px -4px 5px 0px rgba(80, 80, 80, 0.5); }
+    .createevent-description .contentbox .locationImage {
+      border-radius: 50%;
+      width: 33vw;
+      height: 33vw;
+      margin-left: 33vw;
+      margin-top: -16vw;
+      -webkit-box-shadow: 0px -4px 5px 0px rgba(80, 80, 80, 0.5);
+      -moz-box-shadow: 0px -4px 5px 0px rgba(80, 80, 80, 0.5);
+      box-shadow: 0px -4px 5px 0px rgba(80, 80, 80, 0.5); }
+    .createevent-description .contentbox .locationInfos {
+      width: 100%;
+      color: #969696;
+      text-align: center; }
+      .createevent-description .contentbox .locationInfos .locationName {
+        font-size: 1.3em;
+        font-weight: bold; }
+      .createevent-description .contentbox .locationInfos .locationAddress {
+        font-size: 0.8; }
+      .createevent-description .contentbox .locationInfos .locationUrl a {
+        text-decoration: none;
+        color: #009edf; }
+    .createevent-description .contentbox .descriptionField {
+      width: 100%;
+      height: 20vh; }
+      .createevent-description .contentbox .descriptionField textarea {
+        height: 100%;
+        width: 86%;
+        margin: 7%;
+        padding: 3%;
+        border: 2px solid #e1e1e1;
+        background-color: #e1e1e1;
+        overflow: scroll;
+        border-radius: 10px;
+        resize: none;
+        color: #969696; }
+      .createevent-description .contentbox .descriptionField textarea:focus {
+        background-color: white; }
+    .createevent-description .contentbox .actionPane {
+      width: 80%;
+      margin-left: 10%;
+      margin-top: 25px; }
+      .createevent-description .contentbox .actionPane .backButton {
+        float: left; }
+        .createevent-description .contentbox .actionPane .backButton img {
+          width: 40px;
+          height: 40px; }
+      .createevent-description .contentbox .actionPane .nextButton {
+        float: right;
+        width: 30vw;
+        height: 40px;
+        border-radius: 20px;
+        background-color: #009edf;
+        text-align: center; }
+        .createevent-description .contentbox .actionPane .nextButton p {
+          margin-top: 10px; }
+          .createevent-description .contentbox .actionPane .nextButton p a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold; }
+
+.createevent-datepicker {
+  background-color: #e1e1e1 !important; }
+  .createevent-datepicker .datepickerbox {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 2px; }
+    .createevent-datepicker .datepickerbox .onezone-datepicker {
+      height: 55vh !important;
+      background-color: #e1e1e1 !important; }
+    .createevent-datepicker .datepickerbox .onezone-datepicker.onezone-datepicker-show {
+      max-height: 50vh !important;
+      border-bottom: 0px !important; }
+    .createevent-datepicker .datepickerbox .onezone-datepicker-navigation-arrow {
+      color: #009edf !important; }
+    .createevent-datepicker .datepickerbox .onezone-datepicker-button {
+      border: none !important; }
+    .createevent-datepicker .datepickerbox .onezone-datepicker-button:after {
+      border-bottom: none !important; }
+    .createevent-datepicker .datepickerbox .onezone-datepicker-day {
+      border: none; }
+    .createevent-datepicker .datepickerbox .onezone-datepicker-active-day, .createevent-datepicker .datepickerbox .onezone-datepicker-active-day:hover {
+      border: 2px solid white;
+      background-color: #009edf;
+      color: white; }
+    .createevent-datepicker .datepickerbox .onezone-datepicker-modal-item.onezone-datepicker-modal-item-active {
+      background-color: #009edf; }
+    .createevent-datepicker .datepickerbox .onezone-datepicker-week {
+      color: white;
+      font-weight: bold; }
+    .createevent-datepicker .datepickerbox span.onezone-datepicker-selection-button {
+      display: none !important; }
+  .createevent-datepicker .timepickerbox {
+    height: 39vh;
+    width: 100%;
+    background-color: white;
+    -webkit-box-shadow: 0px -4px 5px 0px rgba(80, 80, 80, 0.5);
+    -moz-box-shadow: 0px -4px 5px 0px rgba(80, 80, 80, 0.5);
+    box-shadow: 0px -4px 5px 0px rgba(80, 80, 80, 0.5); }
+    .createevent-datepicker .timepickerbox .rooqierow {
+      height: 40px;
+      width: 100%;
+      border-bottom: 1px solid #e1e1e1; }
+      .createevent-datepicker .timepickerbox .rooqierow .rooqielabel {
+        float: left;
+        color: #969696;
+        font-size: 1.2em;
+        margin-left: 25px;
+        margin-top: 10px; }
+      .createevent-datepicker .timepickerbox .rooqierow .rooqievalue {
+        float: right;
+        color: #969696;
+        font-size: 1.2em;
+        margin-right: 25px;
+        margin-top: 10px; }
+        .createevent-datepicker .timepickerbox .rooqierow .rooqievalue input {
+          color: #969696;
+          text-align: right;
+          margin-top: -8px; }
+    .createevent-datepicker .timepickerbox .actionPane {
+      width: 80%;
+      margin-left: 10%;
+      margin-top: 35px; }
+      .createevent-datepicker .timepickerbox .actionPane .backButton {
+        float: left; }
+        .createevent-datepicker .timepickerbox .actionPane .backButton img {
+          width: 40px;
+          height: 40px; }
+      .createevent-datepicker .timepickerbox .actionPane a {
+        text-decoration: none; }
+        .createevent-datepicker .timepickerbox .actionPane a .nextButton {
+          float: right;
+          width: 30vw;
+          height: 40px;
+          border-radius: 20px;
+          background-color: #009edf;
+          text-align: center; }
+          .createevent-datepicker .timepickerbox .actionPane a .nextButton p {
+            margin-top: 10px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold; }
+
 .legal {
   background-color: #e1e1e1;
   height: 100%;
   width: 100%; }
   .legal .section-container {
     padding: 10%; }
+
+.onboarding-welcome {
+  background-color: #009edf; }
+  .onboarding-welcome a {
+    text-decoration: none; }
+    .onboarding-welcome a img {
+      width: 60vw;
+      height: auto;
+      margin-left: 20vw;
+      margin-top: 15vh; }
+    .onboarding-welcome a .text {
+      color: white;
+      margin-left: 30vw;
+      font-size: 1.6em;
+      font-weight: bold;
+      line-height: 0.5em; }
+      .onboarding-welcome a .text p:first-child {
+        opacity: 0.6; }
+
+.onboarding-intro {
+  background-color: #009edf; }
+  .onboarding-intro img {
+    width: 60vw;
+    height: auto;
+    margin-left: 20vw;
+    margin-top: 15vh; }
+  .onboarding-intro .text {
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 35vh;
+    font-size: 1.6em;
+    line-height: normal; }
+  .onboarding-intro a {
+    text-decoration: none; }
+    .onboarding-intro a .nextButton {
+      width: 50vw;
+      height: 60px;
+      border-radius: 30px;
+      background-color: white;
+      text-align: center;
+      margin: -25px auto 0px auto; }
+      .onboarding-intro a .nextButton p {
+        padding-top: 20px;
+        color: #969696;
+        text-decoration: none;
+        font-size: 1.7em; }
+
+.onboarding-moved {
+  background-color: #009edf; }
+  .onboarding-moved .mainIcon {
+    width: 50vw;
+    height: auto;
+    margin-left: 25vw;
+    margin-top: 20vh; }
+  .onboarding-moved .text {
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 35vh;
+    font-size: 1.6em;
+    line-height: normal; }
+    .onboarding-moved .text .inputbox {
+      width: 50vw;
+      margin-left: 25vw; }
+      .onboarding-moved .text .inputbox .inputIcon {
+        float: left;
+        width: 30%; }
+      .onboarding-moved .text .inputbox input {
+        float: right;
+        background-color: transparent;
+        border-bottom: 1px solid white;
+        width: 60%;
+        margin-left: 10%;
+        color: white;
+        height: 40px;
+        font-size: 0.8em; }
+  .onboarding-moved a {
+    text-decoration: none; }
+    .onboarding-moved a .nextButton {
+      width: 50vw;
+      height: 60px;
+      border-radius: 30px;
+      background-color: white;
+      text-align: center;
+      margin: 0px auto 0px auto; }
+      .onboarding-moved a .nextButton p {
+        padding-top: 20px;
+        color: #969696;
+        text-decoration: none;
+        font-size: 1.7em; }
+
+.onboarding-moved {
+  background-color: #009edf; }
+  .onboarding-moved .mainIcon {
+    width: 50vw;
+    height: auto;
+    margin-left: 25vw;
+    margin-top: 20vh; }
+  .onboarding-moved .text {
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 35vh;
+    font-size: 1.6em;
+    line-height: normal; }
+    .onboarding-moved .text .inputbox {
+      width: 50vw;
+      margin-left: 25vw; }
+      .onboarding-moved .text .inputbox .inputIcon {
+        float: left;
+        width: 30%; }
+      .onboarding-moved .text .inputbox input {
+        float: right;
+        background-color: transparent;
+        border-bottom: 1px solid white;
+        width: 60%;
+        margin-left: 10%;
+        color: white;
+        height: 40px;
+        font-size: 0.8em; }
+  .onboarding-moved a {
+    text-decoration: none; }
+    .onboarding-moved a .nextButton {
+      width: 50vw;
+      height: 60px;
+      border-radius: 30px;
+      background-color: white;
+      text-align: center;
+      margin: 0px auto 0px auto; }
+      .onboarding-moved a .nextButton p {
+        padding-top: 20px;
+        color: #969696;
+        text-decoration: none;
+        font-size: 1.7em; }
+
+.onboarding-facebook {
+  background-color: #009edf; }
+  .onboarding-facebook .mainIcon {
+    width: 50vw;
+    height: auto;
+    margin-left: 25vw;
+    margin-top: 20vh; }
+  .onboarding-facebook .text {
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 35vh;
+    font-size: 1.6em;
+    line-height: normal; }
+    .onboarding-facebook .text .inputbox {
+      width: 50vw;
+      margin-left: 25vw; }
+      .onboarding-facebook .text .inputbox .inputIcon {
+        float: left;
+        width: 30%; }
+      .onboarding-facebook .text .inputbox input {
+        float: right;
+        background-color: transparent;
+        border-bottom: 1px solid white;
+        width: 60%;
+        margin-left: 10%;
+        color: white;
+        height: 40px;
+        font-size: 0.8em; }
+  .onboarding-facebook a {
+    text-decoration: none; }
+    .onboarding-facebook a .nextButton {
+      width: 50vw;
+      height: 60px;
+      border-radius: 30px;
+      background-color: white;
+      text-align: center;
+      margin: 0px auto 0px auto; }
+      .onboarding-facebook a .nextButton p {
+        padding-top: 20px;
+        color: #969696;
+        text-decoration: none;
+        font-size: 1.6em; }
+
+.profile {
+  background-color: #009edf; }
+  .profile .mainIcon {
+    width: 40vw;
+    height: auto;
+    margin-left: 30vw;
+    margin-top: 5vh;
+    border-radius: 50%;
+    border: 10px white solid; }
+  .profile .text {
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 40vh;
+    font-size: 1.6em;
+    line-height: normal;
+    margin-top: 20px; }
+    .profile .text .inputbox {
+      width: 60vw;
+      margin-left: 20vw;
+      height: 60px; }
+      .profile .text .inputbox .inputIcon {
+        float: left;
+        width: 60px;
+        height: 60px; }
+      .profile .text .inputbox input {
+        float: right;
+        background-color: transparent;
+        border-bottom: 1px solid white;
+        width: 60%;
+        margin-left: 10%;
+        color: white;
+        height: 40px;
+        font-size: 0.8em; }
+  .profile a {
+    text-decoration: none; }
+    .profile a .nextButton {
+      width: 50vw;
+      height: 60px;
+      border-radius: 30px;
+      background-color: white;
+      text-align: center;
+      margin: 35px auto 0px auto; }
+      .profile a .nextButton p {
+        padding-top: 20px;
+        color: #969696;
+        text-decoration: none;
+        font-size: 1.6em; }

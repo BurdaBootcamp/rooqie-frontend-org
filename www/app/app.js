@@ -103,6 +103,26 @@ angular.module('app', ['ionic', 'onezone-datepicker'])
           templateUrl: 'app/pages/legal/dataprotection.html'
         }
       }
+    })
+    .state('onboarding-welcome', {
+      url: '/onboarding/welcome',
+      templateUrl: 'app/pages/onboarding/welcome/welcome.html'
+    })
+    .state('onboarding-intro', {
+      url: '/onboarding/intro',
+      templateUrl: 'app/pages/onboarding/intro/intro.html'
+    })
+    .state('onboarding-moved', {
+      url: '/onboarding/moved',
+      templateUrl: 'app/pages/onboarding/moved/moved.html'
+    })
+    .state('onboarding-city', {
+      url: '/onboarding/city',
+      templateUrl: 'app/pages/onboarding/city/city.html'
+    })
+    .state('onboarding-facebook', {
+      url: '/onboarding/facebook',
+      templateUrl: 'app/pages/onboarding/facebook/facebook.html'
     });
     $urlRouterProvider.otherwise('/loading');
   })
