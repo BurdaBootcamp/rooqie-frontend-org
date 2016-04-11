@@ -30,6 +30,9 @@ angular.module('app')
     leave: function(eventId){
       return $http.delete($rootScope.API_URL + "/events/" + eventId + "/accounts/rel/" + $window.localStorage['user_id'] + "?access_token=" + $window.localStorage['access_token']);
     },
+    getLocationId: function(eventId){
+      return $http.get($rootScope.API_URL + '/events/' + eventId + '/location?access_token=' + $window.localStorage['access_token']);
+    },
     createEvent: function(event) {
       var postData = {
         "name": event.name,
