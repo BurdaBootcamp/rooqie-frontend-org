@@ -12,6 +12,12 @@ angular.module('app', ['ionic', 'onezone-datepicker'])
       templateUrl: 'app/pages/authentication/login.html',
       controller: 'LoginCtrl'
     })
+    .state('error', {
+      url: '/error',
+      templateUrl: 'app/pages/layout/error.html',
+      controller: 'ErrorCtrl',
+      params: {error: null}
+    })
     .state('app', {
       url: '/app',
       abstract: true,
@@ -36,14 +42,10 @@ angular.module('app', ['ionic', 'onezone-datepicker'])
         }
       }
     })
-    .state('app.profile', {
+    .state('profile', {
       url: '/profile',
-      views: {
-        'menuContent': {
-          templateUrl: 'app/pages/profile/profile.html',
-          controller: 'ProfileCtrl'
-        }
-      }
+      templateUrl: 'app/pages/profile/profile.html',
+      controller: 'ProfileCtrl'
     })
     .state('eventdetail', {
       url: '/eventdetail/:id',
@@ -114,15 +116,29 @@ angular.module('app', ['ionic', 'onezone-datepicker'])
     })
     .state('onboarding-moved', {
       url: '/onboarding/moved',
-      templateUrl: 'app/pages/onboarding/moved/moved.html'
+      templateUrl: 'app/pages/onboarding/moved/moved.html',
+      controller: 'OnboardingMovedCtrl'
     })
     .state('onboarding-city', {
-      url: '/onboarding/city',
-      templateUrl: 'app/pages/onboarding/city/city.html'
+      url: '/onboarding/city/:moved',
+      templateUrl: 'app/pages/onboarding/city/city.html',
+      controller: 'OnboardingCityCtrl'
     })
     .state('onboarding-facebook', {
       url: '/onboarding/facebook',
       templateUrl: 'app/pages/onboarding/facebook/facebook.html'
+    })
+    .state('onboarding-signup', {
+      url: '/onboarding/signup',
+      params: {user: null},
+      templateUrl: 'app/pages/onboarding/signup/signup.html',
+      controller: 'OnboardingSignupCtrl'
+    })
+    .state('onboarding-userdata', {
+      url: '/onboarding/userdata',
+      params: {user: null},
+      templateUrl: 'app/pages/onboarding/userdata/userdata.html',
+      controller: 'OnboardingUserdataCtrl'
     });
     $urlRouterProvider.otherwise('/loading');
   })

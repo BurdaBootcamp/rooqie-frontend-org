@@ -1,7 +1,10 @@
 <ion-view title="Meine Verabredungen">
   <ion-content class="userevents">
     <ion-scroll class="eventlist">
-      <a ui-sref="eventdetail({id: event.id})" ng-repeat="event in events">
+      <div ng-if="!events" class="spinner">
+        <ion-spinner></ion-spinner>
+      </div>
+      <a ui-sref="eventdetail({id: event.id})" ng-repeat="event in events" ng-if="events">
         <div class="card" style="background-image: url({{event.category.image}})">
           <p class="event-name">
             {{event.name}}
@@ -14,14 +17,14 @@
     </ion-scroll>
     <div class="actionpanel">
       <div class="btn">
-        <a href="#">
+        <a href="" ui-sref="app.recommendations">
           <img src="img/icons/arrow_down_grey_white.svg">
           <p>Weitere Einladungen</p>
           <div style="clear: both"></div>
         </a>
       </div>
       <div class="btn">
-        <a href="#">
+        <a href="" ui-sref="app.createevent-categories">
           <img src="img/icons/plus_grey_white.svg">
           <p>Neue Verabredung</p>
           <div style="clear: both"></div>

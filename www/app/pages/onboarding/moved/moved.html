@@ -8,11 +8,11 @@
         </p>
         <div class="inputbox">
           <img class="inputIcon" src="img/icons/calendar_white_transparent.svg">
-          <input type="text" placeholder="Seit" ng-model="moved">
+          <input type="number" placeholder="Monaten" ng-model="user.moved">
           <div style="clear: btoth"></div>
         </div>
       </div>
-      <a href="" ui-sref="onboarding-city">
+      <a href="" ui-sref="onboarding-city({moved: user.moved})">
         <div class="nextButton">
           <p>
             Weiter

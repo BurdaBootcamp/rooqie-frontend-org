@@ -1,0 +1,29 @@
+<ion-view title="Intro" hide-nav-bar="true">
+  <ion-content class="onboarding-signup">
+      <img class="mainIcon" src="img/pictograms/group_participants_white_grey.svg">
+      <div class="text">
+        <p>
+          Bitte gib uns deine Login Daten <br>
+          für deinen Account bei rooqie!
+        </p>
+        <div class="inputbox">
+          <img class="inputIcon" src="img/icons/location_white_transparent.svg">
+          <input type="text" placeholder="Email" ng-model="user.email">
+          <div style="clear: btoth"></div>
+        </div>
+        <div class="inputbox">
+          <img class="inputIcon" src="img/icons/location_white_transparent.svg">
+          <input type="password" placeholder="Passwort" ng-model="user.password">
+          <div style="clear: btoth"></div>
+        </div>
+      </div>
+      <a href="" ui-sref="onboarding-userdata({user: user})">
+        <div class="nextButton">
+          <p>
+            Weiter
+          </p>
+        </div>
+      </a>
+    </div>
+  </ion-content>
+</ion-view>

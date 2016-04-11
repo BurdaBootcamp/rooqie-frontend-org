@@ -1,7 +1,7 @@
 'use strict';
 angular.module('app')
   .controller('UsereventsCtrl', function($rootScope, $scope, $stateParams, $window, EventsService){
-    $scope.events = [];
+    $scope.events = null;
 
     EventsService.getUserEvents($window.localStorage['user_id'])
       .success(function(result){

@@ -1,32 +1,32 @@
 <ion-view title="Profile">
-  <ion-content class="profile">
+  <ion-content class="userdata">
       <img class="mainIcon" src="{{user.image}}">
       <div class="text">
         <div class="inputbox">
           <img class="inputIcon" src="img/icons/location_white_transparent.svg">
-          <input type="text" placeholder="Name" ng-value="user.firstname">
+          <input type="text" placeholder="Name" ng-model="user.firstname">
           <div style="clear: btoth"></div>
         </div>
         <div class="inputbox">
           <img class="inputIcon" src="img/icons/location_white_transparent.svg">
-          <input type="text" placeholder="Wohnort" ng-value="user.city">
+          <input type="text" placeholder="Wohnort" ng-model="user.city">
           <div style="clear: btoth"></div>
         </div>
         <div class="inputbox">
           <img class="inputIcon" src="img/icons/location_white_transparent.svg">
-          <input type="text" placeholder="Umzug" ng-value="user.moved">
+          <input type="text" placeholder="Umzug" ng-model="user.movedMonth">
           <div style="clear: btoth"></div>
         </div>
         <div class="inputbox">
           <img class="inputIcon" src="img/icons/location_white_transparent.svg">
-          <input type="text" placeholder="Beruf" ng-value="user.profession">
+          <input type="text" placeholder="Beruf" ng-model="user.profession">
           <div style="clear: btoth"></div>
         </div>
       </div>
-      <a href="" ui-sref="onboarding-welcome">
+      <a href="" ng-click="createAccount(user)">
         <div class="nextButton">
           <p>
-            Weiter
+            Account erstellen
           </p>
         </div>
       </a>

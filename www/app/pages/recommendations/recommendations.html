@@ -1,7 +1,10 @@
 <ion-view title="Einladungen">
   <ion-content class="recommendations">
     <ion-scroll class="eventlist">
-      <a ui-sref="eventdetail({id: event.id})" ng-repeat="event in events">
+      <div ng-if="!events" class="spinner">
+        <ion-spinner></ion-spinner>
+      </div>
+      <a ui-sref="eventdetail({id: event.id})" ng-repeat="event in events" ng-if="events">
         <div class="card" style="background-image: url({{event.category.image}})">
           <p class="event-name">
             {{event.name}}

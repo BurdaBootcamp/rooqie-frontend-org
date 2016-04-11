@@ -9736,6 +9736,15 @@ a.button {
   position: absolute; }
   .userevents .eventlist {
     height: 75vh; }
+    .userevents .eventlist .spinner {
+      margin: 25px auto;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      height: 85px;
+      text-align: center; }
     .userevents .eventlist .card {
       margin: 5px 0px;
       min-height: 20vh;
@@ -10373,21 +10382,32 @@ a.button {
 
 .onboarding-welcome {
   background-color: #009edf; }
-  .onboarding-welcome a {
-    text-decoration: none; }
-    .onboarding-welcome a img {
-      width: 60vw;
-      height: auto;
-      margin-left: 20vw;
-      margin-top: 15vh; }
-    .onboarding-welcome a .text {
-      color: white;
-      margin-left: 30vw;
-      font-size: 1.6em;
-      font-weight: bold;
-      line-height: 0.5em; }
-      .onboarding-welcome a .text p:first-child {
-        opacity: 0.6; }
+  .onboarding-welcome img {
+    width: 60vw;
+    height: auto;
+    margin-left: 20vw;
+    margin-top: 15vh; }
+  .onboarding-welcome .text {
+    color: white;
+    margin-left: 30vw;
+    font-size: 1.6em;
+    font-weight: bold;
+    line-height: 0.5em; }
+    .onboarding-welcome .text p:first-child {
+      opacity: 0.6; }
+  .onboarding-welcome .actionPane {
+    width: 100%;
+    margin-top: 150px; }
+    .onboarding-welcome .actionPane a {
+      text-decoration: none; }
+      .onboarding-welcome .actionPane a p {
+        text-align: center;
+        font-size: 1.2em;
+        font-weight: bold;
+        color: white; }
+    .onboarding-welcome .actionPane hr {
+      width: 60%;
+      border: white 1px solid; }
 
 .onboarding-intro {
   background-color: #009edf; }
@@ -10550,13 +10570,108 @@ a.button {
         text-decoration: none;
         font-size: 1.6em; }
 
+.onboarding-signup {
+  background-color: #009edf; }
+  .onboarding-signup .mainIcon {
+    width: 50vw;
+    height: auto;
+    margin-left: 25vw;
+    margin-top: 20vh; }
+  .onboarding-signup .text {
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 35vh;
+    font-size: 1.6em;
+    line-height: normal; }
+    .onboarding-signup .text .inputbox {
+      width: 60vw;
+      margin-left: 20vw;
+      height: 60px; }
+      .onboarding-signup .text .inputbox .inputIcon {
+        float: left;
+        width: 60px;
+        height: 60px; }
+      .onboarding-signup .text .inputbox input {
+        float: right;
+        background-color: transparent;
+        border-bottom: 1px solid white;
+        width: 60%;
+        margin-left: 10%;
+        color: white;
+        height: 40px;
+        font-size: 0.8em; }
+  .onboarding-signup a {
+    text-decoration: none; }
+    .onboarding-signup a .nextButton {
+      width: 50vw;
+      height: 60px;
+      border-radius: 30px;
+      background-color: white;
+      text-align: center;
+      margin: 0px auto 0px auto; }
+      .onboarding-signup a .nextButton p {
+        padding-top: 20px;
+        color: #969696;
+        text-decoration: none;
+        font-size: 1.6em; }
+
+.userdata {
+  background-color: #009edf; }
+  .userdata .mainIcon {
+    width: 40vw;
+    height: 40vw;
+    margin-left: 30vw;
+    margin-top: 15vh;
+    border-radius: 50%;
+    border: 10px white solid; }
+  .userdata .text {
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 40vh;
+    font-size: 1.6em;
+    line-height: normal;
+    margin-top: 20px; }
+    .userdata .text .inputbox {
+      width: 60vw;
+      margin-left: 20vw;
+      height: 60px; }
+      .userdata .text .inputbox .inputIcon {
+        float: left;
+        width: 60px;
+        height: 60px; }
+      .userdata .text .inputbox input {
+        float: right;
+        background-color: transparent;
+        border-bottom: 1px solid white;
+        width: 60%;
+        margin-left: 10%;
+        color: white;
+        height: 40px;
+        font-size: 0.8em; }
+  .userdata a {
+    text-decoration: none; }
+    .userdata a .nextButton {
+      width: 50vw;
+      height: 60px;
+      border-radius: 30px;
+      background-color: white;
+      text-align: center;
+      margin: 25px auto 0px auto; }
+      .userdata a .nextButton p {
+        padding-top: 20px;
+        color: #969696;
+        text-decoration: none;
+        font-size: 1.6em; }
+
 .profile {
   background-color: #009edf; }
   .profile .mainIcon {
     width: 40vw;
-    height: auto;
+    height: 40vw;
     margin-left: 30vw;
-    margin-top: 5vh;
+    margin-top: 15vh;
     border-radius: 50%;
     border: 10px white solid; }
   .profile .text {
@@ -10592,7 +10707,7 @@ a.button {
       border-radius: 30px;
       background-color: white;
       text-align: center;
-      margin: 35px auto 0px auto; }
+      margin: 25px auto 0px auto; }
       .profile a .nextButton p {
         padding-top: 20px;
         color: #969696;

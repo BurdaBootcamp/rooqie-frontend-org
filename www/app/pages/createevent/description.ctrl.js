@@ -16,7 +16,7 @@ angular.module('app')
       })
 
     $scope.createEvent= function(event){
-      event.name = event.category.name + ", " + event.location.name;
+      event.name = event.location.name;
       EventsService.createEvent(event)
         .success(function(result) {
           console.log(result);

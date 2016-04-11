@@ -3,6 +3,16 @@
   position: absolute;
   .eventlist {
     height: 75vh;
+    .spinner {
+      margin: 25px auto;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      height: 85px;
+      text-align: center;
+    }
     .card {
       margin: 5px 0px;
       min-height: 20vh;
