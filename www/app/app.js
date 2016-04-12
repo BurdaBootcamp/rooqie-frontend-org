@@ -65,6 +65,13 @@ angular.module('app', ['ionic', 'onezone-datepicker'])
       templateUrl: 'app/pages/eventjoin/eventjoin.html',
       controller: 'EventjoinCtrl'
     })
+
+    .state('selectlocation', {
+      url: '/selectlocation/selectlocation/:category',
+      templateUrl: 'app/pages/selectlocation/selectlocation.html',
+      controller: 'SelectlocationCtrl'
+    })
+
     .state('eventleave', {
       url: '/eventleave/:id/:join',
       templateUrl: 'app/pages/eventleave/eventleave.html',
