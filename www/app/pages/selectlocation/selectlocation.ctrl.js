@@ -12,9 +12,11 @@ angular.module('app')
 			for (var i = 0; i < resultLength; i++) {
 			    if ((result[i]).categories.contains(category)) {
 			    	locationscontainer.push(result[i]);
-			    } else {
-			    	locationscontainer = ["Sorry, noch keine Locationvorschläge"];
-			    }
+			    } 
+
+			    // else {
+			    // 	locationscontainer = ["Sorry, noch keine Locationvorschläge"];
+			    // }
 			};
   			$scope.locations = locationscontainer;
   	})

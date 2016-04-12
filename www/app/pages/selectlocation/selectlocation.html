@@ -1,16 +1,28 @@
-<ion-view title="Datenschutz" class="background" >
+<ion-view title="Selectlocation">
   <ion-content class="selectlocation">
-    <div class="row">
-      <div class="col-50 category-box">
-        <a ui-sref="selectlocation({category: 'trip'})" href="">
-          <div class="category-img" style="background-image: url({{categories.trip.image}})"></div>
-          <div class="category-name">
-            <p>
-              {{locations}}
+    <ion-scroll class="eventlist">
+      <div class = "mapcontainer">
+        place the map in here
+      </div>
+
+
+      <a ui-sref="" ng-repeat="location in locations">
+        <div class="card">
+          <img src="{{location.image}}">
+          <div class="textbox">
+            <p class="location-name">
+              {{location.name}}
+            </p>
+            <p class="location-address">
+              {{location.address}}
+            </p>
+            <p class="location-distance">
+              7km
             </p>
           </div>
-        </a>
-      </div>
-    </div>
+        </div>
+      </a>
+    </ion-scroll>
+
   </ion-content>
 </ion-view>

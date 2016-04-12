@@ -10656,196 +10656,36 @@ a.button {
         text-decoration: none;
         font-size: 1.6em; }
 
-.createevent-categories {
-  background-color: #e1e1e1; }
-  .createevent-categories .category-box {
-    height: 20vh;
-    padding: 5px; }
-    .createevent-categories .category-box a {
-      text-decoration: none; }
-    .createevent-categories .category-box .category-img {
-      height: 70%;
-      width: 100%;
+.selectlocation {
+  background-color: #e1e1e1;
+  position: absolute; }
+  .selectlocation .eventlist {
+    height: 75vh; }
+    .selectlocation .eventlist .card {
+      margin: 5px 0px;
+      min-height: 15vh;
       background-size: cover;
       background-repeat: no-repeat;
-      background-position: center center;
-      -webkit-box-shadow: 0px 4px 5px 0px rgba(80, 80, 80, 0.5);
-      -moz-box-shadow: 0px 4px 5px 0px rgba(80, 80, 80, 0.5);
-      box-shadow: 0px 4px 5px 0px rgba(80, 80, 80, 0.5); }
-    .createevent-categories .category-box .category-name {
-      height: 30%;
-      width: 100%;
-      background-color: white;
-      -webkit-box-shadow: 0px 4px 5px 0px rgba(80, 80, 80, 0.5);
-      -moz-box-shadow: 0px 4px 5px 0px rgba(80, 80, 80, 0.5);
-      box-shadow: 0px 4px 5px 0px rgba(80, 80, 80, 0.5); }
-      .createevent-categories .category-box .category-name p {
-        text-align: center;
-        color: #969696;
-        width: 100%;
-        font-size: 1.2em;
-        padding-top: 5px; }
-
-.createevent-description {
-  background-color: #e1e1e1; }
-  .createevent-description .event-headerbox {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    height: 30vh;
-    width: 100%; }
-    .createevent-description .event-headerbox .event-topbar {
-      height: 63%; }
-      .createevent-description .event-headerbox .event-topbar img {
-        width: 40px;
-        height: 40px;
-        margin-left: 20px;
-        margin-top: 20px; }
-  .createevent-description .contentbox {
-    height: 70vh;
-    background-color: white;
-    width: 100%;
-    -webkit-box-shadow: 0px -4px 5px 0px rgba(80, 80, 80, 0.5);
-    -moz-box-shadow: 0px -4px 5px 0px rgba(80, 80, 80, 0.5);
-    box-shadow: 0px -4px 5px 0px rgba(80, 80, 80, 0.5); }
-    .createevent-description .contentbox .locationImage {
-      border-radius: 50%;
-      width: 33vw;
-      height: 33vw;
-      margin-left: 33vw;
-      margin-top: -16vw;
-      -webkit-box-shadow: 0px -4px 5px 0px rgba(80, 80, 80, 0.5);
-      -moz-box-shadow: 0px -4px 5px 0px rgba(80, 80, 80, 0.5);
-      box-shadow: 0px -4px 5px 0px rgba(80, 80, 80, 0.5); }
-    .createevent-description .contentbox .locationInfos {
-      width: 100%;
-      color: #969696;
-      text-align: center; }
-      .createevent-description .contentbox .locationInfos .locationName {
-        font-size: 1.3em;
-        font-weight: bold; }
-      .createevent-description .contentbox .locationInfos .locationAddress {
-        font-size: 0.8; }
-      .createevent-description .contentbox .locationInfos .locationUrl a {
-        text-decoration: none;
-        color: #009edf; }
-    .createevent-description .contentbox .descriptionField {
-      width: 100%;
-      height: 20vh; }
-      .createevent-description .contentbox .descriptionField textarea {
-        height: 100%;
-        width: 86%;
-        margin: 7%;
-        padding: 3%;
-        border: 2px solid #e1e1e1;
-        background-color: #e1e1e1;
-        overflow: scroll;
-        border-radius: 10px;
-        resize: none;
-        color: #969696; }
-      .createevent-description .contentbox .descriptionField textarea:focus {
-        background-color: white; }
-    .createevent-description .contentbox .actionPane {
-      width: 80%;
-      margin-left: 10%;
-      margin-top: 25px; }
-      .createevent-description .contentbox .actionPane .backButton {
-        float: left; }
-        .createevent-description .contentbox .actionPane .backButton img {
-          width: 40px;
-          height: 40px; }
-      .createevent-description .contentbox .actionPane .nextButton {
-        float: right;
-        width: 30vw;
-        height: 40px;
-        border-radius: 20px;
-        background-color: #009edf;
-        text-align: center; }
-        .createevent-description .contentbox .actionPane .nextButton p {
-          margin-top: 10px; }
-          .createevent-description .contentbox .actionPane .nextButton p a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold; }
-
-.createevent-datepicker {
-  background-color: #e1e1e1 !important; }
-  .createevent-datepicker .datepickerbox {
-    width: 100%;
-    margin-top: 30px;
-    margin-bottom: 2px; }
-    .createevent-datepicker .datepickerbox .onezone-datepicker {
-      height: 55vh !important;
-      background-color: #e1e1e1 !important; }
-    .createevent-datepicker .datepickerbox .onezone-datepicker.onezone-datepicker-show {
-      max-height: 50vh !important;
-      border-bottom: 0px !important; }
-    .createevent-datepicker .datepickerbox .onezone-datepicker-navigation-arrow {
-      color: #009edf !important; }
-    .createevent-datepicker .datepickerbox .onezone-datepicker-button {
-      border: none !important; }
-    .createevent-datepicker .datepickerbox .onezone-datepicker-button:after {
-      border-bottom: none !important; }
-    .createevent-datepicker .datepickerbox .onezone-datepicker-day {
-      border: none; }
-    .createevent-datepicker .datepickerbox .onezone-datepicker-active-day, .createevent-datepicker .datepickerbox .onezone-datepicker-active-day:hover {
-      border: 2px solid white;
-      background-color: #009edf;
-      color: white; }
-    .createevent-datepicker .datepickerbox .onezone-datepicker-modal-item.onezone-datepicker-modal-item-active {
-      background-color: #009edf; }
-    .createevent-datepicker .datepickerbox .onezone-datepicker-week {
-      color: white;
-      font-weight: bold; }
-    .createevent-datepicker .datepickerbox span.onezone-datepicker-selection-button {
-      display: none !important; }
-  .createevent-datepicker .timepickerbox {
-    height: 39vh;
-    width: 100%;
-    background-color: white;
-    -webkit-box-shadow: 0px -4px 5px 0px rgba(80, 80, 80, 0.5);
-    -moz-box-shadow: 0px -4px 5px 0px rgba(80, 80, 80, 0.5);
-    box-shadow: 0px -4px 5px 0px rgba(80, 80, 80, 0.5); }
-    .createevent-datepicker .timepickerbox .rooqierow {
-      height: 40px;
-      width: 100%;
-      border-bottom: 1px solid #e1e1e1; }
-      .createevent-datepicker .timepickerbox .rooqierow .rooqielabel {
+      background-position: center center; }
+      .selectlocation .eventlist .card img {
+        width: 80px;
+        height: 80px;
         float: left;
-        color: #969696;
-        font-size: 1.2em;
-        margin-left: 25px;
-        margin-top: 10px; }
-      .createevent-datepicker .timepickerbox .rooqierow .rooqievalue {
+        border-radius: 40px;
+        -webkit-border-radius: 40px;
+        -moz-border-radius: 40px;
+        margin: 5px 0px 5px 5px; }
+      .selectlocation .eventlist .card .textbox {
         float: right;
-        color: #969696;
-        font-size: 1.2em;
-        margin-right: 25px;
-        margin-top: 10px; }
-        .createevent-datepicker .timepickerbox .rooqierow .rooqievalue input {
+        width: 70vw;
+        marign-right: 5px; }
+        .selectlocation .eventlist .card .textbox p {
+          margin-bottom: 4px !important;
+          color: #969696 !important;
+          font-weight: bold; }
+        .selectlocation .eventlist .card .textbox .location-name {
+          margin-top: 4px;
           color: #969696;
-          text-align: right;
-          margin-top: -8px; }
-    .createevent-datepicker .timepickerbox .actionPane {
-      width: 80%;
-      margin-left: 10%;
-      margin-top: 35px; }
-      .createevent-datepicker .timepickerbox .actionPane .backButton {
-        float: left; }
-        .createevent-datepicker .timepickerbox .actionPane .backButton img {
-          width: 40px;
-          height: 40px; }
-      .createevent-datepicker .timepickerbox .actionPane a {
-        text-decoration: none; }
-        .createevent-datepicker .timepickerbox .actionPane a .nextButton {
-          float: right;
-          width: 30vw;
-          height: 40px;
-          border-radius: 20px;
-          background-color: #009edf;
-          text-align: center; }
-          .createevent-datepicker .timepickerbox .actionPane a .nextButton p {
-            margin-top: 10px;
-            color: white;
-            text-decoration: none;
-            font-weight: bold; }
+          font-weight: bold;
+          font-size: 1.3em;
+          line-height: normal; }
