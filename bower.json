@@ -5,6 +5,7 @@
     "ionic": "driftyco/ionic-bower#1.2.4"
   },
   "dependencies": {
-    "onezone-datepicker": "*"
+    "onezone-datepicker": "*",
+    "jquery": "^2.2.3"
   }
 }

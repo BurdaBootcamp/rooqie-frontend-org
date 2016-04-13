@@ -4,8 +4,9 @@ angular.module('app')
     $scope.events = [];
     $scope.fn = {};
 
-    EventsService.getEvents()
+    EventsService.getMatchingEvents($window.localStorage['user_id'])
       .success(function(result){
+        result = result.events;
         result.forEach(function(event){
           event.date = EventsService.resolveDateString(event.date);
           event.category = $rootScope.categories[event.category];

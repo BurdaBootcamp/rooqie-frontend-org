@@ -40,6 +40,12 @@ angular.module('app')
         "maxParticipants": event.maxParticipants
       };
       return $http.post($rootScope.API_URL + "/events?access_token=" + $window.localStorage['access_token'], postData);
+    },
+    getLocation: function(eventId){
+      return $http.get($rootScope.API_URL + '/events/' + eventId + '/location?access_token=' + $window.localStorage['access_token']);
+    },
+    getMatchingEvents: function(accountId) {
+      return $http.get($rootScope.API_URL + '/events/getMatchingEvents?accountId=' + accountId + '&access_token=' + $window.localStorage['access_token']);
     }
   };
 });

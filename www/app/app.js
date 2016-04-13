@@ -42,15 +42,29 @@ angular.module('app', ['ionic', 'onezone-datepicker'])
         }
       }
     })
-    .state('profile', {
+    .state('app.profile', {
       url: '/profile',
-      templateUrl: 'app/pages/profile/profile.html',
-      controller: 'ProfileCtrl'
+      views: {
+        'menuContent': {
+          templateUrl: 'app/pages/profile/profile.html',
+          controller: 'ProfileCtrl'
+        }
+      }
     })
     .state('eventdetail', {
       url: '/eventdetail/:id',
       templateUrl: 'app/pages/eventdetail/eventdetail.html',
       controller: 'EventdetailCtrl'
+    })
+    .state('eventdetail-description', {
+      url: '/eventdetail/description/:id',
+      templateUrl: 'app/pages/eventdetail/eventdetail-description.html',
+      controller: 'EventdetailDescriptionCtrl'
+    })
+    .state('eventdetail-location', {
+      url: '/eventdetail/location/:id',
+      templateUrl: 'app/pages/eventdetail/eventdetail-location.html',
+      controller: 'EventdetailLocationCtrl'
     })
     .state('eventjoin', {
       url: '/eventjoin/:id/:join',

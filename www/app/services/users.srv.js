@@ -26,5 +26,8 @@ angular.module('app')
     login: function(user) {
       return $http.post($rootScope.API_URL + "/accounts/login", {"email": user.email, "password": user.password});
     },
+    logout: function(user) {
+      return $http.post($rootScope.API_URL + "/accounts/logout?access_token=" + $window.localStorage['access_token']);
+    }
   };
 });

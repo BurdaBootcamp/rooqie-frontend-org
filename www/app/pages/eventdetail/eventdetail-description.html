@@ -1,0 +1,33 @@
+<ion-view title="Meine Verabredung">
+  <ion-content class="eventdetail-description">
+    <div class="event-headerbox" style="background-image: url({{event.category.image}})">
+      <div class="event-topbar">
+        <a href="" ng-click="myGoBack()">
+          <img src="img/icons/arrow_left_red_white.svg">
+        </a>
+      </div>
+      <div class="event-titlebox">
+        <div class="textbox" ng-if="event">
+          <p class="event-name">{{event.name}}</p>
+          <p class="event-date">{{event.date}} Uhr</p>
+        </div>
+      </div>
+      <div style="clear: both;"></div>
+    </div>
+
+    <div class="contentbox">
+      <div class="headerbox">
+        <div class="icon">
+          <img src="img/icons/information_blue_white.svg">
+        </div>
+        <div class="title">
+          Einladung
+        </div>
+        <div style="clear: both;"></div>
+      </div>
+      <p class="description">
+        {{event.description}}
+      </p>
+    </div>
+  </ion-content>
+</ion-view>

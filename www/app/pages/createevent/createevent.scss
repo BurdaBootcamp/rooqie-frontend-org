@@ -141,13 +141,12 @@
   background-color: $primary_grey !important;
   .datepickerbox {
     width: 100%;
-    margin-top: 30px;
+    height: 48vh;
+    margin-top: 10px;
     margin-bottom: 2px;
 
-
-
     .onezone-datepicker {
-      height: 55vh !important;
+      height: 100% !important;
       background-color: $primary_grey !important;
     }
 
@@ -186,14 +185,10 @@
       color: $primary_white;
       font-weight: bold;
     }
-
-    span.onezone-datepicker-selection-button {
-      display:none !important;
-    }
   }
 
   .timepickerbox {
-    height: 39vh;
+    height: 44vh;
     width: 100%;
     background-color: $primary-white;
     -webkit-box-shadow: $shadow_menu_up;
@@ -226,29 +221,12 @@
     .actionPane {
       width: 80%;
       margin-left: 10%;
-      margin-top: 35px;
+      margin-top: 20px;
       .backButton {
         float: left;
         img {
           width: 40px;
           height: 40px;
-        }
-      }
-      a {
-        text-decoration: none;
-        .nextButton {
-          float: right;
-          width: 30vw;
-          height: 40px;
-          border-radius: 20px;
-          background-color: $primary_blue;
-          text-align: center;
-          p {
-            margin-top: 10px;
-            color: $primary_white;
-            text-decoration: none;
-            font-weight: bold;
-          }
         }
       }
     }

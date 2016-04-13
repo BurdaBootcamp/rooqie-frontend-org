@@ -1,7 +1,6 @@
 'use strict';
 angular.module('app')
   .controller('EventleaveCtrl', function($scope, $rootScope, $ionicHistory, $state, $stateParams, $window, EventsService){
-    $scope.fn = {};
     EventsService.getEvent($stateParams.id)
       .success(function(result){
         result.date = EventsService.resolveDateString(result.date);
@@ -12,7 +11,10 @@ angular.module('app')
         console.log(result);
       });
 
-    $scope.fn.myGoBack = function() {
-      $ionicHistory.goBack();
+    $scope.myGoBack = function() {
+      $ionicHistory.clearCache()
+        .then(function(){
+          $state.go('app.userevents');
+        });
     };
   });

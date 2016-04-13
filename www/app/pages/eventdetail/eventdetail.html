@@ -2,7 +2,7 @@
   <ion-content class="eventdetail">
     <div class="event-headerbox" style="background-image: url({{event.category.image}})">
       <div class="event-topbar">
-        <a href="" ng-click="fn.myGoBack()">
+        <a href="" ng-click="myGoBack()">
           <img src="img/icons/arrow_left_red_white.svg">
         </a>
       </div>
@@ -29,33 +29,37 @@
       <div style="clear: both;"></div>
     </div>
 
-    <div class="contentbox">
-      <div class="headerbox">
-        <div class="icon">
-          <img src="img/icons/information_blue_white.svg">
+    <a href="" ui-sref="eventdetail-description({id: event.id})">
+      <div class="contentbox">
+        <div class="headerbox">
+          <div class="icon">
+            <img src="img/icons/information_blue_white.svg">
+          </div>
+          <div class="title">
+            Einladung
+          </div>
+          <div style="clear: both;"></div>
         </div>
-        <div class="title">
-          Einladung
-        </div>
-        <div style="clear: both;"></div>
+        <p class="description">
+          {{event.description}}
+        </p>
       </div>
-      <p class="description">
-        {{event.description}}
-      </p>
-    </div>
-
-    <div class="contentbox">
-      <div class="headerbox">
-        <div class="icon">
-          <img src="img/icons/location_blue_white.svg">
+    </a>
+    <a href="" ui-sref="eventdetail-location({id: event.id})">
+      <div class="contentbox">
+        <div class="headerbox">
+          <div class="icon">
+            <img src="img/icons/location_blue_white.svg">
+          </div>
+          <div class="title">
+            Location
+          </div>
+          <div style="clear: both;"></div>
         </div>
-        <div class="title">
-          Location
-        </div>
-        <div style="clear: both;"></div>
+        <div class="iframeoverlay"></div>
+        <iframe class="mapbox" width="600" height="450" frameborder="0" style="border:0" ng-src="{{trustSrc(event.location.src)}}" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
-      <iframe class="mapbox" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2661.1997000234473!2d11.605552200000007!3d48.16423229999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479e759795f82b6b%3A0xc99bdf627cefefd1!2sEnglish+Garden!5e0!3m2!1sen!2sde!4v1459779139755" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-    </div>
+    </a>
 
     <div class="eventparticipants">
       <div class="headerbox">

@@ -23,7 +23,7 @@ angular.module('app')
         console.log(result);
       });
 
-    $scope.fn.leaveEvent = function() {
+    $scope.leaveEvent = function() {
       EventsService.leave($stateParams.id)
         .success(function(result){
           $state.go('eventleave', {id: $stateParams.id});
@@ -33,7 +33,7 @@ angular.module('app')
         });
     }
 
-    $scope.fn.myGoBack = function() {
+    $scope.myGoBack = function() {
       $ionicHistory.clearCache()
         .then(function(){
           $ionicHistory.goBack()

@@ -4,7 +4,7 @@
     width: 40vw;
     height: 40vw;
     margin-left: 30vw;
-    margin-top: 15vh;
+    margin-top: 5vh;
     border-radius: 50%;
     border: 10px $primary_white solid;
   }
@@ -17,8 +17,8 @@
     line-height: normal;
     margin-top: 20px;
     .inputbox {
-      width: 60vw;
-      margin-left: 20vw;
+      width: 80vw;
+      margin-left: 10vw;
       height: 60px;
       .inputIcon {
         float: left;
@@ -29,8 +29,7 @@
         float: right;
         background-color: transparent;
         border-bottom: 1px solid $primary_white;
-        width: 60%;
-        margin-left: 10%;
+        width: 70%;
         color: $primary_white;
         height: 40px;
         font-size: 0.8em;

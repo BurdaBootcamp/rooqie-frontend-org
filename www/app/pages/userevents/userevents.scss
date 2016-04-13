@@ -13,28 +13,42 @@
       height: 85px;
       text-align: center;
     }
-    .card {
-      margin: 5px 0px;
-      min-height: 20vh;
-      background-size:     cover;
-      background-repeat:   no-repeat;
-      background-position: center center;
-    }
     a {
       text-decoration: none;
-    }
-    .event-name {
-      margin-left: 10%;
-      color: $primary_white;
-      font-weight: bold;
-      font-size: 2em;
-      margin-top: 50px;
-      line-height: normal;
-    }
-    .event-date {
-      margin-left: 10%;
-      color: $primary_grey;
-      font-weight: bold;
+      .card {
+        margin: 5px 0px;
+        min-height: 25vh;
+        background-size:     cover;
+        background-repeat:   no-repeat;
+        background-position: center center;
+        position: relative;
+      }
+      .text {
+        z-index: 11;
+        position: absolute;
+        width: 100%;
+        .event-name {
+          margin-left: 10%;
+          color: $primary_white;
+          font-weight: bold;
+          font-size: 2em;
+          margin-top: 50px;
+          line-height: normal;
+        }
+        .event-date {
+          margin-left: 10%;
+          color: $primary_grey;
+          font-weight: bold;
+        }
+      }
+      .overlay {
+        position: absolute;
+        z-index: 10;
+        background-color: rgba(0,0,0,0.2);
+        height: 100%;
+        width: 100%;
+        top: 0;
+      }
     }
   }
   .actionpanel {
@@ -44,10 +58,10 @@
     -moz-box-shadow: $shadow_menu_up;
     box-shadow: $shadow_menu_up;
     .btn {
-      width: 80%;
+      width: 89%;
       height: 40px;
       &:first-child {
-        padding-top: 25px;
+        padding-top: 15px;
       }
       img {
         float: left;

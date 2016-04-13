@@ -6,15 +6,18 @@
       </div>
       <a ui-sref="eventdetail({id: event.id})" ng-repeat="event in events" ng-if="events">
         <div class="card" style="background-image: url({{event.category.image}})">
-          <p class="event-name">
-            {{event.name}}
-          </p>
-          <p class="event-date">
-            {{event.date}} Uhr
-          </p>
-          <p class="event-date">
-            {{event.participantCount}}/{{event.maxParticipants}}
-          </p>
+          <div class="text">
+            <p class="event-name">
+              {{event.name}}
+            </p>
+            <p class="event-date">
+              {{event.date}} Uhr
+            </p>
+            <p class="event-date">
+              {{event.participantCount}}/{{event.maxParticipants}}
+            </p>
+          </div>
+          <div class="overlay"></div>
         </div>
       </a>
     </ion-scroll>

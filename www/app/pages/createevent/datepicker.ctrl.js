@@ -26,11 +26,11 @@ angular.module('app')
       event.category = $stateParams.category;
       event.maxParticipants = preEvent.maxParticipants;
       //TODO: have to getted selected
-      event.locationId = 1;
+      event.locationId = "570bf5425a8ebc0717cb9d33";
       $state.go('app.createevent-description', {event: event});
     };
 
-    $scope.fn.myGoBack = function() {
+    $scope.myGoBack = function() {
       $ionicHistory.goBack();
     };
   });

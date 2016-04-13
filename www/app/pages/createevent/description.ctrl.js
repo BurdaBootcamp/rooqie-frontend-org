@@ -15,11 +15,12 @@ angular.module('app')
         console.log(result);
       })
 
-    $scope.createEvent= function(event){
+    $scope.createEvent = function(event){
+      
+
       event.name = event.location.name;
       EventsService.createEvent(event)
         .success(function(result) {
-          console.log(result);
           $state.go('eventjoin', {id: result.id, join: true});
         })
         .error(function(result) {

@@ -9745,25 +9745,37 @@ a.button {
       right: 0;
       height: 85px;
       text-align: center; }
-    .userevents .eventlist .card {
-      margin: 5px 0px;
-      min-height: 20vh;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center; }
     .userevents .eventlist a {
       text-decoration: none; }
-    .userevents .eventlist .event-name {
-      margin-left: 10%;
-      color: white;
-      font-weight: bold;
-      font-size: 2em;
-      margin-top: 50px;
-      line-height: normal; }
-    .userevents .eventlist .event-date {
-      margin-left: 10%;
-      color: #e1e1e1;
-      font-weight: bold; }
+      .userevents .eventlist a .card {
+        margin: 5px 0px;
+        min-height: 25vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: relative; }
+      .userevents .eventlist a .text {
+        z-index: 11;
+        position: absolute;
+        width: 100%; }
+        .userevents .eventlist a .text .event-name {
+          margin-left: 10%;
+          color: white;
+          font-weight: bold;
+          font-size: 2em;
+          margin-top: 50px;
+          line-height: normal; }
+        .userevents .eventlist a .text .event-date {
+          margin-left: 10%;
+          color: #e1e1e1;
+          font-weight: bold; }
+      .userevents .eventlist a .overlay {
+        position: absolute;
+        z-index: 10;
+        background-color: rgba(0, 0, 0, 0.2);
+        height: 100%;
+        width: 100%;
+        top: 0; }
   .userevents .actionpanel {
     height: 19vh;
     background-color: white;
@@ -9771,10 +9783,10 @@ a.button {
     -moz-box-shadow: 0px -4px 5px 0px rgba(80, 80, 80, 0.5);
     box-shadow: 0px -4px 5px 0px rgba(80, 80, 80, 0.5); }
     .userevents .actionpanel .btn {
-      width: 80%;
+      width: 89%;
       height: 40px; }
       .userevents .actionpanel .btn:first-child {
-        padding-top: 25px; }
+        padding-top: 15px; }
       .userevents .actionpanel .btn img {
         float: left;
         margin-right: 15px;
@@ -9866,56 +9878,68 @@ a.button {
       .eventdetail .event-headerbox .event-join p {
         color: white;
         font-size: 0.8em; }
-  .eventdetail .contentbox {
-    margin-top: 2vh;
-    height: 20vh;
-    background-color: white;
-    -webkit-box-shadow: 0px 4px 5px 0px rgba(80, 80, 80, 0.5);
-    -moz-box-shadow: 0px 4px 5px 0px rgba(80, 80, 80, 0.5);
-    box-shadow: 0px 4px 5px 0px rgba(80, 80, 80, 0.5); }
-    .eventdetail .contentbox .headerbox {
-      height: 30px;
-      z-index: 10; }
-      .eventdetail .contentbox .headerbox .icon {
-        float: left; }
-        .eventdetail .contentbox .headerbox .icon img {
+  .eventdetail a {
+    text-decoration: none; }
+    .eventdetail a .contentbox {
+      margin-top: 2vh;
+      height: 20vh;
+      background-color: white;
+      -webkit-box-shadow: 0px 4px 5px 0px rgba(80, 80, 80, 0.5);
+      -moz-box-shadow: 0px 4px 5px 0px rgba(80, 80, 80, 0.5);
+      box-shadow: 0px 4px 5px 0px rgba(80, 80, 80, 0.5);
+      position: relative; }
+      .eventdetail a .contentbox .headerbox {
+        height: 30px;
+        z-index: 11; }
+        .eventdetail a .contentbox .headerbox .icon {
+          float: left; }
+          .eventdetail a .contentbox .headerbox .icon img {
+            position: absolute;
+            z-index: 11;
+            width: 40px;
+            height: 40px;
+            margin-top: -20px;
+            margin-left: 20px; }
+            .eventdetail a .contentbox .headerbox .icon img .icon-circle {
+              fill: white; }
+            .eventdetail a .contentbox .headerbox .icon img .icon-text {
+              fill: #009edf; }
+        .eventdetail a .contentbox .headerbox .title {
           position: absolute;
-          z-index: 10;
-          width: 40px;
-          height: 40px;
-          margin-top: -20px;
-          margin-left: 20px; }
-          .eventdetail .contentbox .headerbox .icon img .icon-circle {
-            fill: white; }
-          .eventdetail .contentbox .headerbox .icon img .icon-text {
-            fill: #009edf; }
-      .eventdetail .contentbox .headerbox .title {
+          z-index: 11;
+          right: 0;
+          float: right;
+          background-color: #009edf;
+          text-align: center;
+          width: 110px;
+          height: 28px;
+          color: white;
+          font-size: 1.2em;
+          border-bottom-left-radius: 15px;
+          border-bottom-left-radius: 15px;
+          -webkit-box-shadow: 0px 4px 5px 0px rgba(80, 80, 80, 0.5);
+          -moz-box-shadow: 0px 4px 5px 0px rgba(80, 80, 80, 0.5);
+          box-shadow: 0px 4px 5px 0px rgba(80, 80, 80, 0.5);
+          padding-top: 2px; }
+      .eventdetail a .contentbox .mapbox {
+        width: 100%;
+        height: 100%;
         position: absolute;
+        top: 0; }
+      .eventdetail a .contentbox .iframeoverlay {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
         z-index: 10;
-        right: 0;
-        float: right;
-        background-color: #009edf;
-        text-align: center;
-        width: 110px;
-        height: 28px;
-        color: white;
-        font-size: 1.2em;
-        border-bottom-left-radius: 15px;
-        border-bottom-left-radius: 15px;
-        -webkit-box-shadow: 0px 4px 5px 0px rgba(80, 80, 80, 0.5);
-        -moz-box-shadow: 0px 4px 5px 0px rgba(80, 80, 80, 0.5);
-        box-shadow: 0px 4px 5px 0px rgba(80, 80, 80, 0.5);
-        padding-top: 2px; }
-    .eventdetail .contentbox .description {
-      padding: 10px 37px;
-      color: #969696;
-      font-size: 1.3em;
-      overflow: hidden;
-      height: 60%; }
-    .eventdetail .contentbox .mapbox {
-      margin-top: -30px;
-      width: 100%;
-      height: 20vh; }
+        background-color: rgba(0, 158, 223, 0.2); }
+      .eventdetail a .contentbox .description {
+        padding: 10px 37px;
+        color: #969696;
+        font-size: 1.3em;
+        overflow: hidden;
+        height: 60%; }
   .eventdetail .eventparticipants {
     height: 24vh;
     width: 100%;
@@ -9968,6 +9992,150 @@ a.button {
         .eventdetail .eventparticipants .participants .participantslist img {
           width: 60px;
           height: 60px; }
+
+.eventdetail-description {
+  background-color: #e1e1e1; }
+  .eventdetail-description .event-headerbox {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 30vh;
+    width: 100%;
+    -webkit-box-shadow: 0px 4px 5px 0px rgba(80, 80, 80, 0.5);
+    -moz-box-shadow: 0px 4px 5px 0px rgba(80, 80, 80, 0.5);
+    box-shadow: 0px 4px 5px 0px rgba(80, 80, 80, 0.5); }
+    .eventdetail-description .event-headerbox .event-topbar {
+      height: 63%; }
+      .eventdetail-description .event-headerbox .event-topbar img {
+        width: 40px;
+        height: 40px;
+        margin-left: 20px;
+        margin-top: 20px; }
+    .eventdetail-description .event-headerbox .event-titlebox .textbox {
+      float: left;
+      height: 37%;
+      width: 80%;
+      overflow-x: hidden; }
+      .eventdetail-description .event-headerbox .event-titlebox .textbox .event-name {
+        margin-left: 10%;
+        color: white;
+        font-weight: bold;
+        font-size: 2em; }
+      .eventdetail-description .event-headerbox .event-titlebox .textbox .event-date {
+        margin-left: 10%;
+        color: #e1e1e1;
+        font-size: 1.3em; }
+  .eventdetail-description .contentbox {
+    margin-top: 2vh;
+    height: 70vh;
+    background-color: white;
+    -webkit-box-shadow: 0px 4px 5px 0px rgba(80, 80, 80, 0.5);
+    -moz-box-shadow: 0px 4px 5px 0px rgba(80, 80, 80, 0.5);
+    box-shadow: 0px 4px 5px 0px rgba(80, 80, 80, 0.5); }
+    .eventdetail-description .contentbox .headerbox {
+      height: 30px;
+      z-index: 10; }
+      .eventdetail-description .contentbox .headerbox .icon {
+        float: left; }
+        .eventdetail-description .contentbox .headerbox .icon img {
+          position: absolute;
+          z-index: 10;
+          width: 40px;
+          height: 40px;
+          margin-top: -20px;
+          margin-left: 20px; }
+          .eventdetail-description .contentbox .headerbox .icon img .icon-circle {
+            fill: white; }
+          .eventdetail-description .contentbox .headerbox .icon img .icon-text {
+            fill: #009edf; }
+      .eventdetail-description .contentbox .headerbox .title {
+        position: absolute;
+        z-index: 10;
+        right: 0;
+        float: right;
+        background-color: #009edf;
+        text-align: center;
+        width: 110px;
+        height: 28px;
+        color: white;
+        font-size: 1.2em;
+        border-bottom-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        -webkit-box-shadow: 0px 4px 5px 0px rgba(80, 80, 80, 0.5);
+        -moz-box-shadow: 0px 4px 5px 0px rgba(80, 80, 80, 0.5);
+        box-shadow: 0px 4px 5px 0px rgba(80, 80, 80, 0.5);
+        padding-top: 2px; }
+    .eventdetail-description .contentbox .description {
+      padding: 10px 37px;
+      color: #969696;
+      font-size: 1.3em;
+      overflow: hidden;
+      height: 60%; }
+
+.eventdetail-location {
+  background-color: #e1e1e1; }
+  .eventdetail-location .event-headerbox {
+    position: relative;
+    height: 30vh;
+    width: 100%; }
+    .eventdetail-location .event-headerbox .event-topbar {
+      position: absolute;
+      z-index: 10;
+      height: 63%; }
+      .eventdetail-location .event-headerbox .event-topbar img {
+        width: 40px;
+        height: 40px;
+        margin-left: 20px;
+        margin-top: 20px; }
+    .eventdetail-location .event-headerbox .mapbox {
+      position: absolute;
+      width: 100%;
+      height: 100%; }
+  .eventdetail-location .contentbox {
+    height: 72vh;
+    background-color: white;
+    -webkit-box-shadow: 0px -4px 5px 0px rgba(80, 80, 80, 0.5);
+    -moz-box-shadow: 0px -4px 5px 0px rgba(80, 80, 80, 0.5);
+    box-shadow: 0px -4px 5px 0px rgba(80, 80, 80, 0.5); }
+    .eventdetail-location .contentbox .headerbox {
+      height: 30px;
+      z-index: 10; }
+      .eventdetail-location .contentbox .headerbox .icon {
+        float: left; }
+        .eventdetail-location .contentbox .headerbox .icon img {
+          position: absolute;
+          z-index: 10;
+          width: 40px;
+          height: 40px;
+          margin-top: -20px;
+          margin-left: 20px; }
+          .eventdetail-location .contentbox .headerbox .icon img .icon-circle {
+            fill: white; }
+          .eventdetail-location .contentbox .headerbox .icon img .icon-text {
+            fill: #009edf; }
+      .eventdetail-location .contentbox .headerbox .title {
+        position: absolute;
+        z-index: 10;
+        right: 0;
+        float: right;
+        background-color: #009edf;
+        text-align: center;
+        width: 110px;
+        height: 28px;
+        color: white;
+        font-size: 1.2em;
+        border-bottom-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        -webkit-box-shadow: 0px 4px 5px 0px rgba(80, 80, 80, 0.5);
+        -moz-box-shadow: 0px 4px 5px 0px rgba(80, 80, 80, 0.5);
+        box-shadow: 0px 4px 5px 0px rgba(80, 80, 80, 0.5);
+        padding-top: 2px; }
+    .eventdetail-location .contentbox .description {
+      padding: 10px 37px;
+      color: #969696;
+      font-size: 1.3em;
+      overflow: hidden;
+      height: 60%; }
 
 .eventjoin {
   background-color: #e1e1e1; }
@@ -10165,19 +10333,36 @@ a.button {
       background-position: center center; }
     .recommendations .eventlist a {
       text-decoration: none; }
-    .recommendations .eventlist .event-name {
-      margin-left: 10%;
-      color: white;
-      font-weight: bold;
-      font-size: 2em;
-      margin-top: 50px;
-      line-height: normal; }
-    .recommendations .eventlist .event-date {
-      margin-left: 10%;
-      color: #e1e1e1;
-      font-weight: bold; }
-      .recommendations .eventlist .event-date:last-child {
-        margin-top: -15px; }
+      .recommendations .eventlist a .card {
+        margin: 5px 0px;
+        min-height: 25vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: relative; }
+      .recommendations .eventlist a .text {
+        z-index: 11;
+        position: absolute;
+        width: 100%; }
+        .recommendations .eventlist a .text .event-name {
+          margin-left: 10%;
+          color: white;
+          font-weight: bold;
+          font-size: 2em;
+          margin-top: 5vh;
+          line-height: normal; }
+        .recommendations .eventlist a .text .event-date {
+          margin-left: 10%;
+          margin-top: -10px;
+          color: #e1e1e1;
+          font-weight: bold; }
+      .recommendations .eventlist a .overlay {
+        position: absolute;
+        z-index: 10;
+        background-color: rgba(0, 0, 0, 0.2);
+        height: 100%;
+        width: 100%;
+        top: 0; }
 
 .createevent-categories {
   background-color: #e1e1e1; }
@@ -10295,10 +10480,11 @@ a.button {
   background-color: #e1e1e1 !important; }
   .createevent-datepicker .datepickerbox {
     width: 100%;
-    margin-top: 30px;
+    height: 48vh;
+    margin-top: 10px;
     margin-bottom: 2px; }
     .createevent-datepicker .datepickerbox .onezone-datepicker {
-      height: 55vh !important;
+      height: 100% !important;
       background-color: #e1e1e1 !important; }
     .createevent-datepicker .datepickerbox .onezone-datepicker.onezone-datepicker-show {
       max-height: 50vh !important;
@@ -10320,10 +10506,8 @@ a.button {
     .createevent-datepicker .datepickerbox .onezone-datepicker-week {
       color: white;
       font-weight: bold; }
-    .createevent-datepicker .datepickerbox span.onezone-datepicker-selection-button {
-      display: none !important; }
   .createevent-datepicker .timepickerbox {
-    height: 39vh;
+    height: 44vh;
     width: 100%;
     background-color: white;
     -webkit-box-shadow: 0px -4px 5px 0px rgba(80, 80, 80, 0.5);
@@ -10352,26 +10536,12 @@ a.button {
     .createevent-datepicker .timepickerbox .actionPane {
       width: 80%;
       margin-left: 10%;
-      margin-top: 35px; }
+      margin-top: 20px; }
       .createevent-datepicker .timepickerbox .actionPane .backButton {
         float: left; }
         .createevent-datepicker .timepickerbox .actionPane .backButton img {
           width: 40px;
           height: 40px; }
-      .createevent-datepicker .timepickerbox .actionPane a {
-        text-decoration: none; }
-        .createevent-datepicker .timepickerbox .actionPane a .nextButton {
-          float: right;
-          width: 30vw;
-          height: 40px;
-          border-radius: 20px;
-          background-color: #009edf;
-          text-align: center; }
-          .createevent-datepicker .timepickerbox .actionPane a .nextButton p {
-            margin-top: 10px;
-            color: white;
-            text-decoration: none;
-            font-weight: bold; }
 
 .legal {
   background-color: #e1e1e1;
@@ -10582,11 +10752,11 @@ a.button {
     color: white;
     width: 100%;
     height: 35vh;
-    font-size: 1.6em;
+    font-size: 1.4em;
     line-height: normal; }
     .onboarding-signup .text .inputbox {
-      width: 60vw;
-      margin-left: 20vw;
+      width: 80vw;
+      margin-left: 10vw;
       height: 60px; }
       .onboarding-signup .text .inputbox .inputIcon {
         float: left;
@@ -10596,8 +10766,7 @@ a.button {
         float: right;
         background-color: transparent;
         border-bottom: 1px solid white;
-        width: 60%;
-        margin-left: 10%;
+        width: 70%;
         color: white;
         height: 40px;
         font-size: 0.8em; }
@@ -10614,7 +10783,7 @@ a.button {
         padding-top: 20px;
         color: #969696;
         text-decoration: none;
-        font-size: 1.6em; }
+        font-size: 1.4em; }
 
 .userdata {
   background-color: #009edf; }
@@ -10622,7 +10791,7 @@ a.button {
     width: 40vw;
     height: 40vw;
     margin-left: 30vw;
-    margin-top: 15vh;
+    margin-top: 10vh;
     border-radius: 50%;
     border: 10px white solid; }
   .userdata .text {
@@ -10630,12 +10799,12 @@ a.button {
     color: white;
     width: 100%;
     height: 40vh;
-    font-size: 1.6em;
+    font-size: 1.4em;
     line-height: normal;
     margin-top: 20px; }
     .userdata .text .inputbox {
-      width: 60vw;
-      margin-left: 20vw;
+      width: 80vw;
+      margin-left: 10vw;
       height: 60px; }
       .userdata .text .inputbox .inputIcon {
         float: left;
@@ -10663,7 +10832,7 @@ a.button {
         padding-top: 20px;
         color: #969696;
         text-decoration: none;
-        font-size: 1.6em; }
+        font-size: 1.4em; }
 
 .profile {
   background-color: #009edf; }
@@ -10671,7 +10840,7 @@ a.button {
     width: 40vw;
     height: 40vw;
     margin-left: 30vw;
-    margin-top: 15vh;
+    margin-top: 5vh;
     border-radius: 50%;
     border: 10px white solid; }
   .profile .text {
@@ -10683,8 +10852,8 @@ a.button {
     line-height: normal;
     margin-top: 20px; }
     .profile .text .inputbox {
-      width: 60vw;
-      margin-left: 20vw;
+      width: 80vw;
+      margin-left: 10vw;
       height: 60px; }
       .profile .text .inputbox .inputIcon {
         float: left;
@@ -10694,8 +10863,7 @@ a.button {
         float: right;
         background-color: transparent;
         border-bottom: 1px solid white;
-        width: 60%;
-        margin-left: 10%;
+        width: 70%;
         color: white;
         height: 40px;
         font-size: 0.8em; }
@@ -10713,3 +10881,20 @@ a.button {
         color: #969696;
         text-decoration: none;
         font-size: 1.6em; }
+
+button.rooqie-button {
+  text-decoration: none;
+  float: right;
+  width: 30vw;
+  height: 40px;
+  border-radius: 20px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  border: none !important; }
+  button.rooqie-button.rooqie-button-blue {
+    color: white;
+    background-color: #009edf; }
+  button.rooqie-button.rooqie-button-white {
+    color: #009edf;
+    background-color: white; }

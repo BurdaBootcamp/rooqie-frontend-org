@@ -12,21 +12,40 @@
     }
     a {
       text-decoration: none;
-    }
-    .event-name {
-      margin-left: 10%;
-      color: $primary_white;
-      font-weight: bold;
-      font-size: 2em;
-      margin-top: 50px;
-      line-height: normal;
-    }
-    .event-date {
-      margin-left: 10%;
-      color: $primary_grey;
-      font-weight: bold;
-      &:last-child {
-        margin-top: -15px;
+      .card {
+        margin: 5px 0px;
+        min-height: 25vh;
+        background-size:     cover;
+        background-repeat:   no-repeat;
+        background-position: center center;
+        position: relative;
+      }
+      .text {
+        z-index: 11;
+        position: absolute;
+        width: 100%;
+        .event-name {
+          margin-left: 10%;
+          color: $primary_white;
+          font-weight: bold;
+          font-size: 2em;
+          margin-top: 5vh;
+          line-height: normal;
+        }
+        .event-date {
+          margin-left: 10%;
+          margin-top: -10px;
+          color: $primary_grey;
+          font-weight: bold;
+        }
+      }
+      .overlay {
+        position: absolute;
+        z-index: 10;
+        background-color: rgba(0,0,0,0.2);
+        height: 100%;
+        width: 100%;
+        top: 0;
       }
     }
   }
