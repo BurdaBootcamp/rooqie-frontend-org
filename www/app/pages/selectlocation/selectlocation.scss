@@ -3,6 +3,15 @@ $image-size: 80px;
 .selectlocation {
   background-color: $primary_grey;
   position: absolute;
+  a img {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+    margin-top: 20px;
+    z-index: 10;
+  }
+  
   .eventlist {
     height: 75vh;
     .card {
@@ -56,3 +65,5 @@ $image-size: 80px;
 .gm-style-mtc {
   display: none;
 }
+
+
