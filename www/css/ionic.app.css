@@ -10696,3 +10696,6 @@ a.button {
 #map {
   width: 100vw;
   height: 30vh; }
+
+.gm-style-mtc {
+  display: none; }

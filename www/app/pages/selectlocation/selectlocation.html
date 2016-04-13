@@ -7,10 +7,7 @@
 
 <!--         <br /><small><a href="https://maps.google.com/maps?q=38.573551,-109.549177&hl=es;z=14&amp;output=embed" style="color:#0000FF;text-align:left" target="_blank">See map bigger</a></small> -->
 
-
-
-      <a ui-sref="" ng-repeat="location in locations">
-        <div class="card">
+        <div class="card" ng-repeat="location in locations">
           <img src="{{location.image}}">
           <div class="textbox">
             <p class="location-name">
@@ -21,7 +18,6 @@
             </p>
           </div>
         </div>
-      </a>
     </ion-scroll>
   </ion-content>
 </ion-view>
