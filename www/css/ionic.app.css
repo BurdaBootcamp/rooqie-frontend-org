@@ -10689,3 +10689,10 @@ a.button {
           font-weight: bold;
           font-size: 1.3em;
           line-height: normal; }
+
+.scroll {
+  height: 100%; }
+
+#map {
+  width: 100vw;
+  height: 30vh; }
