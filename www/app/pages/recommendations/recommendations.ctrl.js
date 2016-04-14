@@ -1,26 +1,16 @@
 'use strict';
 angular.module('app')
-  .controller('RecommendationsCtrl', function($rootScope, $scope, $stateParams, $window, EventsService){
+  .controller('RecommendationsCtrl', function($rootScope, $scope, $stateParams, $window, Event, Account, $account) {
     $scope.events = [];
-    $scope.fn = {};
-
-    EventsService.getMatchingEvents($window.localStorage['user_id'])
-      .success(function(result){
-        result = result.events;
-        result.forEach(function(event){
-          event.date = EventsService.resolveDateString(event.date);
+    Event.find().$promise.then(function(events) {
+        events.forEach(function(event) {
           event.category = $rootScope.categories[event.category];
-          EventsService.getParticipantCount(event.id)
-            .success(function(result) {
-              event.participantCount = result.count;
-            })
-            .error(function(result){
-              console.log(result);
-            });
+          var date = new Date(event.date);
+          event.date = $rootScope.weekday[date.getDay()] + ", " + ("0" + date.getHours()).slice(-2) + "." + ("0" + date.getMinutes()).slice(-2);
+          Event.accounts.count({id: event.id}).$promise.then(function(count) {
+              event.participantCount = count.count;
+          });
         });
-        $scope.events = result;
-      })
-      .error(function(result){
-        console.log(result);
-      });
+        $scope.events = events;
+    });
   });

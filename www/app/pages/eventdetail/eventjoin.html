@@ -2,7 +2,10 @@
   <ion-content class="eventjoin">
     <div class="event-headerbox" style="background-image: url({{event.category.image}})">
       <div class="event-topbar">
-        <a href="" ng-click="myGoBack()">
+        <a ng-if="!created" href="" ng-click="myGoBack()">
+          <img src="img/icons/arrow_left_red_white.svg">
+        </a>
+        <a ng-if="created" href="" ui-sref="eventdetail({id: event.id})">
           <img src="img/icons/arrow_left_red_white.svg">
         </a>
       </div>

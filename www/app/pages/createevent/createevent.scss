@@ -141,7 +141,7 @@
   background-color: $primary_grey !important;
   .datepickerbox {
     width: 100%;
-    height: 48vh;
+    height: 50vh;
     margin-top: 10px;
     margin-bottom: 2px;
 
@@ -188,7 +188,7 @@
   }
 
   .timepickerbox {
-    height: 44vh;
+    height: 50vh;
     width: 100%;
     background-color: $primary-white;
     -webkit-box-shadow: $shadow_menu_up;
@@ -231,4 +231,75 @@
       }
     }
   }
+}
+
+
+.createevent-location {
+  background-color: $primary_grey;
+  .event-headerbox {
+    position: relative;
+    height: 30vh;
+    width: 100%;
+    .event-topbar {
+      position: absolute;
+      z-index: 10;
+      height: 63%;
+      img {
+        width: 40px;
+        height: 40px;
+        margin-left: 20px;
+        margin-top: 20px;
+      }
+    }
+    .mapbox {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .eventlist {
+    height: 70vh;
+    background-color: $primary-white;
+    a {
+        text-decoration: none;
+        .card {
+          margin: 5px 0px;
+          min-height: 10vh;
+          background-size:     cover;
+          background-repeat:   no-repeat;
+          background-position: center center;
+          img {
+            width: 60px;
+            height: 60px;
+            float: left;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            margin: 5px 0px 5px 5px;
+          }
+          .textbox {
+            float: right;
+            width: 70vw;
+            margin-right: 5px;
+            p {
+              margin-bottom: 4px !important;
+              color: $primary_darkgrey !important;
+              font-weight: bold;
+            }
+
+            .location-name {
+              margin-top: 4px;
+              color: $primary_darkgrey;
+              font-weight: bold;
+              font-size: 1.3em;
+              line-height: normal;
+            }
+          }
+        }
+    }
+  }
+}
+
+.gm-style-mtc {
+  display: none;
 }

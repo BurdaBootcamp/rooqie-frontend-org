@@ -1,32 +1,26 @@
 'use strict';
 angular.module('app')
-  .controller('CreateeventDescriptionCtrl', function($rootScope, $scope, $ionicHistory, $state, $stateParams, $window, EventsService, LocationsService){
-    $scope.fn = {};
+  .controller('CreateeventDescriptionCtrl', function($rootScope, $scope, $ionicHistory, $state, $stateParams, $window, Event, Location) {
+    $scope.event = {};
     $scope.event = $stateParams.event;
-    $scope.event.description = "";
+    console.log($scope.event);
     $scope.event.categoryName = $scope.event.category;
     $scope.event.category = $rootScope.categories[$scope.event.category];
 
-    LocationsService.getLocation($scope.event.locationId)
-      .success(function(result){
-        $scope.event.location = result;
-      })
-      .error(function(result){
-        console.log(result);
-      })
+    Location.findOne({
+      id: $scope.event.locationId
+    }).$promise.then(function(location) {
+      $scope.event.location = location;
+    });
 
-    $scope.createEvent = function(event){
-      
-
-      event.name = event.location.name;
-      EventsService.createEvent(event)
-        .success(function(result) {
-          $state.go('eventjoin', {id: result.id, join: true});
-        })
-        .error(function(result) {
-          console.log(result);
-        })
-    }
+    $scope.nextStep = function() {
+      console.log($scope.event);
+      $scope.event.name = $scope.event.category.name;
+      $scope.event.category = $scope.event.categoryName;
+      Event.create($scope.event).$promise.then(function(result) {
+        $state.go('eventjoin', {id: result.id, join: false, created: true});
+      });
+    };
 
     $scope.myGoBack = function() {
       $ionicHistory.goBack();

@@ -1,0 +1,27 @@
+<ion-view title="Selectlocation">
+    <ion-content class="createevent-location">
+        <div class="event-headerbox">
+            <div class="event-topbar">
+                <a href="" ng-click="myGoBack()">
+                    <img src="img/icons/arrow_left_red_white.svg">
+                </a>
+            </div>
+            <div id="mapbox" class="mapbox" data-tap-disabled="true"></div>
+        </div>
+        <ion-scroll class="eventlist">
+            <a href="" ng-click="nextStep(location.id)" ng-repeat="location in locations">
+                <div class="card">
+                    <img ng-src="{{location.image}}">
+                    <div class="textbox">
+                        <p class="location-name">
+                            {{location.name}}
+                        </p>
+                        <p class="location-address">
+                            {{location.address}}
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </ion-scroll>
+    </ion-content>
+</ion-view>

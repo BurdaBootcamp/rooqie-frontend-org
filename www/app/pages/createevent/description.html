@@ -13,7 +13,7 @@
         <p class="locationName">{{event.location.name}}</p>
         <p class="locationAddress">{{event.location.address}}</p>
         <p class="locationUrl">
-          <a href="#">{{event.location.url}}</a>
+          <a href="#">{{event.location.homepage}}</a>
         </p>
       </div>
       <div class="descriptionField">
@@ -25,11 +25,9 @@
             <img src="img/icons/arrow_left_white_grey.svg">
           </a>
         </div>
-        <div class="nextButton">
-          <p>
-            <a href="" ng-click="createEvent(event)">posten</a>
-          </p>
-        </div>
+        <button class="rooqie-button rooqie-button-blue" href="" ng-click="nextStep()">
+          posten
+        </button>
         <div style="clear: both"></div>
       </div>
     </div>

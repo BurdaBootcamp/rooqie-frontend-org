@@ -9,10 +9,17 @@
           Menschen zu finden.
         </p>
       </div>
-      <a href="" ui-sref="profile">
+      <a href="" ng-show="!account.data" ng-click="facebookLogin()">
         <div class="nextButton">
           <p>
             Facebook Login
+          </p>
+        </div>
+      </a>
+      <a href="" ng-show="account.data" ui-sref="app.recommendations">
+        <div class="nextButton">
+          <p>
+            Weiter
           </p>
         </div>
       </a>

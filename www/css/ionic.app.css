@@ -9772,7 +9772,7 @@ a.button {
       .userevents .eventlist a .overlay {
         position: absolute;
         z-index: 10;
-        background-color: rgba(0, 0, 0, 0.2);
+        background-color: rgba(0, 0, 0, 0.5);
         height: 100%;
         width: 100%;
         top: 0; }
@@ -9993,6 +9993,71 @@ a.button {
           width: 60px;
           height: 60px; }
 
+.eventdetail-location {
+  background-color: #e1e1e1; }
+  .eventdetail-location .event-headerbox {
+    position: relative;
+    height: 30vh;
+    width: 100%; }
+    .eventdetail-location .event-headerbox .event-topbar {
+      position: absolute;
+      z-index: 10;
+      height: 63%; }
+      .eventdetail-location .event-headerbox .event-topbar img {
+        width: 40px;
+        height: 40px;
+        margin-left: 20px;
+        margin-top: 20px; }
+    .eventdetail-location .event-headerbox .mapbox {
+      position: absolute;
+      width: 100%;
+      height: 100%; }
+  .eventdetail-location .contentbox {
+    height: 72vh;
+    background-color: white;
+    -webkit-box-shadow: 0px -4px 5px 0px rgba(80, 80, 80, 0.5);
+    -moz-box-shadow: 0px -4px 5px 0px rgba(80, 80, 80, 0.5);
+    box-shadow: 0px -4px 5px 0px rgba(80, 80, 80, 0.5); }
+    .eventdetail-location .contentbox .headerbox {
+      height: 30px;
+      z-index: 10; }
+      .eventdetail-location .contentbox .headerbox .icon {
+        float: left; }
+        .eventdetail-location .contentbox .headerbox .icon img {
+          position: absolute;
+          z-index: 10;
+          width: 40px;
+          height: 40px;
+          margin-top: -20px;
+          margin-left: 20px; }
+          .eventdetail-location .contentbox .headerbox .icon img .icon-circle {
+            fill: white; }
+          .eventdetail-location .contentbox .headerbox .icon img .icon-text {
+            fill: #009edf; }
+      .eventdetail-location .contentbox .headerbox .title {
+        position: absolute;
+        z-index: 10;
+        right: 0;
+        float: right;
+        background-color: #009edf;
+        text-align: center;
+        width: 110px;
+        height: 28px;
+        color: white;
+        font-size: 1.2em;
+        border-bottom-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+        -webkit-box-shadow: 0px 4px 5px 0px rgba(80, 80, 80, 0.5);
+        -moz-box-shadow: 0px 4px 5px 0px rgba(80, 80, 80, 0.5);
+        box-shadow: 0px 4px 5px 0px rgba(80, 80, 80, 0.5);
+        padding-top: 2px; }
+    .eventdetail-location .contentbox .description {
+      padding: 10px 37px;
+      color: #969696;
+      font-size: 1.3em;
+      overflow: hidden;
+      height: 60%; }
+
 .eventdetail-description {
   background-color: #e1e1e1; }
   .eventdetail-description .event-headerbox {
@@ -10072,71 +10137,6 @@ a.button {
       overflow: hidden;
       height: 60%; }
 
-.eventdetail-location {
-  background-color: #e1e1e1; }
-  .eventdetail-location .event-headerbox {
-    position: relative;
-    height: 30vh;
-    width: 100%; }
-    .eventdetail-location .event-headerbox .event-topbar {
-      position: absolute;
-      z-index: 10;
-      height: 63%; }
-      .eventdetail-location .event-headerbox .event-topbar img {
-        width: 40px;
-        height: 40px;
-        margin-left: 20px;
-        margin-top: 20px; }
-    .eventdetail-location .event-headerbox .mapbox {
-      position: absolute;
-      width: 100%;
-      height: 100%; }
-  .eventdetail-location .contentbox {
-    height: 72vh;
-    background-color: white;
-    -webkit-box-shadow: 0px -4px 5px 0px rgba(80, 80, 80, 0.5);
-    -moz-box-shadow: 0px -4px 5px 0px rgba(80, 80, 80, 0.5);
-    box-shadow: 0px -4px 5px 0px rgba(80, 80, 80, 0.5); }
-    .eventdetail-location .contentbox .headerbox {
-      height: 30px;
-      z-index: 10; }
-      .eventdetail-location .contentbox .headerbox .icon {
-        float: left; }
-        .eventdetail-location .contentbox .headerbox .icon img {
-          position: absolute;
-          z-index: 10;
-          width: 40px;
-          height: 40px;
-          margin-top: -20px;
-          margin-left: 20px; }
-          .eventdetail-location .contentbox .headerbox .icon img .icon-circle {
-            fill: white; }
-          .eventdetail-location .contentbox .headerbox .icon img .icon-text {
-            fill: #009edf; }
-      .eventdetail-location .contentbox .headerbox .title {
-        position: absolute;
-        z-index: 10;
-        right: 0;
-        float: right;
-        background-color: #009edf;
-        text-align: center;
-        width: 110px;
-        height: 28px;
-        color: white;
-        font-size: 1.2em;
-        border-bottom-left-radius: 15px;
-        border-bottom-left-radius: 15px;
-        -webkit-box-shadow: 0px 4px 5px 0px rgba(80, 80, 80, 0.5);
-        -moz-box-shadow: 0px 4px 5px 0px rgba(80, 80, 80, 0.5);
-        box-shadow: 0px 4px 5px 0px rgba(80, 80, 80, 0.5);
-        padding-top: 2px; }
-    .eventdetail-location .contentbox .description {
-      padding: 10px 37px;
-      color: #969696;
-      font-size: 1.3em;
-      overflow: hidden;
-      height: 60%; }
-
 .eventjoin {
   background-color: #e1e1e1; }
   .eventjoin .event-headerbox {
@@ -10178,7 +10178,6 @@ a.button {
       float: right; }
       .eventjoin .event-headerbox .event-join img {
         margin-right: 20px;
-        margin-top: 5px;
         height: 40px;
         width: 40px; }
         .eventjoin .event-headerbox .event-join img .icon-circle {
@@ -10223,18 +10222,18 @@ a.button {
       height: 40px; }
       .eventjoin .contentbox .btn:first-child {
         padding-top: 25px; }
-      .eventjoin .contentbox .btn img {
-        float: left;
-        margin-right: 15px;
-        width: 40px;
-        height: 40px;
-        margin-left: 37px; }
-      .eventjoin .contentbox .btn p {
-        float: right;
-        width: 65%;
-        color: #969696;
-        font-size: 1.2em;
-        padding-top: 10px; }
+      .eventjoin .contentbox .btn a {
+        text-decoration: none; }
+        .eventjoin .contentbox .btn a img {
+          float: left;
+          margin-right: 15px;
+          width: 40px;
+          height: 40px;
+          margin-left: 37px; }
+        .eventjoin .contentbox .btn a p {
+          color: #969696;
+          font-size: 1.2em;
+          padding-top: 10px; }
 
 .eventleave {
   background-color: #e1e1e1; }
@@ -10359,7 +10358,7 @@ a.button {
       .recommendations .eventlist a .overlay {
         position: absolute;
         z-index: 10;
-        background-color: rgba(0, 0, 0, 0.2);
+        background-color: rgba(0, 0, 0, 0.5);
         height: 100%;
         width: 100%;
         top: 0; }
@@ -10480,7 +10479,7 @@ a.button {
   background-color: #e1e1e1 !important; }
   .createevent-datepicker .datepickerbox {
     width: 100%;
-    height: 48vh;
+    height: 50vh;
     margin-top: 10px;
     margin-bottom: 2px; }
     .createevent-datepicker .datepickerbox .onezone-datepicker {
@@ -10507,7 +10506,7 @@ a.button {
       color: white;
       font-weight: bold; }
   .createevent-datepicker .timepickerbox {
-    height: 44vh;
+    height: 50vh;
     width: 100%;
     background-color: white;
     -webkit-box-shadow: 0px -4px 5px 0px rgba(80, 80, 80, 0.5);
@@ -10542,6 +10541,62 @@ a.button {
         .createevent-datepicker .timepickerbox .actionPane .backButton img {
           width: 40px;
           height: 40px; }
+
+.createevent-location {
+  background-color: #e1e1e1; }
+  .createevent-location .event-headerbox {
+    position: relative;
+    height: 30vh;
+    width: 100%; }
+    .createevent-location .event-headerbox .event-topbar {
+      position: absolute;
+      z-index: 10;
+      height: 63%; }
+      .createevent-location .event-headerbox .event-topbar img {
+        width: 40px;
+        height: 40px;
+        margin-left: 20px;
+        margin-top: 20px; }
+    .createevent-location .event-headerbox .mapbox {
+      position: absolute;
+      width: 100%;
+      height: 100%; }
+  .createevent-location .eventlist {
+    height: 70vh;
+    background-color: white; }
+    .createevent-location .eventlist a {
+      text-decoration: none; }
+      .createevent-location .eventlist a .card {
+        margin: 5px 0px;
+        min-height: 10vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center; }
+        .createevent-location .eventlist a .card img {
+          width: 60px;
+          height: 60px;
+          float: left;
+          border-radius: 50%;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          margin: 5px 0px 5px 5px; }
+        .createevent-location .eventlist a .card .textbox {
+          float: right;
+          width: 70vw;
+          margin-right: 5px; }
+          .createevent-location .eventlist a .card .textbox p {
+            margin-bottom: 4px !important;
+            color: #969696 !important;
+            font-weight: bold; }
+          .createevent-location .eventlist a .card .textbox .location-name {
+            margin-top: 4px;
+            color: #969696;
+            font-weight: bold;
+            font-size: 1.3em;
+            line-height: normal; }
+
+.gm-style-mtc {
+  display: none; }
 
 .legal {
   background-color: #e1e1e1;

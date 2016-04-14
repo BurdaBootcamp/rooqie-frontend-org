@@ -6,7 +6,7 @@
           <img src="img/icons/arrow_left_red_white.svg">
         </a>
       </div>
-      <iframe class="mapbox" width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2684.792564120354!2d11.754190951118831!3d47.707864679089354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479d8e9a2dfd20d1%3A0x2fc70102769bf216!2sBr%C3%A4ust%C3%BCberl+Tegernsee!5e0!3m2!1sde!2sde!4v1460389070641" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <div id="mapbox" class="mapbox" data-tap-disabled="true"></div>
     </div>
 
     <div class="contentbox">
@@ -20,6 +20,7 @@
         <div style="clear: both;"></div>
       </div>
       <p class="description">
+        <b>{{location.name}}</b><br />
         {{location.description}}
       </p>
     </div>

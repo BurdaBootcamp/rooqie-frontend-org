@@ -12,13 +12,13 @@
           <p class="event-date">{{event.date}} Uhr</p>
         </div>
         <div class="event-join">
-          <a ui-sref="eventjoin({id: event.id, join: false})" ng-if="participates == true">
+          <a ui-sref="eventjoin({id: event.id, join: false, created: false})" ng-if="participates == true">
             <img src="img/icons/check_accept_green_white.svg">
           </a>
           <p ng-if="participates == true">
             zugesagt
           </p>
-          <a ui-sref="eventjoin({id: event.id, join: true})" ng-if="participates == false">
+          <a ui-sref="eventjoin({id: event.id, join: true, created: false})" ng-if="participates == false">
             <img src="img/icons/check_accept_transparent.svg">
           </a>
           <p ng-if="participates == false">
@@ -45,7 +45,7 @@
         </p>
       </div>
     </a>
-    <a href="" ui-sref="eventdetail-location({id: event.id})">
+    <a href="" ui-sref="eventdetail-location({id: event.locationId})">
       <div class="contentbox">
         <div class="headerbox">
           <div class="icon">
@@ -57,7 +57,7 @@
           <div style="clear: both;"></div>
         </div>
         <div class="iframeoverlay"></div>
-        <iframe class="mapbox" width="600" height="450" frameborder="0" style="border:0" ng-src="{{trustSrc(event.location.src)}}" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div id="mapbox" class="mapbox" data-tap-disabled="true"></div>
       </div>
     </a>
 
@@ -77,7 +77,7 @@
         </p>
         <ion-scroll class="participantslist" direction="x">
           <div>
-            <img ng-src="{{user.image}}" ng-repeat="user in users" style="margin-right: 5px">
+            <img ng-src="{{account.image}}" ng-repeat="account in accounts" style="margin-right: 5px">
           </div>
         </ion-scroll>
       </div>

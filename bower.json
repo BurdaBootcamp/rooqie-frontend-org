@@ -6,6 +6,7 @@
   },
   "dependencies": {
     "onezone-datepicker": "*",
-    "jquery": "^2.2.3"
+    "jquery": "^2.2.3",
+    "ngCordova": "^0.1.26-alpha"
   }
 }
