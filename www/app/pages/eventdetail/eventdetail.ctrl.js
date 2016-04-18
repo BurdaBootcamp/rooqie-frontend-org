@@ -41,6 +41,13 @@ angular.module('app')
         });
     };
 
+    $scope.goBackEvents = function() {
+      $ionicHistory.clearCache()
+        .then(function() {
+          $state.go('app.userevents');
+        });
+    };
+
     function drawMap(location) {
       var options = {
         timeout: 10000,

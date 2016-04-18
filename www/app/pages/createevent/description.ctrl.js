@@ -18,7 +18,7 @@ angular.module('app')
       $scope.event.name = $scope.event.category.name;
       $scope.event.category = $scope.event.categoryName;
       Event.create($scope.event).$promise.then(function(result) {
-        $state.go('eventjoin', {id: result.id, join: false, created: true});
+        $state.go('eventjoin', {id: result.id, join: true, created: true});
       });
     };
 

@@ -8,12 +8,12 @@
       </div>
     </div>
     <div class="contentbox">
-      <img class="locationImage" src="img/categories/breakfast.png">
+      <img class="locationImage" ng-src="{{event.location.image}}">
       <div class="locationInfos">
         <p class="locationName">{{event.location.name}}</p>
         <p class="locationAddress">{{event.location.address}}</p>
         <p class="locationUrl">
-          <a href="#">{{event.location.homepage}}</a>
+          <a href="#" ng-href="{{event.location.homepage}}">{{event.location.homepage}}</a>
         </p>
       </div>
       <div class="descriptionField">

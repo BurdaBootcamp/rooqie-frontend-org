@@ -11,20 +11,25 @@ angular.module('app', ['ionic', 'onezone-datepicker', 'lbServices', 'ngCordova']
       });
     };
 
+    accountService.destroy = function() {
+        accountService.data = null;
+    };
+
     accountService.load();
 
     return accountService;
   })
   .factory('$facebookLogin', function($account) {
   return function() {
-    var url = 'http://ec2-52-58-3-95.eu-central-1.compute.amazonaws.com:3000/auth/facebook';
+    //var url = 'http://ec2-52-58-3-95.eu-central-1.compute.amazonaws.com:3000/auth/facebook';
+    var url = 'http://localhost:3000/auth/facebook';
 
     var ref = window.open(url, '_blank', 'location=no');
 
     // For Cordova
     if (window.cordova) {
       ref.addEventListener('loadstop', function(ev) {
-        if (ev.url.indexOf('/auth/facebook/callback') !== -1) {
+        if (ev.url.indexOf('/index.html') !== -1) {
           ref.close();
           $account.load();
         }
@@ -48,7 +53,8 @@ angular.module('app', ['ionic', 'onezone-datepicker', 'lbServices', 'ngCordova']
           // Transform **all** $http calls so that requests that go to `/`
           // instead go to a different origin, in this case localhost:3000
           if (req.url.charAt(0) === '/') {
-            req.url = 'http://ec2-52-58-3-95.eu-central-1.compute.amazonaws.com:3000' + req.url;
+            //req.url = 'http://ec2-52-58-3-95.eu-central-1.compute.amazonaws.com:3000' + req.url;
+            req.url = 'http://localhost:3000' + req.url;
             // and make sure to send cookies too
             req.withCredentials = true;
           }
