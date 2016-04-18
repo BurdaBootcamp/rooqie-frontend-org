@@ -16,7 +16,14 @@
           </p>
         </div>
       </a>
-      <a href="" ng-show="account.data" ui-sref="app.recommendations">
+      <a href="" ng-show="account.data.firstname" ui-sref="app.userevents">
+        <div class="nextButton">
+          <p>
+            Weiter
+          </p>
+        </div>
+      </a>
+      <a href="" ng-show="account.data && !account.data.firstname" ui-sref="onboarding-moved">
         <div class="nextButton">
           <p>
             Weiter
