@@ -23,13 +23,9 @@
           <div style="clear: btoth"></div>
         </div>
       </div>
-      <a href="" ng-click="createAccount(user)">
-        <div class="nextButton">
-          <p>
-            Account erstellen
-          </p>
-        </div>
-      </a>
+      <button class="rooqie-button rooqie-button-white rooqie-button-md center" ng-disabled="!user.moved && !user.firstname && !user.city && !user.profession" href="" ng-click="createAccount(user)">
+        Account erstellen
+      </button>
     </div>
   </ion-content>
 </ion-view>

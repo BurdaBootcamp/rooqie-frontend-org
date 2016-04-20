@@ -12,13 +12,9 @@
           <div style="clear: btoth"></div>
         </div>
       </div>
-      <a href="" ui-sref="onboarding-city({moved: user.moved})">
-        <div class="nextButton">
-          <p>
-            Weiter
-          </p>
-        </div>
-      </a>
+      <button class="rooqie-button rooqie-button-white rooqie-button-md center" ng-disabled="!user.moved" href="" ui-sref="onboarding-city({moved: user.moved})">
+        weiter
+      </button>
     </div>
   </ion-content>
 </ion-view>

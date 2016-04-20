@@ -1,35 +1,23 @@
 <ion-view title="Intro" hide-nav-bar="true">
   <ion-content class="onboarding-facebook">
-      <img class="mainIcon" src="img/pictograms/group_participants_white_grey.svg">
-      <div class="text">
-        <p>
-          Dein Facebook-Profil <br>
-          hilft uns, die für dich <br>
-          interessantesten <br>
-          Menschen zu finden.
-        </p>
-      </div>
-      <a href="" ng-show="!account.data" ng-click="facebookLogin()">
-        <div class="nextButton">
-          <p>
-            Facebook Login
-          </p>
-        </div>
-      </a>
-      <a href="" ng-show="account.data.firstname" ui-sref="app.userevents">
-        <div class="nextButton">
-          <p>
-            Weiter
-          </p>
-        </div>
-      </a>
-      <a href="" ng-show="account.data && !account.data.firstname" ui-sref="onboarding-moved">
-        <div class="nextButton">
-          <p>
-            Weiter
-          </p>
-        </div>
-      </a>
+    <img class="mainIcon" src="img/pictograms/group_participants_white_grey.svg">
+    <div class="text">
+      <p>
+        Dein Facebook-Profil
+        <br> hilft uns, die für dich
+        <br> interessantesten
+        <br> Menschen zu finden.
+      </p>
+    </div>
+    <button class="rooqie-button rooqie-button-white rooqie-button-md center" href="" ng-show="!account.data" ng-click="facebookLogin()">
+      Facebook Login
+    </button>
+    <button class="rooqie-button rooqie-button-white rooqie-button-md center" href="" ng-show="account.data.firstname" ui-sref="app.userevents">
+      weiter
+    </button>
+    <button class="rooqie-button rooqie-button-white rooqie-button-md center" href="" ng-show="account.data && !account.data.onboarding" ui-sref="onboarding-moved">
+      weiter
+    </button>
     </div>
   </ion-content>
 </ion-view>

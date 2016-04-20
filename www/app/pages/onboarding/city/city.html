@@ -8,18 +8,16 @@
           Willkommen in
         </p>
         <div class="inputbox">
-          <img class="inputIcon" src="img/icons/location_white_transparent.svg">
-          <input type="text" placeholder="Wohnort" ng-model="user.city">
-          <div style="clear: btoth"></div>
+            <form name="form">
+                <img class="inputIcon" src="img/icons/location_white_transparent.svg">
+                <input type="text" placeholder="Wohnort" ng-model="user.city" name="city">
+                <div style="clear: btoth"></div>
+            </form>
         </div>
       </div>
-      <a href="" ui-sref="onboarding-userdata({user: user})">
-        <div class="nextButton">
-          <p>
-            Okay, super!
-          </p>
-        </div>
-      </a>
+      <button class="rooqie-button rooqie-button-white rooqie-button-md center" ng-disabled="!user.city" href="" ng-click="nextStep(user)" >
+        Okay, super!
+      </button>
     </div>
   </ion-content>
 </ion-view>
