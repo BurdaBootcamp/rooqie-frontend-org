@@ -6,25 +6,25 @@
     </div>
 
     <div class="timepickerbox">
-      <form novalidate>
+      <form name="form">
         <div class="rooqierow">
           <div class="rooqielabel">Datum</div>
-          <div class="rooqievalue"><input type="text" style="display:none" value="{{onezoneDatepicker.date}}" ng-model="event.date"><input type="text" value="{{onezoneDatepicker.date | date:'dd MMMM yyyy'}}"></div>
+          <div class="rooqievalue"><input type="text" style="display:none" value="{{onezoneDatepicker.date}}" ng-model="event.date" readonly><input type="text" value="{{onezoneDatepicker.date | date:'dd MMMM yyyy'}}" name="date" readonly></div>
           <div style="clear: both"></div>
         </div>
         <div class="rooqierow">
           <div class="rooqielabel">Uhrzeit</div>
-          <div class="rooqievalue"><input type="text" placeholder="HH:MM" ng-model="event.time"></div>
+          <div class="rooqievalue"><input type="text" placeholder="HH:MM" ng-model="event.time" ng-pattern="/^\d\d:\d\d$/" name="time"></div>
           <div style="clear: both"></div>
         </div>
         <div class="rooqierow">
           <div class="rooqielabel">Dauer</div>
-          <div class="rooqievalue"><input type="number" placeholder="ca. Stunden" ng-model="event.duration"></div>
+          <div class="rooqievalue"><input type="number" placeholder="ca. Stunden" ng-model="event.duration" ng-pattern="/^\d+$/" name="duration"></div>
           <div style="clear: both"></div>
         </div>
         <div class="rooqierow">
           <div class="rooqielabel">Max. Teilnehmer</div>
-          <div class="rooqievalue"><input type="number" placeholder="Anzahl" ng-model="event.maxParticipants"></div>
+          <div class="rooqievalue"><input type="number" placeholder="Anzahl" ng-model="event.maxParticipants" ng-pattern="/^\d+$/" name="maxParticipants"></div>
           <div style="clear: both"></div>
         </div>
         <div class="actionPane">
@@ -33,7 +33,7 @@
               <img src="img/icons/arrow_left_white_grey.svg">
             </a>
           </div>
-          <button class="rooqie-button rooqie-button-blue" href="" ng-click="nextStep(event)">
+          <button class="rooqie-button rooqie-button-blue rooqie-button-sm float-right" href="" ng-click="nextStep(event)" ng-disabled="!form.time.$valid || !form.duration.$valid || !form.maxParticipants.$valid">
             weiter
           </button>
           <div style="clear: both"></div>
