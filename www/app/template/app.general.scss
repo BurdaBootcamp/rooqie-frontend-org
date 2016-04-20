@@ -1,19 +1,51 @@
 button.rooqie-button {
   text-decoration: none;
-  float: right;
-  width: 30vw;
-  height: 40px;
-  border-radius: 20px;
   text-align: center;
   text-decoration: none;
   font-weight: bold;
   border: none !important;
+    &.rooqie-button-sm {
+        width: 30vw;
+        height: 40px;
+        border-radius: 20px;
+    }
+    &.rooqie-button-md {
+        width: 40vw;
+        height: 60px;
+        border-radius: 30px;
+    }
+    &.rooqie-button-bg {
+        width: 50vw;
+        height: 80px;
+        border-radius: 40px;
+        font-size: 20px;
+    }
   &.rooqie-button-blue {
     color: $primary_white;
     background-color: $primary_blue;
+  }
+  &.rooqie-button-blue:disabled {
+    color: $primary_darkgrey;
+    background-color: $primary_blue;
+    opacity: 0.5;
   }
   &.rooqie-button-white {
     color: $primary_blue;
     background-color: $primary_white;
   }
+  &.rooqie-button-white:disabled {
+    color: $primary_darkgrey;
+    background-color: $primary_white;
+    opacity: 0.5;
+    }
+}
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
+.center {
+  margin: 0 auto;
+  display: block;
 }
