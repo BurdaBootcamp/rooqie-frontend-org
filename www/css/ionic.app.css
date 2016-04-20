@@ -10939,17 +10939,44 @@ a.button {
 
 button.rooqie-button {
   text-decoration: none;
-  float: right;
-  width: 30vw;
-  height: 40px;
-  border-radius: 20px;
   text-align: center;
   text-decoration: none;
   font-weight: bold;
   border: none !important; }
+  button.rooqie-button.rooqie-button-sm {
+    width: 30vw;
+    height: 40px;
+    border-radius: 20px; }
+  button.rooqie-button.rooqie-button-md {
+    width: 40vw;
+    height: 60px;
+    border-radius: 30px; }
+  button.rooqie-button.rooqie-button-bg {
+    width: 50vw;
+    height: 80px;
+    border-radius: 40px;
+    font-size: 20px; }
   button.rooqie-button.rooqie-button-blue {
     color: white;
     background-color: #009edf; }
+  button.rooqie-button.rooqie-button-blue:disabled {
+    color: #969696;
+    background-color: #009edf;
+    opacity: 0.5; }
   button.rooqie-button.rooqie-button-white {
     color: #009edf;
     background-color: white; }
+  button.rooqie-button.rooqie-button-white:disabled {
+    color: #969696;
+    background-color: white;
+    opacity: 0.5; }
+
+.float-left {
+  float: left; }
+
+.float-right {
+  float: right; }
+
+.center {
+  margin: 0 auto;
+  display: block; }

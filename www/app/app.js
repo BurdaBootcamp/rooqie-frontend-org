@@ -12,7 +12,7 @@ angular.module('app', ['ionic', 'onezone-datepicker', 'lbServices', 'ngCordova']
     };
 
     accountService.destroy = function() {
-        accountService.data = null;
+      accountService.data = null;
     };
 
     accountService.load();
@@ -20,32 +20,32 @@ angular.module('app', ['ionic', 'onezone-datepicker', 'lbServices', 'ngCordova']
     return accountService;
   })
   .factory('$facebookLogin', function($account) {
-  return function() {
-    //var url = 'http://ec2-52-58-3-95.eu-central-1.compute.amazonaws.com:3000/auth/facebook';
-    var url = 'http://localhost:3000/auth/facebook';
+    return function() {
+      //var url = 'http://localhost:3000/auth/facebook';
+      var url = 'https://backend.rooqie.de/auth/facebook';
 
-    var ref = window.open(url, '_blank', 'location=no');
+      var ref = window.open(url, '_blank', 'location=no');
 
-    // For Cordova
-    if (window.cordova) {
-      ref.addEventListener('loadstop', function(ev) {
-        if (ev.url.indexOf('/index.html') !== -1) {
-          ref.close();
-          $account.load();
-        }
-      });
-    } else {
-      // For `ionic serve --lab`. Wait for the user to close the window
-      // and, when they do, check the server to see if they're now logged in.
-      var interval = setInterval(function() {
-        if (ref.closed) {
-          $account.load();
-          clearInterval(interval);
-        }
-      }, 100);
-    }
-  };
-})
+      // For Cordova
+      if (window.cordova) {
+        ref.addEventListener('loadstop', function(ev) {
+          if (ev.url.indexOf('/index.html') !== -1) {
+            ref.close();
+            $account.load();
+          }
+        });
+      } else {
+        // For `ionic serve --lab`. Wait for the user to close the window
+        // and, when they do, check the server to see if they're now logged in.
+        var interval = setInterval(function() {
+          if (ref.closed) {
+            $account.load();
+            clearInterval(interval);
+          }
+        }, 100);
+      }
+    };
+  })
   .config(function($stateProvider, $urlRouterProvider, $provide, $httpProvider) {
     $httpProvider.interceptors.push(function() {
       return {
@@ -53,8 +53,8 @@ angular.module('app', ['ionic', 'onezone-datepicker', 'lbServices', 'ngCordova']
           // Transform **all** $http calls so that requests that go to `/`
           // instead go to a different origin, in this case localhost:3000
           if (req.url.charAt(0) === '/') {
-            //req.url = 'http://ec2-52-58-3-95.eu-central-1.compute.amazonaws.com:3000' + req.url;
-            req.url = 'http://localhost:3000' + req.url;
+            req.url = 'https://backend.rooqie.de' + req.url;
+            //req.url = 'http://localhost:3000' + req.url;
             // and make sure to send cookies too
             req.withCredentials = true;
           }
@@ -274,10 +274,6 @@ angular.module('app', ['ionic', 'onezone-datepicker', 'lbServices', 'ngCordova']
       }
     };
     $rootScope.weekday = ["Sonntag", "Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag"];
-    $rootScope.URL = "http://ec2-52-58-3-95.eu-central-1.compute.amazonaws.com";
-    $rootScope.PORT = "3000";
-    $rootScope.PREFIX = "/api";
-    $rootScope.API_URL = $rootScope.URL + ":" + $rootScope.PORT + $rootScope.PREFIX;
     $rootScope.safeApply = function(fn) {
       var phase = this.$root ? this.$root.$$phase : this.$$phase;
       if (phase === '$apply' || phase === '$digest') {
