@@ -2,10 +2,7 @@
   <ion-content class="eventjoin">
     <div class="event-headerbox" style="background-image: url({{event.category.image}})">
       <div class="event-topbar">
-        <a ng-if="!created" href="" ng-click="myGoBack()">
-          <img src="img/icons/arrow_left_red_white.svg">
-        </a>
-        <a ng-if="created" href="" ng-click="goBackEvents()">
+        <a  href="" ng-click="myGoBack()">
           <img src="img/icons/arrow_left_red_white.svg">
         </a>
       </div>
@@ -32,8 +29,8 @@
         <div style="clear: both;"></div>
       </div>
       <div class="message">
-        <p class="headline">Du bist dabei!</p>
-        <p>Du kannst dir den Termin nun in den Kalender eintragen. Bitte sag ab falls du es nicht schaffst!</p>
+        <p class="headline">Du bist dabei:</p>
+        <p>Du kannst dir den Termin nun in den Kalender eintragen. Bitte sag ab, falls du es nicht schaffst!</p>
       </div>
       <!--
       <div class="btn">

@@ -1,6 +1,6 @@
 <ion-view title="Intro" hide-nav-bar="true">
   <ion-content class="onboarding-facebook">
-    <img class="mainIcon" src="img/pictograms/group_participants_white_grey.svg">
+    <img class="mainIcon" src="img/pictograms/facebook_white.svg">
     <div class="text">
       <p>
         Dein Facebook-Profil
@@ -9,14 +9,17 @@
         <br> Menschen zu finden.
       </p>
     </div>
-    <button class="rooqie-button rooqie-button-white rooqie-button-md center" href="" ng-show="!account.data" ng-click="facebookLogin()">
+    <button class="rooqie-button rooqie-button-white rooqie-button-md center" href="" ng-show="!account.data" ng-click="login()">
       Facebook Login
     </button>
-    <button class="rooqie-button rooqie-button-white rooqie-button-md center" href="" ng-show="account.data.firstname" ui-sref="app.userevents">
-      weiter
+    <button class="rooqie-button rooqie-button-white rooqie-button-md center" href="" ng-show="account.data && account.data.onboarding" ui-sref="app.userevents">
+      Weiter
     </button>
-    <button class="rooqie-button rooqie-button-white rooqie-button-md center" href="" ng-show="account.data && !account.data.onboarding" ui-sref="onboarding-moved">
-      weiter
+    <button class="rooqie-button rooqie-button-white rooqie-button-md center" href="" ng-show="account.data && !account.data.onboarding && !account.data.unsupportedcity" ui-sref="onboarding-moved">
+      Weiter
+    </button>
+    <button class="rooqie-button rooqie-button-white rooqie-button-md center" href="" ng-show="account.data && !account.data.onboarding && account.data.unsupportedcity" ui-sref="onboarding-sorry">
+      Weiter
     </button>
     </div>
   </ion-content>

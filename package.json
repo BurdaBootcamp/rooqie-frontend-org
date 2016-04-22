@@ -3,6 +3,7 @@
   "version": "1.1.1",
   "description": "rooqie-frontend: An Ionic project",
   "dependencies": {
+    "angular-intro.js": "^1.3.0",
     "gulp": "^3.5.6",
     "gulp-concat": "^2.2.0",
     "gulp-minify-css": "^0.3.0",
@@ -24,7 +25,10 @@
     "cordova-plugin-inappbrowser"
   ],
   "cordovaPlatforms": [
-    "android",
+    {
+      "platform": "android",
+      "locator": "wp8"
+    },
     {
       "platform": "ios",
       "version": "3.9.0",

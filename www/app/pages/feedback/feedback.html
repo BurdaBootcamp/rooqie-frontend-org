@@ -1,0 +1,10 @@
+<ion-view title="Feedback">
+  <ion-content class="feedback">
+      <br />
+      <div class="descriptionField">
+        <textarea placeholder="Schreibe uns dein Feedback!" ng-model="feedback.message"></textarea>
+      </div>
+      <br />
+      <button style="width: 80vw" ng-disabled="sent" class="rooqie-button rooqie-button-sm rooqie-button-blue center" href="" ng-disabled="!feedback.message" ng-click="feedbackSend(feedback)">Senden</button>
+  </ion-content>
+</ion-view>

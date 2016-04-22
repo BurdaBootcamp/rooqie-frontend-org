@@ -1,35 +1,28 @@
 <ion-view title="Profile">
   <ion-content class="profile">
-      <img class="mainIcon" src="{{user.image}}">
+      <img class="mainIcon" src="{{account.image}}" />
       <div class="text">
         <div class="inputbox">
-          <img class="inputIcon" src="img/icons/location_white_transparent.svg">
-          <input type="text" placeholder="Name" ng-value="user.firstname">
+          <img class="inputIcon" src="img/icons/participant_white.svg">
+          <input type="text" placeholder="Name" ng-model="account.firstname" readonly>
           <div style="clear: btoth"></div>
         </div>
         <div class="inputbox">
           <img class="inputIcon" src="img/icons/location_white_transparent.svg">
-          <input type="text" placeholder="Wohnort" ng-value="user.city">
+          <input type="text" placeholder="Wohnort" ng-model="account.city" readonly>
+          <div style="clear: btoth"></div>
+        </div>
+        <div class="inputbox">
+          <img class="inputIcon" src="img/icons/calendar_white_transparent.svg">
+          <input type="text" placeholder="Umzug" ng-model="account.moved" readonly>
           <div style="clear: btoth"></div>
         </div>
         <div class="inputbox">
           <img class="inputIcon" src="img/icons/location_white_transparent.svg">
-          <input type="text" placeholder="Umzug" ng-value="user.moved">
-          <div style="clear: btoth"></div>
-        </div>
-        <div class="inputbox">
-          <img class="inputIcon" src="img/icons/location_white_transparent.svg">
-          <input type="text" placeholder="Beruf" ng-value="user.profession">
+          <input type="text" placeholder="Beruf" ng-model="account.profession" readonly>
           <div style="clear: btoth"></div>
         </div>
       </div>
-      <a href="" ng-click="logout()">
-        <div class="nextButton">
-          <p>
-            Logout
-          </p>
-        </div>
-      </a>
     </div>
   </ion-content>
 </ion-view>

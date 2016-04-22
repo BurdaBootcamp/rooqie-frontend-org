@@ -8,7 +8,11 @@ angular.module('app')
     Account.findById({
       id: 'me'
     }).$promise.then(function(account) {
-      $state.go('app.userevents');
+        if(account.onboarding){
+            $state.go('app.recommendations');
+        } else {
+            $state.go('onboarding-welcome');
+        }
     }, function(error) {
         $state.go('onboarding-welcome');
     });

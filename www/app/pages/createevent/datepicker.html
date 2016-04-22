@@ -18,7 +18,7 @@
           <div style="clear: both"></div>
         </div>
         <div class="rooqierow">
-          <div class="rooqielabel">Dauer</div>
+          <div class="rooqielabel">Dauer (in Std)</div>
           <div class="rooqievalue"><input type="number" placeholder="ca. Stunden" ng-model="event.duration" ng-pattern="/^\d+$/" name="duration"></div>
           <div style="clear: both"></div>
         </div>
@@ -27,6 +27,7 @@
           <div class="rooqievalue"><input type="number" placeholder="Anzahl" ng-model="event.maxParticipants" ng-pattern="/^\d+$/" name="maxParticipants"></div>
           <div style="clear: both"></div>
         </div>
+        {{error}}
         <div class="actionPane">
           <div class="backButton">
             <a href="" ng-click="myGoBack()">
@@ -34,7 +35,7 @@
             </a>
           </div>
           <button class="rooqie-button rooqie-button-blue rooqie-button-sm float-right" href="" ng-click="nextStep(event)" ng-disabled="!form.time.$valid || !form.duration.$valid || !form.maxParticipants.$valid">
-            weiter
+            Weiter
           </button>
           <div style="clear: both"></div>
         </div>

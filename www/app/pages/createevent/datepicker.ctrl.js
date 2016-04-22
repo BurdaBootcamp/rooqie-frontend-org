@@ -1,13 +1,13 @@
 'use strict';
 angular.module('app')
   .controller('CreateeventDatepickerCtrl', function($rootScope, $scope, $ionicHistory, $state, $stateParams, $window){
+      $scope.error = " ";
     $scope.event = {
       time: '12:00',
       date: new Date(),
       duration: 2,
       maxParticipants: 5
     }
-    console.log($scope.event);
 
     $scope.onezoneDatepicker = {
       date: new Date(),
@@ -20,7 +20,7 @@ angular.module('app')
 
     $scope.nextStep = function(preEvent) {
       var event = {};
-      event.date = new Date(preEvent.date.toLocaleDateString() + " " + preEvent.time);
+      event.date = new Date(preEvent.date.toDateString() + " " + preEvent.time);
       event.duration = preEvent.duration;
       event.category = $stateParams.category;
       event.maxParticipants = preEvent.maxParticipants;

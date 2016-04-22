@@ -2,7 +2,6 @@
 angular.module('app')
   .controller('CreateeventLocationCtrl', function($rootScope, $scope, $ionicHistory, $state, $stateParams, $window, Location, $cordovaGeolocation) {
     $scope.event = $stateParams.event;
-    console.log($scope.event);
     Location.find().$promise.then(function(allLocations) {
       $scope.locations = [];
       allLocations.forEach(function(location) {
@@ -23,6 +22,7 @@ angular.module('app')
 
         var mapOptions = {
           center: latLng,
+          liteMode: true,
           zoom: 11,
           mapTypeId: google.maps.MapTypeId.ROADMAP,
           icon: {

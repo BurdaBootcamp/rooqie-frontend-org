@@ -6,11 +6,12 @@ angular.module('app')
     $account.load();
     $scope.user.id = $account.data.id;
 
-    UserIdentity.findOne({
+    console.log($account.data.id);
+    UserIdentity.findOne({filter: {
       where: {
-        userId: 'me'
+        userId: $account.data.id
       }
-    }, function(identity) {
+  }}, function(identity) {
       console.log(identity);
       $scope.user.gender = identity.profile.gender;
       $scope.user.firstname = identity.profile.name.givenName;
@@ -32,9 +33,11 @@ angular.module('app')
         image: user.image,
         city: user.city,
         moved: user.moved,
-        onboarding: true
+        profession: user.profession,
+        onboarding: true,
+        unsupportedcity: false
       }).$promise.then(function(newUser) {
-        $state.go('app.userevents');
+        $state.go('app.recommendations');
       });
     }
   });

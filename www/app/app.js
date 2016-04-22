@@ -170,11 +170,20 @@ angular.module('app', ['ionic', 'onezone-datepicker', 'lbServices', 'ngCordova']
           }
         }
       })
-      .state('app.imprint', {
-        url: '/imprint',
+      .state('app.feedback', {
+        url: '/feedback',
         views: {
           'menuContent': {
-            templateUrl: 'app/pages/legal/imprint.html'
+            templateUrl: 'app/pages/feedback/feedback.html',
+            controller: 'FeedbackCtrl'
+          }
+        }
+      })
+      .state('app.gtc', {
+        url: '/gtc',
+        views: {
+          'menuContent': {
+            templateUrl: 'app/pages/legal/gtc.html'
           }
         }
       })
@@ -220,6 +229,11 @@ angular.module('app', ['ionic', 'onezone-datepicker', 'lbServices', 'ngCordova']
         templateUrl: 'app/pages/onboarding/signup/signup.html',
         controller: 'OnboardingSignupCtrl'
       })
+      .state('onboarding-sorry', {
+        url: '/onboarding/sorry/:city',
+        templateUrl: 'app/pages/onboarding/sorry/sorry.html',
+        controller: 'OnboardingSorryCtrl'
+      })
       .state('onboarding-userdata', {
         url: '/onboarding/userdata',
         params: {
@@ -234,11 +248,11 @@ angular.module('app', ['ionic', 'onezone-datepicker', 'lbServices', 'ngCordova']
     $rootScope.categories = {
       "trip": {
         "name": "Ausflug",
-        "image": "img/categories/trip_sea.jpg"
+        "image": "img/categories/trip_city.jpg"
       },
       "party": {
         "name": "Feiern",
-        "image": "img/categories/cocktails.jpg"
+        "image": "img/categories/party.jpg"
       },
       "sightseeing": {
         "name": "Sightseeing",
@@ -252,17 +266,9 @@ angular.module('app', ['ionic', 'onezone-datepicker', 'lbServices', 'ngCordova']
         "name": "Sport",
         "image": "img/categories/sports_foodball.jpg"
       },
-      "tatort": {
-        "name": "Tatort",
-        "image": "img/categories/tatort.jpg"
-      },
       "coffee": {
         "name": "Café",
         "image": "img/categories/coffee.jpg"
-      },
-      "cooking": {
-        "name": "Kochen",
-        "image": "img/categories/course_cooking.jpg"
       },
       "cinema": {
         "name": "Kino",
@@ -271,6 +277,14 @@ angular.module('app', ['ionic', 'onezone-datepicker', 'lbServices', 'ngCordova']
       "museum": {
         "name": "Museum",
         "image": "img/categories/museum.jpg"
+      },
+      "restaurant": {
+        "name": "Restaurant",
+        "image": "img/categories/food.jpg"
+      },
+      "bar": {
+        "name": "Bar",
+        "image": "img/categories/cocktails.jpg"
       }
     };
     $rootScope.weekday = ["Sonntag", "Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag"];

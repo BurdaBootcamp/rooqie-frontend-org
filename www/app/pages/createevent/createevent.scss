@@ -1,8 +1,13 @@
 .createevent-categories {
   background-color: $primary_grey;
+  ul {
+
+  }
   .category-box {
     height: 20vh;
+    width: 50vw;
     padding: 5px;
+    float: left;
     a {
       text-decoration: none;
     }
@@ -194,6 +199,8 @@
     -webkit-box-shadow: $shadow_menu_up;
     -moz-box-shadow: $shadow_menu_up;
     box-shadow: $shadow_menu_up;
+    z-index: 11;
+    position: absolute;
     .rooqierow {
       height: 40px;
       width: 100%;

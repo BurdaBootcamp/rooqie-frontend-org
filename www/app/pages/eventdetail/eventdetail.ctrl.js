@@ -1,7 +1,8 @@
 'use strict';
 angular.module('app')
-  .controller('EventdetailCtrl', function($rootScope, $scope, $ionicHistory, $stateParams, $window, Event, Location, Account, Participant, $cordovaGeolocation, $account) {
+  .controller('EventdetailCtrl', function($rootScope, $scope, $state, $ionicHistory, $stateParams, $window, Event, Location, Account, Participant, $cordovaGeolocation, $account) {
     $scope.event = {};
+    $scope.participates = false;
     Event.findById({
       id: $stateParams.id
     }).$promise.then(function(event) {
@@ -17,6 +18,7 @@ angular.module('app')
           id: event.id
         }).$promise.then(function(count) {
           event.remainingSpaces = event.maxParticipants - count.count;
+      }, function(error) {
         });
         $scope.event = event;
       });
@@ -27,21 +29,25 @@ angular.module('app')
       $scope.accounts = accounts;
     });
 
-    Participant.participates({
-      accountId: $account.id,
-      eventId: $stateParams.id
-    }).$promise.then(function(bool) {
-      $scope.participates = bool.participates;
+    Account.findById({
+      id: 'me'
+    }).$promise.then(function(account) {
+      Participant.findOne({
+        filter: {
+          where: {
+            participantId: account.id,
+            eventId: $stateParams.id
+          }
+        }
+      }).$promise.then(function(bool) {
+          if(bool.length != 0) {
+            $scope.participates = true;
+          }
+      });
     });
 
-    $scope.myGoBack = function() {
-      $ionicHistory.clearCache()
-        .then(function() {
-          $ionicHistory.goBack()
-        });
-    };
 
-    $scope.goBackEvents = function() {
+    $scope.myGoBack = function() {
       $ionicHistory.clearCache()
         .then(function() {
           $state.go('app.userevents');
@@ -57,6 +63,7 @@ angular.module('app')
         var latLng = new google.maps.LatLng(location.lat, location.lng);
         var mapOptions = {
           center: latLng,
+          liteMode: true,
           zoom: 11,
           mapTypeId: google.maps.MapTypeId.ROADMAP,
           icon: {
@@ -101,6 +108,7 @@ angular.module('app')
         var latLng = new google.maps.LatLng(location.lat, location.lng);
         var mapOptions = {
           center: latLng,
+          liteMode: true,
           zoom: 11,
           mapTypeId: google.maps.MapTypeId.ROADMAP,
           icon: {
@@ -140,7 +148,7 @@ angular.module('app')
     };
   })
   .controller('EventjoinCtrl', function($scope, $rootScope, $ionicHistory, $state, $stateParams, $window, Event, Participant, $account) {
-  $scope.created = $stateParams.created;
+    $scope.created = $stateParams.created;
     var join = ($stateParams.join === 'true');
     if (join) {
       Event.join({
@@ -166,9 +174,11 @@ angular.module('app')
 
     $scope.leaveEvent = function() {
       Participant.findOne({
-        where: {
-          eventId: $stateParams.id,
-          participantId: $account.id
+        filter: {
+          where: {
+            eventId: $stateParams.id,
+            participantId: $account.id
+          }
         }
       }).$promise.then(function(result) {
         Participant.deleteById({
@@ -186,11 +196,13 @@ angular.module('app')
     $scope.myGoBack = function() {
       $ionicHistory.clearCache()
         .then(function() {
-          $ionicHistory.goBack()
+          $state.go('eventdetail', {
+            id: $stateParams.id
+          });
         });
     };
   })
-  .controller('EventleaveCtrl', function($scope, $rootScope, $ionicHistory, $state, $stateParams, $window, EventsService, Event) {
+  .controller('EventleaveCtrl', function($scope, $rootScope, $ionicHistory, $state, $stateParams, $window, Event) {
     Event.findById({
       id: $stateParams.id
     }).$promise.then(function(event) {
