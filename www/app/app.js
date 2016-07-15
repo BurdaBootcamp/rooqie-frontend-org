@@ -1,5 +1,5 @@
 'use strict';
-angular.module('app', ['ionic', 'onezone-datepicker', 'lbServices', 'ngCordova'])
+angular.module('app', ['ionic', 'onezone-datepicker', 'lbServices', 'ngCordova', 'angularHelpOverlay'])
   .factory('$account', function(Account) {
     var accountService = {};
 

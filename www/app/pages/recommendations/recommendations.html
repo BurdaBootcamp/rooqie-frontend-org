@@ -1,7 +1,7 @@
-<ion-view title="Vorschläge" ng-intro-options="IntroOptions" ng-intro-method="CallMe">
+<ion-view title="Einladungen" help-overlay="showHelp" overlay-start-callback="onStart(event)" overlay-stop-callback="onStop(event)">
   <ion-content class="recommendations">
-    <ion-scroll class="eventlist">
-      <div ng-if="!events" class="spinner">
+    <ion-scroll class="eventlist" data-intro="Project title" data-position="bottom">
+      <div ng-if="!events" class="spinner" data-intro="Project title" data-position="bottom">
         <ion-spinner></ion-spinner>
       </div>
       <a ui-sref="eventdetail({id: event.id})" ng-repeat="event in events" ng-if="events">
@@ -21,6 +21,9 @@
           <div class="overlay"></div>
         </div>
       </a>
+      <a href="#" class="btn btn-large primary" data-toggle="chardinjs"
+         data-intro="This button toggles the overlay, you can click it, even when the overlay is visible"
+         data-position="left" ng-click="toggleHelp()">See it in action</a>
     </ion-scroll>
   </ion-content>
 </ion-view>

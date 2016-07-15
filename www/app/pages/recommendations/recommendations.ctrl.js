@@ -2,7 +2,8 @@
 angular.module('app')
   .controller('RecommendationsCtrl', function($rootScope, $scope, $stateParams, $window, Event, Account, $account) {
     $scope.events = [];
-    //Event.getMatchingEvents({accountId: $account.data.id}).$promise.then(function(events) {
+    $scope.showHelp = false;
+
     Event.find().$promise.then(function(events) {
         if(events.length > 0){
             events.forEach(function(event) {
@@ -16,4 +17,28 @@ angular.module('app')
             $scope.events = events;
         }
     });
+
+    $scope.onStart = function(event) {
+        console.log('STARTING');
+        return '1';
+      };
+
+      $scope.onStop = function(event) {
+        console.log('ENDING');
+        return '0';
+      };
+
+      $scope.toggleHelp = function() {
+        $scope.showHelp = !$scope.showHelp;
+        /*var picture = $('.jumbotron img');
+        if (picture.is(':visible')) {
+          return ($('body').data('chardinJs')).toggle();
+        } else {
+          return picture.animate({
+            height: 250
+          }, 600, function() {
+            return ($('body').data('chardinJs')).toggle();
+          });
+        }*/
+      };
   });
